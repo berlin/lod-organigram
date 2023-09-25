@@ -1,0 +1,4 @@
+{% assign cbd_snippet = page.url | relative_url | replace: site.dataset_url, '/' | replace: '/', '_' | replace: '.html', '' | append: '.json'  %}
+<script type="application/ld+json">
+  {% include {{ site.cbd_folder | append: cbd_snippet }} %}
+</script>

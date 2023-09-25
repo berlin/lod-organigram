@@ -1,0 +1,7 @@
+{%- assign label = include.iri -%}
+{%- for prefix_definition in site.data.prefixes -%}
+    {%- if include.iri contains prefix_definition.url -%}
+        {%- capture label -%}{{ prefix_definition.prefix }}:{{ include.iri | remove: prefix_definition.url }}{%- endcapture -%}
+    {%- endif -%}
+{%- endfor -%}
+{{ label }}

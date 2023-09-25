@@ -1,0 +1,32 @@
+- prefix: dct
+  url: http://purl.org/dc/terms/
+
+- prefix: rdf
+  url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
+- prefix: rdfs
+  url: http://www.w3.org/2000/01/rdf-schema#
+
+- prefix: geo
+  url: http://www.opengis.net/ont/geosparql#
+
+- prefix: lodsg
+  url: https://berlinonline.github.io/lod-sg/
+
+- prefix: schema
+  url: https://schema.org/
+
+- prefix: void
+  url: http://rdfs.org/ns/void#
+
+- prefix: foaf
+  url: http://xmlns.com/foaf/0.1/
+
+- prefix: format
+  url: http://www.w3.org/ns/formats/
+
+- prefix: prov
+  url: http://www.w3.org/ns/prov#
+
+- prefix: lodbo
+  url: https://berlinonline.github.io/lod-berlin-bo/

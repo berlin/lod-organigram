@@ -1,0 +1,42 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lodsg: <https://berlinonline.github.io/lod-sg/> .
+@prefix schema: <https://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Vocabulary Terms
+
+lodsg:ImprintPage
+    a rdfs:Class ;
+    rdfs:subClassOf schema:WebPage ;
+    rdfs:label "Impressum"@de ;
+    rdfs:label "Imprint"@en ;
+    rdfs:comment "Die Impressums-Webseite einer Website"@de ;
+    rdfs:comment "A web page that shows the imprint for a site."@en ;
+.
+
+lodsg:managingDirector
+    a owl:ObjectProperty ;
+    rdfs:label "Geschäftsführen"@de ;
+    rdfs:label "managing director"@en ;
+    rdfs:comment "Der oder die Geschäftsführer*in einer Firma"@de ;
+    rdfs:comment "The managing director of a company"@en ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:Person ;
+.
+
+lodsg:komplementaer
+    a owl:ObjectProperty ;
+    rdfs:label "Komplementär"@de ;
+    rdfs:comment "Der Komplementär einer Kommanditgesellschaft (KG)"@de ;
+    rdfs:domain schema:Organization ;
+    rdfs:range schema:Organization ;
+.
+
+lodsg:registerGericht 
+    a owl:ObjectProperty ;
+    rdfs:label "Registergericht"@de ;
+    rdfs:comment "Das Gericht, bei dem die Handelsregisternummer eingetragen ist"@de ;
+    rdfs:domain schema:PropertyValue ;
+    rdfs:range schema:Organization ;
+.

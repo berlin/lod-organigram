@@ -1,0 +1,9 @@
+/data/temp
+Gemfile.lock
+_site/
+.jekyll-cache/
+.vscode
+_includes/cbds
+venv/
+lib/
+.DS_Store

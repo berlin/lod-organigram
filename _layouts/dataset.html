@@ -1,0 +1,126 @@
+---
+rdf_prefix_path: "conf/prefixes.sparql"
+---
+{% assign title = page.rdf | rdf_property: "dct:title", "de" %}
+{% assign page_link = page.url | absolute_url | replace: '.html', '' %}
+<html>
+  {% include page_head.html title = title %}
+  <body>
+    {% include content_header.html title = title page_link = page_link icon = "database" %}
+    <div class="container">
+      <div class="row breadcrumbs">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                {{ site.dataset_breadcrumb }}
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>{{ page.rdf | rdf_property: "dct:description", "de" }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-9 col-sm-12">
+          <table class="table table-striped align-middle">
+            <tbody>
+              {% include type_row.html %}
+              {% assign date_created = page.rdf | rdf_property: "dct:created" %}
+              {% if date_created %}
+                <tr>
+                  <td>zuerst erstellt am:</td>
+                  <td>{{ date_created }}</td>
+                </tr>
+              {% endif %}
+              {% assign date_modified = page.rdf | rdf_property: "dct:modified" %}
+              {% if date_modified %}
+                <tr>
+                  <td>zuletzt geändert am:</td>
+                  <td>{{ date_modified }}</td>
+                </tr>
+              {% endif %}
+              {% assign publisher = page.rdf | rdf_property: "dct:publisher" %}
+              {% if publisher %}
+                <tr>
+                  <td>Veröffentlichende Stelle:</td>
+                  <td>
+                    <a href="{{ publisher }}">
+                      {{ publisher | rdf_property: "schema:name" }}
+                    </a>
+                  </td>
+                </tr>
+              {% endif %}
+              {% assign homepage = page.rdf | rdf_property: "foaf:homepage" %}
+              {% if homepage %}
+                <tr>
+                  <td>Homepage:</td>
+                  <td>
+                    <a href="{{ homepage }}">
+                      {{ homepage }}
+                    </a>
+                  </td>
+                </tr>
+              {% endif %}
+              {% assign data_dumps = page.rdf | rdf_property: "void:dataDump", nil, true %}
+              {% for data_dump in data_dumps %}
+                <tr>
+                  <td>Datensatz-Download:</td>
+                  <td>
+                    <a href="{{ data_dump }}">
+                      {{ data_dump }}
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              {% assign licenses = page.rdf | rdf_property: "dct:license", nil, true %}
+              {% for license in licenses %}
+                <tr>
+                  <td>Lizenz:</td>
+                  <td>
+                    <a href="{{ license }}">
+                      {{ license }}
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+              {%  capture sources_query %}
+                SELECT ?source
+                WHERE {
+                  ?resourceUri
+                  prov:wasGeneratedBy/prov:used ?source ;
+                }
+                {% endcapture %}
+                {% assign sources = page.rdf | sparql_query: sources_query %}
+                {% if sources.size > 0 %}
+                  {% for row in sources %}
+                    <tr>
+                      <td>Quelle:</td>
+                      <td>
+                        <a href="{{ row.source }}">
+                          {{ row.source }}
+                        </a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% endif %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row local-graph">
+        <div class="col-12">
+          {% include local_graph.html %}
+        </div>
+      </div>
+    </div>
+    {% include content_footer.html %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

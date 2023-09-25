@@ -1,0 +1,9 @@
+{% assign type = page.rdf | rdf_property: "rdf:type" %}
+<tr>
+  <td>Typ:</td>
+  {% if type %}
+    <td>{% include prefix_url.html iri = type.iri %}</td>
+  {% else %}
+    <td>unbekannt</td>
+  {% endif %}
+</tr>
