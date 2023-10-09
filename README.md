@@ -5,9 +5,16 @@ It uses the [Jekyll](https://jekyllrb.com) static site generator with the [Jekyl
 The project contains a number of basic page templates to produce a generic website.
 By adding additional templates for specific kinds of RDF resources, LOD-SG can be the starting point for developing tailor-made sites for individual datasets.
 
+## Data
+
+# Sources
+
+SenMVKU: https://www.berlin.de/sen/uvk/_assets/ueber-uns/organisation/organisationsplan-senmvku.pdf?ts=1695304787
+SenFin: https://www.berlin.de/sen/finanzen/ueber-uns/leitung-organisation/organigramm_senfin.pdf
+
 ## Features
 
-### Skeleton Structure 
+### Skeleton Structure
 
 … for generating and publishing a LOD dataset with Jekyll
 
@@ -20,7 +27,7 @@ By adding additional templates for specific kinds of RDF resources, LOD-SG can b
 
 … for generating HTML pages out of RDF resources (using the [Liquid](https://shopify.github.io/liquid/ "Documentation for the Liquid template language") template language).
 
-- [ ] a default page template 
+- [ ] a default page template
 - [ ] a default page header
 - [ ] a default page footer
 - [ ] a dataset template (for instances of `void:Dataset`)
@@ -55,8 +62,6 @@ To generate a new static site for your dataset, you need to perform the followin
 - Put a `.ttl` (Turtle) file with your RDF data in `/data`.
   - This is the bare minimum. Of course, you could also add code or other assets that will be used to generate the Turtle-file in `/data`. I usually put some scripts in `/bin` that convert the source (non-RDF) data into RDF, maybe some static boilerplate RDF in `/data/static`, and some plumbing in a `/Makefile` to orchestrate and automate the process of building the output data.
 - Adjust the [void.ttl](/void.ttl) file that describes your dataset.
-- Adjust [_config.yml](/_config.yml) to configure the creation of the static site.
+- Adjust [\_config.yml](/_config.yml) to configure the creation of the static site.
 
 ---
-
-
