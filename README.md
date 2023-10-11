@@ -9,8 +9,40 @@ By adding additional templates for specific kinds of RDF resources, LOD-SG can b
 
 # Sources
 
-SenMVKU: https://www.berlin.de/sen/uvk/_assets/ueber-uns/organisation/organisationsplan-senmvku.pdf?ts=1695304787
-SenFin: https://www.berlin.de/sen/finanzen/ueber-uns/leitung-organisation/organigramm_senfin.pdf
+Gliederung der Berliner Verwaltung
+
+- https://www.berlin.de/sen/inneres/ueber-uns/organigramme/01_schaubild-berliner-verwaltung-25072023.pdf?ts=1696586795
+
+Der Regierende Bürgermeister von Berlin - Senatskanzlei (RBm-Skzl)
+
+Senatsverwaltung für Bildung, Jugend und Familie (SenBJF)
+
+Senatsverwaltung für Finanzen (SenFin)
+
+- https://www.berlin.de/sen/finanzen/ueber-uns/leitung-organisation/organigramm_senfin.pdf
+
+Senatsverwaltung für Wissenschaft, Gesundheit und Pflege (SenWGP)
+
+Senatsverwaltung für Inneres und Sport (SenInnSport)
+
+- https://www.berlin.de/sen/inneres/ueber-uns/organigramme/stand-01102023-organigramm-inneres-und-sport.pdf?ts=1696586798
+
+Senatsverwaltung für Arbeit, Soziales, Gleichstellung, Integration, Vielfalt und Antidiskriminierung (SenASGIVA)
+
+Senatsverwaltung für Justiz und Verbraucherschutz (SenJustV)
+
+Senatsverwaltung für Kultur und Gesellschaftlichen Zusammenhalt (SenKultGZ)
+
+- https://www.berlin.de/sen/kultur/wir-ueber-uns/internet-organigramm-stand-september_2023.pptx?ts=1693565976
+- https://www.berlin.de/sen/kultgz/ueber-uns/
+
+Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (SenStadt)
+
+Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt (SenMVKU)
+
+- https://www.berlin.de/sen/uvk/_assets/ueber-uns/organisation/organisationsplan-senmvku.pdf?ts=1695304787
+
+Senatsverwaltung für Wirtschaft, Energie und Betriebe (SenWiEnBe)
 
 ## Features
 
