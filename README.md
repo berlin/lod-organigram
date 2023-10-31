@@ -33,8 +33,8 @@ Senatsverwaltung für Justiz und Verbraucherschutz (SenJustV)
 
 Senatsverwaltung für Kultur und Gesellschaftlichen Zusammenhalt (SenKultGZ)
 
-- https://www.berlin.de/sen/kultur/wir-ueber-uns/internet-organigramm-stand-september_2023.pptx?ts=1693565976
 - https://www.berlin.de/sen/kultgz/ueber-uns/
+- https://www.berlin.de/sen/kultur/wir-ueber-uns/internet-organigramm-stand-september_2023.pptx?ts=1693565976
 
 Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen (SenStadt)
 
