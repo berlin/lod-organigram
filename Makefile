@@ -1,24 +1,23 @@
-berlin_url = https://raw.githubusercontent.com/berlin/lod-organigram/main/data/static/SenFin.ttl
-
-data/temp/void.nt: data/temp
-	@echo "converting void.ttl to $@ ..."
-	@rdfpipe -o ntriples void.ttl > $@
-
-data/temp/SenFin.ttl: data/temp
-	@echo "downloading $(berlin_url)..."
-	@curl -s -o $@ "$(berlin_url)"
+base_uri = https://berlin.github.io/lod-organigram
+log_sg_repo = https://github.com/berlinonline/lod-sg
 
 # This target creates the RDF file that serves as the input to the static site generator.
 # All data should be merged in this file. This should include at least the VOID dataset
 # description and the actual data.
-# The target works by merging all prerequisites 
-data/temp/all.nt: data/temp void.ttl data/temp/SenFin.ttl data/static/vocab.ttl
+# The target works by merging all prerequisites.
+data/temp/all.nt: data/temp void.ttl data/static/SenFin.ttl
 	@echo "combining $(filter-out $<,$^) to $@ ..."
 	@rdfpipe -o ntriples $(filter-out $<,$^) > $@
 
 cbds: _includes/cbds data/temp/all.nt
 	@echo "computing concise bounded descriptions for all subjects in input data"
-	@python bin/compute_cbds.py --base="https://berlin.github.io/lod-organigram/"
+	@python bin/compute_cbds.py --base="$(base_uri)"
+
+update-core-templates: data/temp _includes/core _layouts/core
+	@echo "cloning $(log_sg_repo) into data/temp ..."
+	@git clone -b develop --single-branch $(log_sg_repo) data/temp/lod-sg
+	@cp data/temp/lod-sg/_includes/core/* _includes/core
+	@cp data/temp/lod-sg/_layouts/core/* _layouts/core
 
 .PHONY: serve-local
 serve-local: data/temp/all.nt cbds
