@@ -1,4 +1,4 @@
-berlin_url = https://raw.githubusercontent.com/berlin/lod-berlin-bo/main/data/static/SenFin.ttl
+berlin_url = https://raw.githubusercontent.com/berlin/lod-organigram/main/data/static/SenFin.ttl
 
 data/temp/void.nt: data/temp
 	@echo "converting void.ttl to $@ ..."
