@@ -1,24 +1,24 @@
-berlinonline_url = https://raw.githubusercontent.com/berlinonline/lod-berlin-bo/main/data/static/berlinonline.ttl
+berlin_url = https://raw.githubusercontent.com/berlin/lod-berlin-bo/main/data/static/SenFin.ttl
 
 data/temp/void.nt: data/temp
 	@echo "converting void.ttl to $@ ..."
 	@rdfpipe -o ntriples void.ttl > $@
 
-data/temp/berlinonline.ttl: data/temp
-	@echo "downloading $(berlinonline_url)..."
-	@curl -s -o $@ "$(berlinonline_url)"
+data/temp/SenFin.ttl: data/temp
+	@echo "downloading $(berlin_url)..."
+	@curl -s -o $@ "$(berlin_url)"
 
 # This target creates the RDF file that serves as the input to the static site generator.
 # All data should be merged in this file. This should include at least the VOID dataset
 # description and the actual data.
 # The target works by merging all prerequisites 
-data/temp/all.nt: data/temp void.ttl data/temp/berlinonline.ttl data/static/vocab.ttl
+data/temp/all.nt: data/temp void.ttl data/temp/SenFin.ttl data/static/vocab.ttl
 	@echo "combining $(filter-out $<,$^) to $@ ..."
 	@rdfpipe -o ntriples $(filter-out $<,$^) > $@
 
 cbds: _includes/cbds data/temp/all.nt
 	@echo "computing concise bounded descriptions for all subjects in input data"
-	@python bin/compute_cbds.py --base="https://berlinonline.github.io/lod-sg/"
+	@python bin/compute_cbds.py --base="https://berlin.github.io/lod-organigram/"
 
 .PHONY: serve-local
 serve-local: data/temp/all.nt cbds
