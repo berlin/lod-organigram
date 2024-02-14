@@ -15,25 +15,25 @@
           {% comment %} Subject {% endcomment %}
           {% if focus == "subject" %}
             {% if forloop.first %}
-              <td rowspan="{{ statements | size }}"><strong>{% include prefix_url.html iri=statement.subject.iri %}</strong></td>
+              <td rowspan="{{ statements | size }}"><strong>{% include core/prefix_url.html iri=statement.subject.iri %}</strong></td>
             {% endif %}
           {% else %}
-            <td>{% include prefix_url.html iri=statement.subject.iri %}</td>
+            <td>{% include core/prefix_url.html iri=statement.subject.iri %}</td>
           {% endif %}
           {% comment %} Predicate {% endcomment %}
-          <td>{% include prefix_url.html iri=statement.predicate.iri %}</td>
+          <td>{% include core/prefix_url.html iri=statement.predicate.iri %}</td>
           {% comment %} Object {% endcomment %}
           {% if statement.object.iri %}
             {% if focus == "object" %}
               {% if forloop.first %}
                 <td rowspan="{{ statements | size }}">
-                  <strong>{% include prefix_url.html iri=statement.object.iri %}</strong>
+                  <strong>{% include core/prefix_url.html iri=statement.object.iri %}</strong>
                 </td> 
               {% endif %}
             {% else %}
               {% if statement.object.iri != "" %}
                 <td>
-                  {% include prefix_url.html iri=statement.object.iri %}
+                  {% include core/prefix_url.html iri=statement.object.iri %}
                 </td> 
               {% else %}
                 {% assign bnode_query = 'SELECT DISTINCT ?predicate ?object WHERE { ?resourceUri_0 ?resourceUri_1 ?bnode . ?bnode ?predicate ?object . }' %}
@@ -42,7 +42,7 @@
                 {% assign bnode_statements = input_array | sparql_query: bnode_query %}
                 <td>
                   <div class="card">
-                    {% include bnode_table.html statements=bnode_statements %}
+                    {% include core/bnode_table.html statements=bnode_statements %}
                   </div>
                 </td>
               {% endif %}

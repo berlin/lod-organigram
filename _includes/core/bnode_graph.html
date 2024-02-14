@@ -1,11 +1,11 @@
 {%- assign statements = include.statements -%}
 {% for statement in statements %}
     id{{ statement.bnode }}([ ])
-    -->|{% include prefix_label.html iri=statement.predicate.iri %}|
+    -->|{% include core/prefix_label.html iri=statement.predicate.iri %}|
     {%- if  statement.object.iri -%}
         {%- comment %} The object is a resource, render a clickable circle {% endcomment -%}
         {%- if statement.object.iri != "" -%}
-            {{ statement.object.iri }}(["{% include prefix_label.html iri=statement.object.iri -%}"])
+            {{ statement.object.iri }}(["{% include core/prefix_label.html iri=statement.object.iri -%}"])
             click {{ statement.object.iri }} "{{ statement.object.iri }}" "Link"
         {%- else -%}
             id{{ statement.bnode }}_{{ statement.object }}([ ])

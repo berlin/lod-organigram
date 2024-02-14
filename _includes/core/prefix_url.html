@@ -1,0 +1,1 @@
+<a href="{{ include.iri | replace_first: site.true_url, "" }}" {% unless include.iri contains site.url %} target="_blank"{% endunless %}>{% include core/prefix_label.html iri=include.iri %}</a>

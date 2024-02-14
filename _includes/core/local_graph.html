@@ -18,17 +18,17 @@
         <div class="container">
           <div class="row statements-table statements-table-subject">
             <div class="col-12">
-              <h5>Statements with {% include prefix_url.html iri=page.rdf.iri %} as subject</h5>
+              <h5>Statements with {% include core/prefix_url.html iri=page.rdf.iri %} as subject</h5>
               <div class="card">            
-                {% include statements_table.html statements=statements_as_subject focus="subject" %}
+                {% include core/statements_table.html statements=statements_as_subject focus="subject" %}
               </div>
             </div>
           </div>
           <div class="row statements-table statements-table-object">
             <div class="col-12">
-              <h5>Statements with {% include prefix_url.html iri=page.rdf.iri %} as object</h5>
+              <h5>Statements with {% include core/prefix_url.html iri=page.rdf.iri %} as object</h5>
               <div class="card">
-                {% include statements_table.html statements=statements_as_object focus="object" %}
+                {% include core/statements_table.html statements=statements_as_object focus="object" %}
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
       </div>
       <div class="tab-pane fade" id="graph-tab" role="tabpanel" aria-labelledby="nav-graph-tab" tabindex="0">
         {% assign all_statements = statements_as_subject | concat: statements_as_object %}
-        {% include mermaid_statements_graph.html statements=all_statements local_center=page.rdf.iri %}
+        {% include core/mermaid_statements_graph.html statements=all_statements local_center=page.rdf.iri %}
       </div>
     </div>
   </div>

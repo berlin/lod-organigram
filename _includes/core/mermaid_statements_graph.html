@@ -6,8 +6,8 @@
     graph LR
     click {{ local_center }} "{{ local_center }}" "Link"
     {% for statement in statements %}
-        {{ statement.subject.iri }}(["{% include prefix_label.html iri=statement.subject.iri -%}"])
-        -->|{% include prefix_label.html iri=statement.predicate.iri %}|
+        {{ statement.subject.iri }}(["{% include core/prefix_label.html iri=statement.subject.iri -%}"])
+        -->|{% include core/prefix_label.html iri=statement.predicate.iri %}|
         {%- if  statement.object.iri -%}
             {%- comment %} The object is a resource, render a clickable circle {% endcomment -%}
             {%- if statement.object.iri != "" -%}
@@ -17,7 +17,7 @@
                     {%- assign iri_id = mailto_check[1] -%}
                     {%- assign iri_id = iri_id | replace: "@", "_AT_" -%}
                 {%- endif -%}
-                {{ iri_id }}(["{% include prefix_label.html iri=statement.object.iri -%}"])
+                {{ iri_id }}(["{% include core/prefix_label.html iri=statement.object.iri -%}"])
                 click {{ iri_id }} "{{ statement.object.iri }}" "Link"
             {%- else -%}
                 id{{ statement.object }}([ ])

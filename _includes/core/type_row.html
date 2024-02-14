@@ -2,7 +2,7 @@
 <tr>
   <td>Typ:</td>
   {% if type %}
-    <td>{% include prefix_url.html iri = type.iri %}</td>
+    <td>{% include core/prefix_url.html iri = type.iri %}</td>
   {% else %}
     <td>unbekannt</td>
   {% endif %}

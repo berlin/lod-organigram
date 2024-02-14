@@ -9,17 +9,17 @@
     <tbody class="table-group-divider">
         {% for statement in statements %}
             <tr>
-                <td>{% include prefix_url.html iri=statement.predicate.iri %}</td>
+                <td>{% include core/prefix_url.html iri=statement.predicate.iri %}</td>
                 <td>
                     {% if statement.object.iri %}
                         {% if statement.object.iri != "" %}
-                            {% include prefix_url.html iri=statement.object.iri %}
+                            {% include core/prefix_url.html iri=statement.object.iri %}
                         {% else %}
                             {% assign bnode_query = 'SELECT DISTINCT ?predicate ?object WHERE { ?resourceUri_0 ?resourceUri_1 ?bnode . ?bnode ?predicate ?object . }' %}
                             {% capture input_array_string %}<{{ statement.subject.iri }}>,<{{ statement.predicate.iri }}>{% endcapture %}
                             {% assign input_array = input_array_string | split: ',' %}
                             {% assign bnode_statements = input_array | sparql_query: bnode_query %}
-                            {% include bnode_table.html statements=bnode_statements %}
+                            {% include core/bnode_table.html statements=bnode_statements %}
                             {%- comment %}There is a fundamental issue with blank nodes, in that we cannot use them
                             as the subject in a graph pattern. That's because the BNode-Identifier is totally arbitrary.
                             So, unfortunately, we cannot recursively call this template (with the desired result),

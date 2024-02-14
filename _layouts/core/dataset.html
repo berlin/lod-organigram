@@ -88,19 +88,17 @@ rdf_prefix_path: "conf/prefixes.sparql"
                 {% endfor %}
               {% endif %}
               {%  capture vocabs_query %}
-                SELECT ?vocab ?label
+                SELECT ?vocab
                 WHERE {
-                  ?resourceUri void:vocabulary ?vocab .
-                  ?vocab rdfs:label ?label .
-                  FILTER(lang(?label)="de")
+                  ?resourceUri void:vocabulary ?vocab ;
                 } ORDER BY ?vocab
               {% endcapture %}
               {% assign vocabs = page.rdf | sparql_query: vocabs_query %}
               {% if vocabs.size > 0 %}
                 {% for row in vocabs %}
                   <tr>
-                    <td>Enthaltenes Vokabular:</td>
-                    <td><a href="{{ row.vocab.iri | replace_first: site.true_url, "" }}">{{ row.label }}</a></td>
+                    <td>Genutztes Vokabular:</td>
+                    <td>{% include core/prefix_url.html iri = row.vocab.iri %}</td>
                   </tr>
                 {% endfor %}
               {% endif %}

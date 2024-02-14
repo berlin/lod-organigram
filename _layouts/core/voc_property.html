@@ -1,0 +1,109 @@
+---
+rdf_prefix_path: "conf/prefixes.sparql"
+---
+{% assign title = page.rdf | rdf_property: "rdfs:label", "de" %}
+{% assign page_link = page.url | absolute_url | replace: '.html', '' %}
+<html>
+{% include core/page_head.html title = title %}
+
+<body>
+    {% include core/content_header.html title = title page_link = page_link icon = "arrow-up-right" %}
+    <div class="container">
+        <div class="row breadcrumbs">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{ site.dataset_url }}">
+                                {{ site.dataset_breadcrumb }}
+                            </a>
+                        </li>
+                        {% assign vocabs = page.rdf | rdf_property: "rdfs:isDefinedBy", nil, true %}
+                        {% if vocabs.size > 0 %}
+                        {% for vocab in vocabs %}
+                        <li class="breadcrumb-item">
+                            <a href="{{ vocab.page_url | relative_url }}">{{ vocab | rdf_get | rdf_property:
+                                "rdfs:label", "de" }}</a>
+                        </li>
+                        {% endfor %}
+                        {% endif %}
+                        <li class="breadcrumb-item">
+                            {{ title }}
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>{{ page.rdf | rdf_property: "rdfs:comment", "de" }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-9 col-sm-12">
+                <table class="table table-striped align-middle">
+                    <tbody>
+                        {% include core/type_row.html %}
+
+                        {% if vocabs.size > 0 %}
+                            {% for vocab in vocabs %}
+                            <tr>
+                                <td>Vokabular:</td>
+                                <td><a href="{{ vocab.page_url | relative_url }}">{{ vocab | rdf_get | rdf_property: "rdfs:label", "de" }}</a></a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% endif %}
+                        {% assign super_property = page.rdf | rdf_property: "rdfs:subPropertyOf", nil, true %}
+                        {% for property in super_property %}
+                        <tr>
+                            <td>Superproperty:</td>
+                            <td>{% include core/prefix_url.html iri = property.iri %}</td>
+                        </tr>
+                        {% endfor %}
+                        {% capture subproperty_query %}
+                            SELECT ?property
+                            WHERE {
+                                ?property rdfs:subPropertyOf ?resourceUri ;
+                            } ORDER BY ?property
+                        {% endcapture %}
+                        {% assign subproperties = page.rdf | sparql_query: subproperty_query %}
+                        {% if subproperties.size > 0 %}
+                            {% for row in subproperties %}
+                                <tr>
+                                    <td>Subproperty:</td>
+                                    <td>{% include core/prefix_url.html iri = row.property.iri %}</td>
+                                </tr>
+                            {% endfor %}
+                        {% endif %}
+                        {% assign domains = page.rdf | rdf_property: "rdfs:domain", nil, true %}
+                        {% for domain in domains %}
+                        <tr>
+                            <td>Domain:</td>
+                            <td>{% include core/prefix_url.html iri = domain.iri %}</td>
+                        </tr>
+                        {% endfor %}
+                        {% assign ranges = page.rdf | rdf_property: "rdfs:range", nil, true %}
+                        {% for range in ranges %}
+                        <tr>
+                            <td>Range:</td>
+                            <td>{% include core/prefix_url.html iri = range.iri %}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row local-graph">
+            <div class="col-12">
+                {% include core/local_graph.html %}
+            </div>
+        </div>
+    </div>
+    {% include core/content_footer.html %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
