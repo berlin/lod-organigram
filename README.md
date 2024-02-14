@@ -2,11 +2,9 @@
 
 This repository is the home for various Organizational Charts describing Berlins public administration as RDF / Linked Open Data .
 
-The vocabularies contained in this repository are:
-
-- [Berlin Public Organisation Vocabulary](https://berlin.github.io/lod-vocabulary/berorgs/)
-
 **[Start browsing the data!](https://berlin.github.io/lod-organigram/)**
+
+Berlin Public Organisation Vocabulary is described [here](https://berlin.github.io/lod-vocabulary/berorgs/)
 
 The data was created and is maintained by hand and was published as Linked Open Data using the [LOD Site Generator](https://github.com/berlinonline/lod-sg) repository as a template.
 
