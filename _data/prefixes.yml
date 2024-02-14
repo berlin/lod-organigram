@@ -10,9 +10,6 @@
 - prefix: geo
   url: http://www.opengis.net/ont/geosparql#
 
-- prefix: lodsg
-  url: https://berlinonline.github.io/lod-sg/
-
 - prefix: schema
   url: https://schema.org/
 
@@ -28,5 +25,29 @@
 - prefix: prov
   url: http://www.w3.org/ns/prov#
 
-- prefix: lodbo
-  url: https://berlinonline.github.io/lod-berlin-bo/
+- prefix: organigram
+  url: https://berlin.github.io/lod-organigram/
+
+- prefix: org
+  url: http://www.w3.org/ns/org#
+
+- prefix: vcard
+  url: http://www.w3.org/2006/vcard/ns#
+
+- prefix: owl
+  url: http://www.w3.org/2002/07/owl#
+
+- prefix: lodvocab
+  url: https://berlin.github.io/lod-vocabulary/
+
+- prefix: berorgs
+  url: https://berlin.github.io/lod-vocabulary/berorgs/
+
+- prefix: dcterms
+  url: http://purl.org/dc/terms#
+
+- prefix: skos
+  url: http://www.w3.org/2004/02/skos/core#
+
+- prefix: rdfs
+  url: http://www.w3.org/2000/01/rdf-schema#

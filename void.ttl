@@ -2,43 +2,41 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix lodsg: <https://berlinonline.github.io/lod-sg/> .
-@prefix lodbo: <https://berlinonline.github.io/lod-berlin-bo/> .
 @prefix schema: <https://schema.org/> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix datenregister: <https://datenregister.berlin.de/dataset/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix organigram: <https://berlin.github.io/lod-organigram/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix lodvocab: <https://berlin.github.io/lod-vocabulary/> .
+@prefix berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/> .
+@prefix dcterms: <http://purl.org/dc/terms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-lodsg:
+lodvocab:
     a void:Dataset ;
-    dct:title "LOD-Organigramme"@de ;
-    dct:title "LOD-Organizational Charts"@en ;
-    dct:description """Organigramme zur Beschreibung der öffentlichen Verwaltung Berlins als RDF / Linked Open Data."""@de ;
-    dct:description """Organizational charts (organogram) describing Berlins public administration as RDF / Linked Open Data."""@en ;
-    dct:created "2024-02-14"^^xsd:date ;
-    dct:modified "2024-02-14"^^xsd:date ;
-    dct:publisher lodbo:berlin ;
+    dct:title "Berliner LOD-Vokabulare"@de ;
+    dct:title "Berlin LOD vocabularies"@en ;
+    dct:description "Verschiedene Vokabulare für Linked Open Data der Berliner Verwaltungen."@de ;
+    dct:description "Various vocabularies for linked open data published by the public administration of Berlin."@en ;
+    dct:created "2023-09-25"^^xsd:date ;
+    dct:modified "2024-02-06"^^xsd:date ;
+    # dct:publisher lodvocab:berlinonline ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    foaf:homepage <https://github.com/berlin/lod-organigram> ;
+    foaf:homepage <https://github.com/berlin/lod-vocabulary> ;
+    # void:dataDump <https://raw.githubusercontent.com/berlinonline/lod-vocabulary/main/data/static/lodvocab.ttl> ;
     void:feature <http://www.w3.org/ns/formats/Turtle> ;
-    void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigramg/main/data/static/vocab.ttl> ;
-    # void:rootResource <...> ;
-    # void:exampleResource <...> ;
-    # prov:wasGeneratedBy lodsg:triplification ;
+    # void:rootResource lodvocab:berlinonline ;
+    void:vocabulary berorgs: ;
 .
 
-# lodsg:triplification
-#     a prov:Activity ;
-#     rdfs:label "Triplifizierung"@de ;
-#     rdfs:comment "Die Konvertierung des Quelldatensatzes in RDF"@de ;
-#     prov:used datenregister:source_id ;
+# lodbo:impressum
+#     a lodsg:ImprintPage ;
+#     schema:name "Impressum"@de ;
+#     schema:name "Imprint"@en ;
+#     schema:about lodbo: ;
 # .
-
-lodsg:impressum
-    a lodsg:ImprintPage ;
-    schema:name "Impressum"@de ;
-    schema:name "Imprint"@en ;
-    schema:about lodsg: ;
-.
