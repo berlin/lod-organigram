@@ -5,7 +5,7 @@ log_sg_repo = https://github.com/berlinonline/lod-sg
 # All data should be merged in this file. This should include at least the VOID dataset
 # description and the actual data.
 # The target works by merging all prerequisites.
-data/temp/all.nt: data/temp void.ttl
+data/temp/all.nt: data/temp void.ttl data/static/senfin.ttl
 	@echo "combining $(filter-out $<,$^) to $@ ..."
 	@rdfpipe -o ntriples $(filter-out $<,$^) > $@
 
