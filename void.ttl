@@ -1,0 +1,44 @@
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lodsg: <https://berlinonline.github.io/lod-sg/> .
+@prefix lodbo: <https://berlinonline.github.io/lod-berlin-bo/> .
+@prefix schema: <https://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix datenregister: <https://datenregister.berlin.de/dataset/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+lodsg:
+    a void:Dataset ;
+    dct:title "LOD-SG-Beispiel-Datensatz und Vokabular"@de ;
+    dct:title "LOD-SG example dataset and vocabulary"@en ;
+    dct:description """Dieser Datensatz beinhaltet Beispieldaten für das LOD-SG-Projekt (LOD Site Generator) sowie Vokabular zur Erstellung eines Impressums."""@de ;
+    dct:description """This dataset contains example data for the LOD-SG project (LOD Site Generator) as well as vocabulary for creating an imprint page."""@en ;
+    dct:created "2022-12-31"^^xsd:date ;
+    dct:modified "2023-03-28"^^xsd:date ;
+    dct:publisher lodbo:berlinonline ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    foaf:homepage <https://github.com/berlinonline/lod-sg> ;
+    void:feature <http://www.w3.org/ns/formats/Turtle> ;
+    void:dataDump <https://raw.githubusercontent.com/berlinonline/lod-sg/main/data/static/vocab.ttl> ;
+    # void:rootResource <...> ;
+    # void:exampleResource <...> ;
+    # prov:wasGeneratedBy lodsg:triplification ;
+.
+
+# lodsg:triplification
+#     a prov:Activity ;
+#     rdfs:label "Triplifizierung"@de ;
+#     rdfs:comment "Die Konvertierung des Quelldatensatzes in RDF"@de ;
+#     prov:used datenregister:source_id ;
+# .
+
+lodsg:impressum
+    a lodsg:ImprintPage ;
+    schema:name "Impressum"@de ;
+    schema:name "Imprint"@en ;
+    schema:about lodsg: ;
+.

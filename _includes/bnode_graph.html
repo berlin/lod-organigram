@@ -1,0 +1,22 @@
+{%- assign statements = include.statements -%}
+{% for statement in statements %}
+    id{{ statement.bnode }}([ ])
+    -->|{% include prefix_label.html iri=statement.predicate.iri %}|
+    {%- if  statement.object.iri -%}
+        {%- comment %} The object is a resource, render a clickable circle {% endcomment -%}
+        {%- if statement.object.iri != "" -%}
+            {{ statement.object.iri }}(["{% include prefix_label.html iri=statement.object.iri -%}"])
+            click {{ statement.object.iri }} "{{ statement.object.iri }}" "Link"
+        {%- else -%}
+            id{{ statement.bnode }}_{{ statement.object }}([ ])
+            {%- comment %}There is a fundamental issue with blank nodes, in that we cannot use them
+            as the subject in a graph pattern. That's because the BNode-Identifier is totally arbitrary.
+            So, unfortunately, we cannot recursively call this template, because we cannot construct 
+            a working query. Maybe there is another way...
+            {% endcomment -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- comment -%} The object is a literal, render a box. {%- endcomment -%}
+        id{{ statement.bnode }}_{{ forloop.index }}["{{ statement.object | truncate: 150 | replace: '"', '#quot;' }}"]
+    {%- endif %}
+{% endfor -%}

@@ -1,0 +1,13 @@
+{% assign icon = include.icon %}
+{% assign title = include.title %}
+{% assign page_link = include.page_link %}
+<div class="marker"></div>
+<header class="text-bg-secondary">
+  <a href="{{ page_link }}" class="link-unstyled">
+    <h1 class="resource-title">
+      <i class="bi bi-{{ icon }}"></i>
+      {{ title }}
+      <i class="bi bi-link-45deg permalink"></i>
+    </h1>
+  </a>
+</header>

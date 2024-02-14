@@ -1,0 +1,43 @@
+<div>
+  <p>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#local_graph_content" role="button" aria-expanded="false" aria-controls="local_graph_content">
+      Toggle Local Graph
+    </a>
+  </p>
+  <div class="collapse" id="local_graph_content">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-statements-tab" data-bs-toggle="tab" data-bs-target="#statements-tab" type="button" role="tab" aria-controls="statements-tab" aria-selected="true">Statements</button>
+        <button class="nav-link" id="nav-graph-tab" data-bs-toggle="tab" data-bs-target="#graph-tab" type="button" role="tab" aria-controls="graph-tab" aria-selected="false">Graph</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      {% assign statements_as_subject = page.rdf.statements_as_subject %}
+      {% assign statements_as_object = page.rdf.statements_as_object %}
+      <div class="tab-pane fade show active" id="statements-tab" role="tabpanel" aria-labelledby="nav-statements-tab" tabindex="0">
+        <div class="container">
+          <div class="row statements-table statements-table-subject">
+            <div class="col-12">
+              <h5>Statements with {% include prefix_url.html iri=page.rdf.iri %} as subject</h5>
+              <div class="card">            
+                {% include statements_table.html statements=statements_as_subject focus="subject" %}
+              </div>
+            </div>
+          </div>
+          <div class="row statements-table statements-table-object">
+            <div class="col-12">
+              <h5>Statements with {% include prefix_url.html iri=page.rdf.iri %} as object</h5>
+              <div class="card">
+                {% include statements_table.html statements=statements_as_object focus="object" %}
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+      <div class="tab-pane fade" id="graph-tab" role="tabpanel" aria-labelledby="nav-graph-tab" tabindex="0">
+        {% assign all_statements = statements_as_subject | concat: statements_as_object %}
+        {% include mermaid_statements_graph.html statements=all_statements local_center=page.rdf.iri %}
+      </div>
+    </div>
+  </div>
+</div>
