@@ -2,7 +2,7 @@ baseurl: "/lod-organigram" # the subpath of your site, e.g. /blog
 url: "https://berlin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 true_url:
   "https://berlin.github.io" # This duplication is necessary to make relative links work when
-  # running the Jekyll-Site locally, when `url` is replaced with somehting like http://localhost:4000
+  # running the Jekyll-Site locally, when `url` is replaced with something like http://localhost:4000
 
 dataset_url: "/lod-organigram/"
 dataset_breadcrumb: "Datensatz"
@@ -14,17 +14,22 @@ exclude:
   - conf/
   - README.md
   - Makefile
-  - Gemfile
-  - requirements.txt
 plugins:
   - jekyll-rdf
 
 # Jekyll RDF settings
 jekyll_rdf:
   path: "data/temp/all.nt"
-  restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?predicate ?object FILTER(STRSTARTS(STR(?resourceUri), 'https://berlin.github.io/lod-organigram')) }"
+  restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?predicate ?object FILTER(STRSTARTS(STR(?resourceUri), 'https://berlin.github.io/lod-vocabulary')) }"
   default_template: "default"
   class_template_mappings:
     "http://rdfs.org/ns/void#Dataset": "dataset"
-    "https://schema.org/Organization": "organization"
-    "https://berlin.github.io/lod-organigram/ImprintPage": "imprint"
+    "https://schema.org/Organization": "core/organization"
+    "https://berlin.github.io/lod-vocabulary/ImprintPage": "core/imprint"
+    "http://www.w3.org/2002/07/owl#Ontology": "core/voc_ontology"
+    "http://www.w3.org/2002/07/owl#Class": "core/voc_class"
+    "http://www.w3.org/2000/01/rdf-schema#Class": "core/voc_class"
+    "http://www.w3.org/2002/07/owl#DatatypeProperty": "core/voc_property"
+    "http://www.w3.org/2002/07/owl#ObjectProperty": "core/voc_property"
+    "http://www.w3.org/2002/07/owl#AnnotationProperty": "core/voc_property"
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property": "core/voc_property"
