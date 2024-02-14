@@ -25,7 +25,7 @@ jekyll_rdf:
   class_template_mappings:
     "http://rdfs.org/ns/void#Dataset": "dataset"
     "https://schema.org/Organization": "core/organization"
-    "https://berlin.github.io/lod-vocabulary/ImprintPage": "core/imprint"
+    "https://berlin.github.io/lod-organigram/ImprintPage": "core/imprint"
     "http://www.w3.org/2002/07/owl#Ontology": "core/voc_ontology"
     "http://www.w3.org/2002/07/owl#Class": "core/voc_class"
     "http://www.w3.org/2000/01/rdf-schema#Class": "core/voc_class"
