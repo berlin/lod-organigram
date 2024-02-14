@@ -1,0 +1,546 @@
+@prefix organigram: <https://berlin.github.io/lod-organigram/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>.
+@prefix dcterms: <http://purl.org/dc/terms#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <https://schema.org/>.
+
+organigram:organigram-a7a13aa4e4 dcterms:created "2023-10-25"^^<xsd:date>;
+    dcterms:creator _:b1_b0;
+    a berorgs:Organogram;
+    rdfs:label "SenJustV"@de;
+    berorgs:contains organigram:organisation-3e7abed288.
+organigram:organisation-0510b7a644 a organigram:orgtype-0035e9d4dd;
+    skos:prefLabel "Tierschutzbeauftrage des Landes Berlin"@de;
+    org:hasMember organigram:person-3499a92727;
+    org:hasPost organigram:position-1b54eb0577;
+    org:hasSite _:b1_b3.
+organigram:organisation-17a54918f0 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung V"@de;
+    org:hasMember organigram:person-acb9c30e61;
+    org:hasPost organigram:position-0293e51b57, organigram:position-9a1a383390;
+    org:hasSubOrganization organigram:organisation-2ff1c4352b, organigram:organisation-90c5f5ac7d, organigram:organisation-bef21785bd;
+    org:purpose "Justiz und Gesellschaft - Justiz in der viel- fältigen Gesellschaft, Stiftungsaufsicht, Justizielle Opferhilfe und Zentrale Anlaufstelle für Betroffenen von Terroranschlä- gen und deren Angehörigen, Sozialberatung der Berliner Justiz"@de.
+organigram:organisation-1eeccf9c77 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat GJPA A"@de, "Referat GJPA AF"@de;
+    org:purpose "Aufgaben der Aus- und Fortbildung in der Rechtspflege"@de, "Gemeinsames Juristisches Prüfungsamt der Länder Berlin und Branden- burg"@de.
+organigram:organisation-2e62e40389 a org:Organization, organigram:orgtype-0000000000, berorgs:Referat;
+    skos:prefLabel "Personal- und Organisationsentwicklung"@de, "Referat I A"@de, "Referat I B"@de, "Referat I C"@de, "Referat I ID"@de;
+    org:hasMember organigram:person-0eecadacfa, organigram:person-297eaae312, organigram:person-842719053b, organigram:person-db08dd051b;
+    org:hasPost organigram:position-754f3eab5f, organigram:position-8ebf80d893, organigram:position-b295b47a6f, organigram:position-b607392fc0, organigram:position-efa3fdbf7a;
+    org:purpose "Dienstrecht und vorbehaltene Personaleinzelange- legenheiten der Gerichte, Staatsanwaltschaften u. Amtsanwaltschaft; Anwalts- u. Notariatswesen; Personalservice für SenJustV"@de, "Gerichtsverfassungsrecht; Organisation, Personal- bedarfsberechnung u. Statistik der Gerichte u. Strafverfolgungsbehörden; Steuerungsdienst; Grundsatzangelegenheiten zentrales Facility Management"@de, "Haushaltswesen inkl. Finanz-/ Investitionsplanung; Kassen-/ Beitreibungswesen; Stellen-/ Personal- wirtschaft, Finanzservice für SenJustV"@de, "Personal- und Organisationsentwicklung, Fortbildung, Wissensmanagement, Gesundheitsmanagement"@de, "Zentrale Dienste, IT-Angelegenheiten des Stammhauses, IT-Stelle"@de.
+organigram:organisation-2ff1c4352b a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat V C"@de;
+    org:hasPost organigram:position-9207df7df9;
+    org:purpose "Stiftungsrecht, Stiftungsaufsicht, Normprüfung"@de.
+organigram:organisation-35f82090b8 a organigram:orgtype-0004ded163;
+    skos:prefLabel "Pressestelle"@de;
+    org:hasMember organigram:person-5ba5f2e420;
+    org:hasPost organigram:position-d6e7e93800, organigram:position-f5f91114fd.
+organigram:organisation-3e303e6418 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung III"@de;
+    org:hasMember organigram:person-2ff5863484, organigram:person-ab9aefed29;
+    org:hasPost organigram:position-5d878249d7, organigram:position-b518ad4bfa;
+    org:hasSubOrganization organigram:organisation-4c6ff166e9, organigram:organisation-b6f9af85b5, organigram:organisation-c6f8bd2b49;
+    org:purpose "Justizvollzug, Gnadenwesen, Soziale Dienste der Justiz - Gerichts- und Bewährungshilfe, Strafrecht, Strafverfahrensrecht, Strafvollstreckung"@de.
+organigram:organisation-3e7abed288 a org:Organization, berorgs:Senatsverwaltung;
+    skos:altLabel "SenJustV"@de;
+    skos:prefLabel "Senatsverwaltung für Justiz und Verbraucherschutz"@de;
+    org:hasMember organigram:person-4713f3b7d1;
+    org:hasPost organigram:position-7782dc3f19;
+    org:hasSubOrganization organigram:organisation-745545bff0, organigram:organisation-f56256c3d8.
+organigram:organisation-441a11f732 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat II A"@de;
+    org:hasMember organigram:person-88675cdd75;
+    org:hasPost organigram:position-8c633eb889;
+    org:purpose "Staats- u. Verfassungsrecht, Verwal- tungsrecht, Normprüfung, Verfassungs- gerichtsbarkeit, Verfahrensrecht der Ver- waltungs-, Finanz- und Sozialgerichts- barkeit, Gesetz- und Verordnungsblatt, Berliner Vorschrifteninformationssystem, Rechtsbereinigung"@de.
+organigram:organisation-4c6ff166e9 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat III B"@de;
+    org:hasMember organigram:person-c3d2f33f85;
+    org:hasPost organigram:position-d468cd92a6;
+    org:purpose "Aufsicht über die Justizvollzugsanstalten und die Sozialen Dienste der Justiz in folgenden Angelegenheiten: Organisationsentwicklung, Personalmanagement, Personal, Finanzen, KLR, Controlling, Informationstechnik, Be- schäftigung und Qualifizierung sowie Verpfle- gung und Versorgung der Gefangenen, An- gelegenheiten der Vollzugsgeschäftsstellen, Rechts- und Disziplinarangelegenheiten der Bediensteten des Justizvollzuges und der Sozialen Dienste der Justiz"@de.
+organigram:organisation-551867407c a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat II B"@de;
+    org:hasMember organigram:person-e4788acd7f;
+    org:hasPost organigram:position-268c116519;
+    org:purpose "Zivilrecht, internationale Rechtshilfe in Zivil- und Verwaltungssachen, Angele- genheiten der Europäischen Union, Fiskussachen, Anerkennung ausländischer Entscheidungen in Ehesachen"@de.
+organigram:organisation-6482303c54 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat VI C"@de;
+    org:hasMember organigram:person-24374a20c3, organigram:person-bf6eae56e2;
+    org:hasPost organigram:position-7d6be8680f, organigram:position-9e3ea08347;
+    org:purpose "Haushalt, Zuwendungen, LLBB, Food Fraud, QM, GPM, Digitalisierungs/IT-Angelegenheiten Verbraucherschutz"@de.
+organigram:organisation-6fd73a6e3c a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung IV"@de;
+    org:hasMember organigram:person-15094a11e5;
+    org:hasPost organigram:position-025824efe2, organigram:position-f7f5fd01c8;
+    org:hasSubOrganization organigram:organisation-1eeccf9c77;
+    org:purpose "Gemeinsames Juristisches Prüfungsamt der Länder Berlin und Brandenburg, Juristische Prüfungen, Aus- und Fortbildung in der Rechtspflege"@de.
+organigram:organisation-745545bff0 a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Leitungsstab"@de;
+    org:hasMember organigram:person-1c3bd05328, organigram:person-21db206e49, organigram:person-bd1e7bc92b;
+    org:hasPost organigram:position-3a18ac0e55, organigram:position-6db29d0e89, organigram:position-ec279b0a9a;
+    org:hasSubOrganization organigram:organisation-35f82090b8, organigram:organisation-a8589b3358, organigram:organisation-cca1ff862b.
+organigram:organisation-7f17656138 a organigram:orgtype-0005e803ec;
+    skos:prefLabel "Sozialberatung der Berliner Justiz"@de;
+    org:hasMember organigram:person-cca4077b1c;
+    org:hasPost organigram:position-8c13c67f4c;
+    org:hasSite _:b1_b1.
+organigram:organisation-90c5f5ac7d a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat V B "@de;
+    org:hasPost organigram:position-230cb86448;
+    org:purpose "Justizielle Opferhilfe und Zentrale Anlaufstelle für Betroffene von Terroran- schlägen und deren Angehörigen"@de.
+organigram:organisation-a5e39f1306 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat VI A"@de;
+    org:hasMember organigram:person-c302db5698;
+    org:hasPost organigram:position-64076db0b2;
+    org:purpose "Gesundheitlicher Verbraucherschutz, amtliche Lebensmittelüberwachung einschließlich Lebensmittelhygiene, Wein und Spirituosen, Tabakerzeugnisse, Kosmetika und Bedarfsgegenstände; Tierschutz, Tierarzneimittel, Tierseuchenbekämpfung, Tiergesundheit, Gefahrtiere, tierische Nebenprodukte"@de.
+organigram:organisation-a8589b3358 a organigram:orgtype-006d9041fa;
+    skos:altLabel "VbSt"@de;
+    skos:prefLabel "Verbindungsstelle"@de;
+    org:hasMember organigram:person-6081586d2d, organigram:person-769647a23e, organigram:person-bc0b91109d, organigram:person-e8094f3468;
+    org:hasPost organigram:position-2468796af4, organigram:position-3578dcadab, organigram:position-cce3063d80, organigram:position-f0aca13788;
+    org:hasUnit organigram:organisation-cae3af5f52.
+organigram:organisation-aabcc73727 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat VI B"@de;
+    org:hasPost organigram:position-a15890e6ea;
+    org:purpose "Wirtschaftlicher Verbraucherschutz, Landwirtschaft, Gartenbau und Ernährung, Tarifgenehmigungen BWB/BSR, Bundesrats- und IFG/VIG-Angelegenheiten im Ver- braucherschutz"@de.
+organigram:organisation-af814f6bd1 a organigram:orgtype-0000000000, organigram:orgtype-0073ac303d;
+    skos:prefLabel "Sekretariat"@de;
+    org:hasMember organigram:person-15919d9047;
+    org:hasPost organigram:position-b2d43da912, organigram:position-e73eb985bd.
+organigram:organisation-b13ec05e36 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung I"@de;
+    org:hasMember organigram:person-3520b3e330, organigram:person-db08dd051b;
+    org:hasPost organigram:position-4001e2966b, organigram:position-a9485e5fdf;
+    org:hasSubOrganization organigram:organisation-2e62e40389, organigram:organisation-7f17656138, organigram:organisation-b1d0da5e17;
+    org:purpose "Personal, Haushalt, Organisation der Gerichte und Straf- verfolgungsbehörden sowie Grundsatzangelegenheiten des zentralen Facilitymanagement, Steuerungsdienst, Per- sonal- und Organisationsentwicklung, Innere Dienste (IT-Angelegenheiten des Stammhauses inkl. IT-Stelle, Ge- schäftsprozessmanagement, Zentrale Dienste), Sozialbe- ratung der Berliner Justiz (organisatorisch)"@de.
+organigram:organisation-b1d0da5e17 a organigram:orgtype-0000000000;
+    skos:prefLabel "Digitalisierung Hauptverwaltung"@de;
+    org:hasMember organigram:person-24c05e5674;
+    org:hasPost organigram:position-cb60c868b1;
+    org:purpose "Einführung digitale Akte, Geschäftsprozessmgt., (operative) Stabsstelle, strategische Vorbereitung der IT-Migration zum Landesdienstleister Berlin"@de.
+organigram:organisation-b6f9af85b5 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat III A"@de;
+    org:hasMember organigram:person-2ff5863484;
+    org:hasPost organigram:position-aeed507e2f;
+    org:purpose "Aufsicht über die Justizvollzugsanstalten in folgenden Angelegenheiten: Vollzugsgestal- tung, Sicherheit, Behandlung und Betreuung, Übergangsmanagement, Gesundheitsfür- sorge, Belegung, Facility Management, Voll- zugsrecht, Bauangelegenheiten, Forschung, Beiräte und freie Mitarbeiter, Strafortände- rungsgesuche, Europäische Zusammenar- beit, Aufsicht über die Sozialen Dienste der Justiz - Gerichts- und Bewährungshilfe –"@de.
+organigram:organisation-bdd731379f a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat II IT"@de;
+    org:hasPost organigram:position-5eea0f1089;
+    org:purpose "Informations- und Kommunikationstechnik der Gerichte und Strafverfolgungsbe- hörden"@de.
+organigram:organisation-bef21785bd a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat V A"@de;
+    org:hasMember organigram:person-c7459301a3;
+    org:hasPost organigram:position-ae9fcc0385;
+    org:purpose "Justiz der vielfältigen Gesellschaft"@de.
+organigram:organisation-c6f8bd2b49 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat III C"@de;
+    org:hasMember organigram:person-c2253f4a56;
+    org:hasPost organigram:position-a53dd9238f;
+    org:purpose "Strafrecht, Strafverfahrensrecht, Fachaufsicht über die Strafverfolgungsbehörden, Angele- genheiten der Strafvollstreckung einschließlich freiheitsentziehender Maßnahmen, Grundsatz- angelegenheiten der Kriminalpolitik, der Füh- rungsaufsichtsstelle, der internationalen Rechtshilfe und des Gnadenrechts, Gnadenwesen, Stiftung Gustav Radbruch - Unterstützungsfonds -"@de.
+organigram:organisation-cae3af5f52 a organigram:orgtype-0000000000;
+    skos:prefLabel "Koordination Fachminister:innen-Konferenzen / Bundesrat"@de;
+    org:hasMember organigram:person-d31ae5b6b8;
+    org:hasPost organigram:position-dcd5cbc0be.
+organigram:organisation-cca1ff862b a org:Organization, berorgs:Buero;
+    skos:prefLabel "Büro"@de;
+    org:hasMember organigram:person-066462ae82;
+    org:hasPost organigram:position-3b0fea1a22.
+organigram:organisation-dd52b009a0 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung VI"@de;
+    org:hasMember organigram:person-74f8612289;
+    org:hasPost organigram:position-b5f07dcd24, organigram:position-c1212859c0;
+    org:hasSubOrganization organigram:organisation-6482303c54, organigram:organisation-a5e39f1306, organigram:organisation-aabcc73727;
+    org:purpose "Verbraucherschutz"@de.
+organigram:organisation-f56256c3d8 a organigram:orgtype-00509170bd;
+    skos:prefLabel "Staatssekretariat für Justiz"@de, "Staatssekretariat für Zentrales und Verbraucherschutz"@de;
+    org:hasMember organigram:person-1568719581, organigram:person-650b9fccdd, organigram:person-a6011e5c1e, organigram:person-fdbf294b21;
+    org:hasPost organigram:position-17be242f8f, organigram:position-482afde88b, organigram:position-6db2fa96a9, organigram:position-b1d9f732a7, organigram:position-b514c1e531;
+    org:hasSubOrganization organigram:organisation-0510b7a644, organigram:organisation-17a54918f0, organigram:organisation-3e303e6418, organigram:organisation-6fd73a6e3c, organigram:organisation-b13ec05e36, organigram:organisation-dd52b009a0, organigram:organisation-f8530a2f1b;
+    org:hasUnit organigram:organisation-af814f6bd1.
+organigram:organisation-f8530a2f1b a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung II"@de;
+    org:hasMember organigram:person-307f5b4f41, organigram:person-88675cdd75;
+    org:hasPost organigram:position-52065f237f, organigram:position-79589a4144;
+    org:hasSubOrganization organigram:organisation-441a11f732, organigram:organisation-551867407c, organigram:organisation-bdd731379f;
+    org:purpose "Zivilrecht, öffentliches Recht, Angelegenheiten der Informations- und Kommunikationstechnik der Gerichte und Strafverfolgungsbehörden)"@de.
+organigram:orgtype-0000000000 a rdfs:Class;
+    rdfs:label ""@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0000360641 a rdfs:Class;
+    rdfs:label "staa"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0004ded163 a rdfs:Class;
+    rdfs:label "Pressestelle"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0005e803ec a rdfs:Class;
+    rdfs:label "Innerbetriebliche Einrichtung"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-00150e2f96 a rdfs:Class;
+    rdfs:label "Körperschaft des Öffentlichen Rechts"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0035e9d4dd a rdfs:Class;
+    rdfs:label "Stabstelle"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-003a9c2c7d a rdfs:Class;
+    rdfs:label "Sonderbehörde"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-003c65bf0c a rdfs:Class;
+    rdfs:label "Landesbetrieb"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-00509170bd a rdfs:Class;
+    rdfs:label "Staatssekretariat"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-005574b2ad a rdfs:Class;
+    rdfs:label "Anstalten des Öffentlichen Rechts"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-006d9041fa a rdfs:Class;
+    rdfs:label "Verbindungsstelle"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0073ac303d a rdfs:Class;
+    rdfs:label "Sekretariat"@de;
+    rdfs:subClassOf org:Organization.
+organigram:person-066462ae82 a vcard:Individual;
+    vcard:family-name "Binia";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-3b0fea1a22;
+    schema:gender schema:Female.
+organigram:person-0eecadacfa a vcard:Individual;
+    vcard:family-name "Grohmann";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-8ebf80d893;
+    schema:gender schema:Female.
+organigram:person-15094a11e5 a vcard:Individual;
+    vcard:family-name "Neike";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-025824efe2;
+    schema:gender schema:Female.
+organigram:person-1568719581 a vcard:Individual;
+    vcard:family-name "Janßen";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-b1d9f732a7;
+    schema:gender schema:Male.
+organigram:person-15919d9047 a vcard:Individual;
+    vcard:family-name "Lehmann", "Schneider";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-b2d43da912, organigram:position-e73eb985bd;
+    schema:gender schema:Female.
+organigram:person-1c3bd05328 a vcard:Individual;
+    vcard:family-name "Möhrle";
+    vcard:honorific-prefix "Hr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-6db29d0e89;
+    schema:gender schema:Male.
+organigram:person-21db206e49 a vcard:Individual;
+    vcard:family-name "Lüthe";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-3a18ac0e55;
+    schema:gender schema:Female.
+organigram:person-24374a20c3 a vcard:Individual;
+    vcard:family-name "Kuhn";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-7d6be8680f.
+organigram:person-24c05e5674 a vcard:Individual;
+    vcard:family-name "Rudel";
+    vcard:honorific-prefix "HR.";
+    org:holds organigram:position-cb60c868b1;
+    schema:gender schema:Male.
+organigram:person-297eaae312 a vcard:Individual;
+    vcard:family-name "Respondek";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-b295b47a6f;
+    schema:gender schema:Female.
+organigram:person-2ff5863484 a vcard:Individual;
+    vcard:family-name "Richard";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-aeed507e2f, organigram:position-b518ad4bfa;
+    schema:gender schema:Male.
+organigram:person-307f5b4f41 a vcard:Individual;
+    vcard:family-name "Meinen";
+    vcard:honorific-prefix "Hr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-52065f237f;
+    schema:gender schema:Male.
+organigram:person-3499a92727 a vcard:Individual;
+    vcard:family-name "Herrmann";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-1b54eb0577;
+    schema:gender schema:Female.
+organigram:person-3520b3e330 a vcard:Individual;
+    vcard:family-name "Kipp";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-4001e2966b;
+    schema:gender schema:Female.
+organigram:person-4713f3b7d1 a vcard:Individual;
+    vcard:family-name "Badenberg";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-7782dc3f19.
+organigram:person-5ba5f2e420 a vcard:Individual;
+    vcard:family-name "Keller";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-d6e7e93800;
+    schema:gender schema:Female.
+organigram:person-6081586d2d a vcard:Individual;
+    vcard:family-name "Rhein";
+    vcard:honorific-prefix "Hr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-3578dcadab.
+organigram:person-650b9fccdd a vcard:Individual;
+    vcard:family-name "Loos";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-b514c1e531;
+    schema:gender schema:Female.
+organigram:person-74f8612289 a vcard:Individual;
+    vcard:family-name "Tielke";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-b5f07dcd24;
+    schema:gender schema:Male.
+organigram:person-769647a23e a vcard:Individual;
+    vcard:family-name "Fitler";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-2468796af4;
+    schema:gender schema:Female.
+organigram:person-842719053b a vcard:Individual;
+    vcard:family-name "Strehlow";
+    vcard:honorific-prefix "Herr";
+    org:holds organigram:position-efa3fdbf7a;
+    schema:gender schema:Male.
+organigram:person-88675cdd75 a vcard:Individual;
+    vcard:family-name "Kirchner";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-79589a4144, organigram:position-8c633eb889;
+    schema:gender schema:Male.
+organigram:person-a6011e5c1e a vcard:Individual;
+    vcard:family-name "Budde";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-482afde88b;
+    schema:gender schema:Female.
+organigram:person-ab9aefed29 a vcard:Individual;
+    vcard:family-name "Gerlach";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-5d878249d7;
+    schema:gender schema:Female.
+organigram:person-acb9c30e61 a vcard:Individual;
+    vcard:family-name "Nickel";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-9a1a383390;
+    schema:gender schema:Female.
+organigram:person-bc0b91109d a vcard:Individual;
+    vcard:family-name "Stein";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-cce3063d80;
+    schema:gender schema:Female.
+organigram:person-bd1e7bc92b a vcard:Individual;
+    vcard:family-name "Loth";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-ec279b0a9a;
+    schema:gender schema:Male.
+organigram:person-bf6eae56e2 a vcard:Individual;
+    vcard:family-name "Bentzien";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-9e3ea08347;
+    schema:gender schema:Male.
+organigram:person-c2253f4a56 a vcard:Individual;
+    vcard:family-name "Barts";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-a53dd9238f;
+    schema:gender schema:Female.
+organigram:person-c302db5698 a vcard:Individual;
+    vcard:family-name "Zucker";
+    vcard:honorific-prefix "Hr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-64076db0b2;
+    schema:gender schema:Male.
+organigram:person-c3d2f33f85 a vcard:Individual;
+    vcard:family-name "Hansen";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-d468cd92a6;
+    schema:gender schema:Female.
+organigram:person-c7459301a3 a vcard:Individual;
+    vcard:family-name "Okoye-Montis";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-ae9fcc0385;
+    schema:gender schema:Female.
+organigram:person-cca4077b1c a vcard:Individual;
+    vcard:family-name "Just";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-8c13c67f4c;
+    schema:gender schema:Female.
+organigram:person-d31ae5b6b8 a vcard:Individual;
+    vcard:family-name "Lemmel";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-dcd5cbc0be;
+    schema:gender schema:Female.
+organigram:person-db08dd051b a vcard:Individual;
+    vcard:family-name "Kupfernagel";
+    vcard:honorific-prefix "Hr.";
+    org:holds organigram:position-754f3eab5f, organigram:position-a9485e5fdf;
+    schema:gender schema:Male.
+organigram:person-e4788acd7f a vcard:Individual;
+    vcard:family-name "Tari";
+    vcard:honorific-prefix "Fr.";
+    vcard:title "Dr.";
+    org:holds organigram:position-268c116519;
+    schema:gender schema:Female.
+organigram:person-e8094f3468 a vcard:Individual;
+    vcard:family-name "Arifi";
+    vcard:honorific-prefix "Fr.";
+    org:holds organigram:position-f0aca13788;
+    schema:gender schema:Female.
+organigram:person-fdbf294b21 a vcard:Individual;
+    vcard:email "Buero.StaatssekretaerinVA@senjustva.berlin.de";
+    vcard:family-name "Feuerberg", "Uleer";
+    vcard:honorific-prefix "Fr.", "Hr.";
+    org:holds organigram:position-17be242f8f, organigram:position-6db2fa96a9;
+    schema:gender schema:Female, schema:Male.
+organigram:position-025824efe2 a org:Post;
+    org:role organigram:role-0016972d3d.
+organigram:position-0293e51b57 a org:Post;
+    rdfs:comment "N.N.";
+    org:role organigram:role-0070c701bd.
+organigram:position-17be242f8f a org:Post;
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-1b54eb0577 a org:Post;
+    org:role organigram:role-003d9e8cbf.
+organigram:position-230cb86448 a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Referatsleitung.
+organigram:position-2468796af4 a org:Post.
+organigram:position-268c116519 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-3578dcadab a org:Post;
+    org:role organigram:role-0003789a0a.
+organigram:position-3a18ac0e55 a org:Post;
+    org:role organigram:role-006677a156.
+organigram:position-3b0fea1a22 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-4001e2966b a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-482afde88b a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-52065f237f a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-5d878249d7 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-5eea0f1089 a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Referatsleitung.
+organigram:position-64076db0b2 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-6db29d0e89 a org:Post;
+    org:role berorgs:LeitungDesLeitungsstabs.
+organigram:position-6db2fa96a9 a org:Post;
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-754f3eab5f a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-7782dc3f19 a org:Post;
+    org:role berorgs:SenatorIn.
+organigram:position-79589a4144 a org:Post;
+    org:role organigram:role-0016972d3d.
+organigram:position-7d6be8680f a org:Post;
+    rdfs:comment "Haushalt, Zuwendungen, LLBB";
+    org:role berorgs:Referatsleitung.
+organigram:position-8c13c67f4c a org:Post;
+    org:role organigram:role-0003789a0a.
+organigram:position-8c633eb889 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-8ebf80d893 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-9207df7df9 a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Referatsleitung.
+organigram:position-9a1a383390 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-9e3ea08347 a org:Post;
+    rdfs:comment "Food Fraud, QM, GPM, Digitalisie- rungs/IT-Angelegenheiten Ver- braucherschutz";
+    org:role berorgs:Referatsleitung.
+organigram:position-a15890e6ea a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Referatsleitung.
+organigram:position-a53dd9238f a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-a9485e5fdf a org:Post;
+    org:role organigram:role-004afe2249.
+organigram:position-ae9fcc0385 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-aeed507e2f a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-b1d9f732a7 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-b295b47a6f a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-b2d43da912 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-b514c1e531 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-b518ad4bfa a org:Post;
+    org:role organigram:role-0016972d3d.
+organigram:position-b5f07dcd24 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-b607392fc0 a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Referatsleitung.
+organigram:position-c1212859c0 a org:Post;
+    rdfs:comment "N.N.";
+    org:role organigram:role-0070c701bd.
+organigram:position-cb60c868b1 a org:Post;
+    org:role organigram:role-0003789a0a.
+organigram:position-cce3063d80 a org:Post.
+organigram:position-d468cd92a6 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-d6e7e93800 a org:Post;
+    org:role organigram:role-000e6e049e.
+organigram:position-dcd5cbc0be a org:Post.
+organigram:position-e73eb985bd a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-ec279b0a9a a org:Post;
+    org:role organigram:role-006677a156.
+organigram:position-efa3fdbf7a a org:Post;
+    org:role organigram:role-0003789a0a.
+organigram:position-f0aca13788 a org:Post.
+organigram:position-f5f91114fd a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:PressesprecherIn.
+organigram:position-f7f5fd01c8 a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Abteilungsleitung.
+organigram:role-0003789a0a a org:Role;
+    skos:prefLabel "Leitung "@de, "Leitung"@de.
+organigram:role-000e6e049e a org:Role;
+    skos:prefLabel "Referent:in Öffentlichkeitsarbeit"@de.
+organigram:role-0016972d3d a org:Role;
+    skos:prefLabel "Vertretung der Abteilungsleitung"@de.
+organigram:role-003d9e8cbf a org:Role;
+    skos:prefLabel "Tierschutzbeauftragte"@de.
+organigram:role-004afe2249 a org:Role;
+    skos:prefLabel "Vertertung der Abteilungsleitung"@de.
+organigram:role-006677a156 a org:Role;
+    skos:prefLabel "Referent:in der Senator:in"@de.
+organigram:role-0070c701bd a org:Role;
+    skos:prefLabel "Vertretung der Abteilungsleitung (N.N.)"@de.
+_:b1_b0 schema:name "organigramm@senjustv.berlin.de"@de.
+_:b1_b1 a org:Site;
+    vcard:email "kontakt@sozialberatung-justiz.berlin.de";
+    vcard:fax "(030) 9(0)16-6551";
+    vcard:tel "(030) 9(0)16-6555";
+    org:siteAddress _:b1_b2.
+_:b1_b2 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "12157";
+    vcard:street-address "Rubensstraße 111".
+_:b1_b3 a org:Site;
+    vcard:tel "(030) 9(0)254 + App";
+    org:siteAddress _:b1_b4.
+_:b1_b4 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "13355";
+    vcard:street-address "Brunnenstraße  110d-111".

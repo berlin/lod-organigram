@@ -1,0 +1,499 @@
+@prefix organigram: <https://berlin.github.io/lod-organigram/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>.
+@prefix dcterms: <http://purl.org/dc/terms#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <https://schema.org/>.
+
+organigram:organigram-85f78328b7 dcterms:created "2023-09-01"^^<xsd:date>;
+    a berorgs:Organogram;
+    rdfs:label "Senatsverwaltung für Kultur und Gesellschaftlichen Zusammenhalt"@de;
+    berorgs:contains organigram:organisation-8a0a8b00a4.
+organigram:organisation-03eb02a156 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I B"@de;
+    org:hasMember organigram:person-58fde376c9;
+    org:hasPost organigram:position-34c6c9bb62;
+    org:purpose "Bühnen, Orchester, Tanz, Literatur, Interdisziplinäre Einrichtungen"@de.
+organigram:organisation-1c7b711624 a organigram:orgtype-001851d377;
+    skos:prefLabel "Presseabteilung"@de;
+    org:hasMember organigram:person-53075f0047, organigram:person-a9d03f1259, organigram:person-dbb8616f26;
+    org:hasPost organigram:position-7f49ae2a1d, organigram:position-a296a1ec24, organigram:position-d5a089e857.
+organigram:organisation-1efa343004 a organigram:orgtype-0073ac303d;
+    skos:prefLabel "Sekretariat"@de;
+    org:hasMember organigram:person-74391ff328, organigram:person-816e044076;
+    org:hasPost organigram:position-657457324a, organigram:position-860abcb2f6.
+organigram:organisation-292e89c63c a organigram:orgtype-00509170bd;
+    skos:altLabel "StS K"@de;
+    skos:prefLabel "Staatssekretariat für Kultur"@de;
+    org:hasMember organigram:person-23708b8991, organigram:person-81a320916f, organigram:person-eb3a80f0cf;
+    org:hasPost organigram:position-22499e3aa9, organigram:position-28f765e41f, organigram:position-578d7f1f79;
+    org:hasSubOrganization organigram:organisation-4a6bac9345, organigram:organisation-a6e0fb3970;
+    org:hasUnit organigram:organisation-1efa343004.
+organigram:organisation-2f3c6f827e a organigram:orgtype-0000000000;
+    skos:prefLabel "BKRW"@de;
+    org:hasMember organigram:person-3dd15b2629;
+    org:hasPost organigram:position-e27e9f15ae;
+    org:purpose "Beauftragter für Kirchen, Religions- und Welt-anschauungsgemeinschaften"@de.
+organigram:organisation-3de99708ab a organigram:orgtype-0000000000;
+    skos:prefLabel "I Ctrl"@de;
+    org:hasMember organigram:person-4978fbd956;
+    org:hasPost organigram:position-ce98a97336;
+    org:purpose "Controlling"@de.
+organigram:organisation-4a6bac9345 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung  I"@de;
+    org:hasMember organigram:person-76dd0bdd06;
+    org:hasPost organigram:position-c912aaccd6;
+    org:hasSubOrganization organigram:organisation-03eb02a156, organigram:organisation-3de99708ab, organigram:organisation-64bcd7325b, organigram:organisation-91c2d471d7, organigram:organisation-d0767a2235, organigram:organisation-d456ff2aaa, organigram:organisation-dfb1cdd160, organigram:organisation-eef94336a4;
+    org:purpose "Kultur und Serviceeinheiten"@de.
+organigram:organisation-64bcd7325b a organigram:orgtype-0000000000;
+    skos:prefLabel "SE 3"@de;
+    org:hasMember organigram:person-931baf9949;
+    org:hasPost organigram:position-683c46f92c;
+    org:purpose "Serviceeinheit Informations- und Kommunikations-management"@de.
+organigram:organisation-69cd7f03c7 a organigram:orgtype-0000000000;
+    skos:prefLabel "Referat II C"@de;
+    org:hasMember organigram:person-857215aa13;
+    org:hasPost organigram:position-d0f88a6fc1;
+    org:purpose "Stadtkultur, Bibliotheken,  Archive, Musik- und  Jugend- kunstschulen"@de.
+organigram:organisation-6cb297a75b a org:Organization, berorgs:NachgeordneteEinrichtung;
+    owl:sameAs <http://www.wikidata.org/entity/Q833759>;
+    skos:prefLabel "Brücke-Museum"@de;
+    org:hasMember organigram:person-783d523419;
+    org:hasPost organigram:position-82dce026ef;
+    org:purpose "Nachgeordnete Einrichtung"@de.
+organigram:organisation-714340360d a organigram:orgtype-00509170bd;
+    skos:altLabel "StS GZ"@de;
+    skos:prefLabel "Staatssekretriat für Gesellschaftlichen Zusammenhalt"@de;
+    org:hasMember organigram:person-6daab3c83b, organigram:person-a5603fc46c, organigram:person-dc3df28e48;
+    org:hasPost organigram:position-143ea9d935, organigram:position-23a7031144, organigram:position-50a07cc704;
+    org:hasSubOrganization organigram:organisation-f8523ab204.
+organigram:organisation-72479208c6 a organigram:orgtype-0000000000;
+    skos:altLabel "PR Gesch"@de;
+    skos:prefLabel "Personalrats, Geschäftsführung"@de;
+    org:hasMember organigram:person-6a3d124b93;
+    org:hasPost organigram:position-ec0ec28af9;
+    org:hasSubOrganization organigram:organisation-b18ff78132, organigram:organisation-da9320bc3c, organigram:organisation-efe3bdef38.
+organigram:organisation-8a0a8b00a4 a organigram:orgtype-000024fea7;
+    skos:altLabel "SenKultGZ"@de;
+    skos:prefLabel "Senatsverwaltung für Kultur und Gesellschaftlichen Zusammenhalt"@de;
+    org:hasMember organigram:person-5d80e1cede;
+    org:hasPost organigram:position-9e6653dde5;
+    org:hasSubOrganization organigram:organisation-292e89c63c, organigram:organisation-6cb297a75b, organigram:organisation-714340360d, organigram:organisation-72479208c6, organigram:organisation-cd887e3e12.
+organigram:organisation-91c2d471d7 a organigram:orgtype-0000000000;
+    skos:prefLabel "SE 2"@de;
+    org:hasMember organigram:person-87aa00ba6d;
+    org:hasPost organigram:position-6f9b1dffd8;
+    org:purpose "Serviceeinheit Personal und Innere Dienste"@de.
+organigram:organisation-a6e0fb3970 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung II"@de;
+    org:hasMember organigram:person-296d2a7b49, organigram:person-88b691c990;
+    org:hasPost organigram:position-85439437d5, organigram:position-b50d161967;
+    org:hasSubOrganization organigram:organisation-69cd7f03c7, organigram:organisation-b2d30c846e, organigram:organisation-b3e548832f, organigram:organisation-c32a822394;
+    org:purpose "Grundsatz"@de.
+organigram:organisation-b18ff78132 a organigram:orgtype-0000000000;
+    skos:prefLabel "SBV Schwerbehindertenvertretung"@de;
+    org:hasMember organigram:person-3125751183;
+    org:hasPost organigram:position-28896ccce0;
+    org:hasSite _:b3_b1.
+organigram:organisation-b2d30c846e a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat II A"@de;
+    org:hasMember organigram:person-296d2a7b49;
+    org:hasPost organigram:position-d271b99a0a;
+    org:purpose "Grundsatz und Recht"@de.
+organigram:organisation-b3e548832f a organigram:orgtype-0000000000;
+    skos:prefLabel "II VSt "@de;
+    org:hasMember organigram:person-6103fcaf50;
+    org:hasPost organigram:position-3581060051;
+    org:purpose "Verbindungsstelle"@de.
+organigram:organisation-c32a822394 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat II B"@de;
+    org:hasMember organigram:person-94ce598efb;
+    org:hasPost organigram:position-0d99d4da9f;
+    org:purpose "Bau und  Liegenschaften"@de.
+organigram:organisation-cd887e3e12 a organigram:orgtype-0000000000;
+    skos:prefLabel "Leitungsstab"@de;
+    org:hasMember organigram:person-13df0653e9, organigram:person-309de2467e, organigram:person-37c9e02ba0;
+    org:hasPost organigram:position-5e509485f8, organigram:position-a84e8d7d12, organigram:position-b544554218;
+    org:hasSubOrganization organigram:organisation-1c7b711624.
+organigram:organisation-d0767a2235 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat  I A"@de;
+    org:hasMember organigram:person-62b10917b5, organigram:person-ba12ad63fd;
+    org:hasPost organigram:position-7391a1974f, organigram:position-7f8d8a9815;
+    org:purpose "Förderung von Künstlerinnen, Künstlern, Projekten und Freien Gruppen"@de.
+organigram:organisation-d13ce2e33e a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat III A"@de;
+    org:hasMember organigram:person-ba792e9812;
+    org:hasPost organigram:position-7b0e9f1a9a;
+    org:purpose "Engagement- und Demokratieförderung"@de.
+organigram:organisation-d456ff2aaa a organigram:orgtype-0000000000;
+    skos:prefLabel "SE 1"@de;
+    org:hasMember organigram:person-5a8ef202f6;
+    org:hasPost organigram:position-555106a831;
+    org:purpose "Serviceeinheit Finanzen / Prüfdienst"@de.
+organigram:organisation-da9320bc3c a organigram:orgtype-0000000000;
+    skos:prefLabel "FV Frauenvertreterin"@de;
+    org:hasMember organigram:person-37e2ac3c47;
+    org:hasPost organigram:position-bb3fe96c67.
+organigram:organisation-dfb1cdd160 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I C"@de;
+    org:hasMember organigram:person-a975eca409;
+    org:hasPost organigram:position-2c933eff5b;
+    org:purpose "Gedenkstätten, Museen, Bildende Kunst"@de.
+organigram:organisation-eef94336a4 a organigram:orgtype-0000000000;
+    skos:prefLabel "I EGov"@de;
+    org:hasMember organigram:person-5d29cc49d2;
+    org:hasPost organigram:position-9ba912d749;
+    org:purpose "E-Government"@de.
+organigram:organisation-efe3bdef38 a organigram:orgtype-0000000000;
+    skos:prefLabel "PR Personalratsvorsitzende"@de;
+    org:hasMember organigram:person-0e43c8e8c9, organigram:person-a03b463211;
+    org:hasPost organigram:position-5d5f932a73, organigram:position-5db2f4a6fb;
+    org:hasSite _:b3_b0.
+organigram:organisation-f8523ab204 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung III"@de;
+    org:hasMember organigram:person-ea9ec59bc6;
+    org:hasPost organigram:position-5e88e03d97, organigram:position-d9ee81a0db;
+    org:hasSubOrganization organigram:organisation-2f3c6f827e, organigram:organisation-d13ce2e33e;
+    org:purpose "Engagement- und Demokratieförderung, BKRW"@de.
+organigram:orgtype-0000000000 a rdfs:Class;
+    rdfs:label ""@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-000024fea7 a rdfs:Class;
+    rdfs:label "Neue"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0000360641 a rdfs:Class;
+    rdfs:label "staa"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0004ded163 a rdfs:Class;
+    rdfs:label "Pressestelle"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0005e803ec a rdfs:Class;
+    rdfs:label "Innerbetriebliche Einrichtung"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-00150e2f96 a rdfs:Class;
+    rdfs:label "Körperschaft des Öffentlichen Rechts"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-001851d377 a rdfs:Class;
+    rdfs:label "Presseabteilung"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0035e9d4dd a rdfs:Class;
+    rdfs:label "Stabstelle"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-003a9c2c7d a rdfs:Class;
+    rdfs:label "Sonderbehörde"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-003c65bf0c a rdfs:Class;
+    rdfs:label "Landesbetrieb"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-00509170bd a rdfs:Class;
+    rdfs:label "Staatssekretariat"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-005574b2ad a rdfs:Class;
+    rdfs:label "Anstalten des Öffentlichen Rechts"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-006d9041fa a rdfs:Class;
+    rdfs:label "Verbindungsstelle"@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-0073ac303d a rdfs:Class;
+    rdfs:label "Sekretariat"@de;
+    rdfs:subClassOf org:Organization.
+organigram:person-0e43c8e8c9 a vcard:Individual;
+    vcard:family-name "Fuhlbrügge";
+    vcard:given-name "Jeannine";
+    org:holds organigram:position-5d5f932a73.
+organigram:person-13df0653e9 a vcard:Individual;
+    vcard:email "Katharina.Schrade@Kultur.berlin.de";
+    vcard:family-name "Schrade";
+    vcard:given-name "Katharina";
+    vcard:tel "+49 (0)30 90 228 776 ";
+    org:holds organigram:position-5e509485f8.
+organigram:person-23708b8991 a vcard:Individual;
+    vcard:email "Anneke.Kleimann@Kultur.berlin.de";
+    vcard:family-name "Kleimann";
+    vcard:given-name " Anneke";
+    vcard:tel "+49 (0)30 90 228 226 ";
+    org:holds organigram:position-28f765e41f.
+organigram:person-296d2a7b49 a vcard:Individual;
+    vcard:email "helge.rehders@kultur.berlin.de";
+    vcard:family-name "Rehders";
+    vcard:given-name "Helge";
+    vcard:tel "+49 (0)30 90 228 369 710", "+49 (0)30 90 228 710";
+    org:holds organigram:position-85439437d5, organigram:position-d271b99a0a.
+organigram:person-309de2467e a vcard:Individual;
+    vcard:email "Georg.Gremske@Kultur.berlin.de";
+    vcard:family-name "Gremske";
+    vcard:given-name "Georg";
+    vcard:tel "+49 (0)30 90 228 208";
+    vcard:title "Dr.";
+    org:holds organigram:position-b544554218.
+organigram:person-3125751183 a vcard:Individual;
+    vcard:family-name "Marcus";
+    vcard:given-name "Corinna";
+    org:holds organigram:position-28896ccce0.
+organigram:person-37c9e02ba0 a vcard:Individual;
+    vcard:email "Jennifer.Michaelis@Kultur.berlin.de";
+    vcard:family-name "Michaelis";
+    vcard:given-name " Jennifer";
+    vcard:tel "+49 (0)30 90 228 202";
+    org:holds organigram:position-a84e8d7d12.
+organigram:person-37e2ac3c47 a vcard:Individual;
+    vcard:email "birgit.reinsch@kultur.berlin.de";
+    vcard:family-name "Reinsch";
+    vcard:given-name "Birgit";
+    vcard:tel "90228 382";
+    org:holds organigram:position-bb3fe96c67.
+organigram:person-3dd15b2629 a vcard:Individual;
+    vcard:family-name "Rhein";
+    vcard:given-name "Hartmut";
+    vcard:tel "+49 (0)30 90 228 400";
+    org:holds organigram:position-e27e9f15ae.
+organigram:person-4978fbd956 a vcard:Individual;
+    vcard:family-name "Kandziora";
+    vcard:given-name "Jens";
+    vcard:tel "+49 (0)30 90 228 734";
+    org:holds organigram:position-ce98a97336.
+organigram:person-53075f0047 a vcard:Individual;
+    vcard:email "christopher.suss@kultur.berlin.de";
+    vcard:family-name "Suss";
+    vcard:given-name " Christopher";
+    vcard:tel "+49 (0)30 90 228 207 ";
+    org:holds organigram:position-a296a1ec24.
+organigram:person-58fde376c9 a vcard:Individual;
+    vcard:email "sabine.koehncke@kultur.berlin.de";
+    vcard:family-name "Köhncke";
+    vcard:given-name "Sabine";
+    vcard:tel "+49 (0)30 90 228 720";
+    org:holds organigram:position-34c6c9bb62.
+organigram:person-5a8ef202f6 a vcard:Individual;
+    vcard:family-name "Pick";
+    vcard:given-name "Rafael";
+    vcard:tel "+49 (0)30 90 228 370";
+    org:holds organigram:position-555106a831.
+organigram:person-5d29cc49d2 a vcard:Individual;
+    vcard:family-name "Fritsch";
+    vcard:given-name "Monika";
+    vcard:tel "+49 (0)30 90 228 369 718";
+    org:holds organigram:position-9ba912d749.
+organigram:person-5d80e1cede a vcard:Individual;
+    vcard:family-name "Chialo";
+    vcard:given-name "Joe";
+    vcard:tel "+49 (0)30 90 228 200";
+    org:holds organigram:position-9e6653dde5.
+organigram:person-6103fcaf50 a vcard:Individual;
+    vcard:family-name "Wulfert";
+    vcard:given-name "Diedrich";
+    vcard:tel "+49 (0)30 90 228 558 744";
+    org:holds organigram:position-3581060051.
+organigram:person-62b10917b5 a vcard:Individual;
+    vcard:email "miriam.agritelli@kultur.berlin.de";
+    vcard:family-name "Agritelli";
+    vcard:given-name "Miriam";
+    vcard:tel "+49 (0)30 90 228 750";
+    org:holds organigram:position-7f8d8a9815.
+organigram:person-6a3d124b93 a vcard:Individual;
+    vcard:family-name "Mewes";
+    vcard:given-name "Silvan";
+    vcard:tel "90228 666";
+    org:holds organigram:position-ec0ec28af9.
+organigram:person-6daab3c83b a vcard:Individual;
+    vcard:family-name "Friederici";
+    vcard:given-name " Oliver";
+    vcard:tel "+49 (0)30 90 228 232 ";
+    org:holds organigram:position-23a7031144.
+organigram:person-74391ff328 a vcard:Individual;
+    vcard:family-name "Nourafrouz";
+    vcard:given-name "Negiza";
+    vcard:tel "+49 (0)30 90 228 223 ";
+    org:holds organigram:position-657457324a.
+organigram:person-76dd0bdd06 a vcard:Individual;
+    vcard:email "konrad.schmidt-werthern@kultur.berlin.de";
+    vcard:family-name "Schmidt-Werthern ";
+    vcard:given-name "Konrad";
+    vcard:tel "+49 (0)30 90 228 700";
+    vcard:title "Dr.";
+    org:holds organigram:position-c912aaccd6.
+organigram:person-783d523419 a vcard:Individual;
+    vcard:family-name "Schmidt";
+    vcard:given-name "Lisa Marei";
+    vcard:tel "839 00 860";
+    org:holds organigram:position-82dce026ef.
+organigram:person-816e044076 a vcard:Individual;
+    vcard:family-name "Pulkkinen";
+    vcard:given-name "Kaisa";
+    vcard:tel "+49 (0)30 90 228 822 ";
+    org:holds organigram:position-860abcb2f6.
+organigram:person-81a320916f a vcard:Individual;
+    vcard:family-name "Engelbrecht";
+    vcard:given-name "Michaela";
+    vcard:tel "+49 (0)30 90 228 821 ";
+    org:holds organigram:position-22499e3aa9.
+organigram:person-857215aa13 a vcard:Individual;
+    vcard:email "reiner.schmock-bathe@kultur.berlin.de";
+    vcard:family-name "Schmock-Bathe   ";
+    vcard:given-name "R.";
+    vcard:tel "+49 (0)30 90 228 558";
+    org:holds organigram:position-d0f88a6fc1.
+organigram:person-87aa00ba6d a vcard:Individual;
+    vcard:family-name "Reimann";
+    vcard:given-name "Claudia";
+    vcard:tel "+49 (0)30 90 228 402";
+    org:holds organigram:position-6f9b1dffd8.
+organigram:person-88b691c990 a vcard:Individual;
+    vcard:family-name "Schirle";
+    vcard:given-name "Christian";
+    vcard:tel "+49 (0)30 90 228 369 731";
+    org:holds organigram:position-b50d161967.
+organigram:person-931baf9949 a vcard:Individual;
+    vcard:family-name "Kesou";
+    vcard:given-name "Samier";
+    vcard:tel "+49 (0)30 90 228 369";
+    org:holds organigram:position-683c46f92c.
+organigram:person-94ce598efb a vcard:Individual;
+    vcard:email "kathrin.simons@kultur.berlin.de";
+    vcard:family-name "Simons";
+    vcard:given-name "Kathrin";
+    vcard:tel "+49 (0)30 90 228 390";
+    org:holds organigram:position-0d99d4da9f.
+organigram:person-a03b463211 a vcard:Individual;
+    vcard:family-name "Draeger";
+    vcard:given-name "Antje  ";
+    org:holds organigram:position-5db2f4a6fb.
+organigram:person-a5603fc46c a vcard:Individual;
+    vcard:family-name "Dogan";
+    vcard:given-name "Özüm";
+    vcard:tel "+49 (0)30 90 228 232";
+    org:holds organigram:position-143ea9d935.
+organigram:person-a975eca409 a vcard:Individual;
+    vcard:email "christine.regus@kultur.berlin.de";
+    vcard:family-name "Regus";
+    vcard:given-name "Christine";
+    vcard:honorific-prefix "Dr.";
+    vcard:tel "+49 (0)30 90 228 550";
+    org:holds organigram:position-2c933eff5b.
+organigram:person-a9d03f1259 a vcard:Individual;
+    vcard:email "hannah.dannel@kultur.berlin.de";
+    vcard:family-name "Dannel";
+    vcard:given-name "Hannah";
+    vcard:tel "+49 (0)30 90 228 212 ";
+    org:holds organigram:position-d5a089e857.
+organigram:person-ba12ad63fd a vcard:Individual;
+    vcard:email "Julia.GutierrezPeris@Kultur.berlin.de";
+    vcard:family-name "Gutierrez-Peris";
+    vcard:given-name "Julia";
+    vcard:tel "+49 (0)30 90 228 396";
+    org:holds organigram:position-7391a1974f.
+organigram:person-ba792e9812 a vcard:Individual;
+    vcard:family-name "Walther";
+    vcard:given-name "Friedemann";
+    vcard:tel "+49 (0)30 90 228 617";
+    org:holds organigram:position-7b0e9f1a9a.
+organigram:person-dbb8616f26 a vcard:Individual;
+    vcard:email "daniel.bartsch@kultur.berlin.de";
+    vcard:family-name "Bartsch";
+    vcard:given-name " Daniel";
+    vcard:tel "+49 (0)30 90 228 203";
+    org:holds organigram:position-7f49ae2a1d.
+organigram:person-dc3df28e48 a vcard:Individual;
+    vcard:family-name "Neumann";
+    vcard:given-name " Tobias";
+    vcard:tel "+49 (0)30 90 228 231";
+    org:holds organigram:position-50a07cc704.
+organigram:person-ea9ec59bc6 a vcard:Individual;
+    vcard:family-name "Frank";
+    vcard:given-name "Angela";
+    vcard:tel "+49 (0)30 90 228 400 501";
+    org:holds organigram:position-d9ee81a0db.
+organigram:person-eb3a80f0cf a vcard:Individual;
+    vcard:family-name "Wedl-Wilson";
+    vcard:given-name "Sarah";
+    vcard:tel "+49 (0)30 90 228 223";
+    org:holds organigram:position-578d7f1f79.
+organigram:position-0d99d4da9f a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-143ea9d935 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-22499e3aa9 a org:Post;
+    org:role organigram:role-005d5c2f27.
+organigram:position-23a7031144 a org:Post;
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-28896ccce0 a org:Post.
+organigram:position-28f765e41f a org:Post;
+    org:role organigram:role-005d5c2f27.
+organigram:position-2c933eff5b a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-34c6c9bb62 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-3581060051 a org:Post.
+organigram:position-50a07cc704 a org:Post;
+    org:role organigram:role-005d5c2f27.
+organigram:position-555106a831 a org:Post.
+organigram:position-578d7f1f79 a org:Post;
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-5d5f932a73 a org:Post;
+    org:role organigram:role-00654fe8a1.
+organigram:position-5db2f4a6fb a org:Post.
+organigram:position-5e509485f8 a org:Post;
+    org:role organigram:role-005d5c2f27.
+organigram:position-5e88e03d97 a org:Post;
+    rdfs:comment "N.N";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-657457324a a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-683c46f92c a org:Post.
+organigram:position-6f9b1dffd8 a org:Post.
+organigram:position-7391a1974f a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-7b0e9f1a9a a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-7f49ae2a1d a org:Post;
+    rdfs:comment "stellvertretend";
+    org:role berorgs:PressesprecherIn.
+organigram:position-7f8d8a9815 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-82dce026ef a org:Post.
+organigram:position-85439437d5 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-860abcb2f6 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-9ba912d749 a org:Post.
+organigram:position-9e6653dde5 a org:Post;
+    org:role berorgs:SenatorIn.
+organigram:position-a296a1ec24 a org:Post;
+    org:role organigram:role-00268083aa.
+organigram:position-a84e8d7d12 a org:Post;
+    org:role berorgs:LeitungDesLeitungsstabs.
+organigram:position-b50d161967 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-b544554218 a org:Post;
+    org:role organigram:role-005d5c2f27.
+organigram:position-bb3fe96c67 a org:Post.
+organigram:position-c912aaccd6 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-ce98a97336 a org:Post.
+organigram:position-d0f88a6fc1 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-d271b99a0a a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-d5a089e857 a org:Post;
+    org:role organigram:role-005c587063.
+organigram:position-d9ee81a0db a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-e27e9f15ae a org:Post.
+organigram:position-ec0ec28af9 a org:Post.
+organigram:role-00268083aa a org:Role;
+    skos:prefLabel " Presse- und Öffentlichkeitsarbeit "@de.
+organigram:role-005c587063 a org:Role;
+    skos:prefLabel " Pressesprecherin und Leiterin der Presse- und Öffentlichkeitsarbeit "@de.
+organigram:role-005d5c2f27 a org:Role;
+    skos:prefLabel " Persönliche:r Referent:in"@de, "Persönliche:r Referent:in"@de.
+organigram:role-00654fe8a1 a org:Role;
+    skos:prefLabel "1. Stellv."@de.
+_:b3_b0 a org:Site;
+    vcard:email "personalrat@kultur.berlin.de";
+    vcard:tel "90228 666".
+_:b3_b1 a org:Site;
+    vcard:email "sbv@kultur.berlin.de";
+    vcard:tel "90228 378".

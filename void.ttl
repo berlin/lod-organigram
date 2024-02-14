@@ -13,17 +13,17 @@
 
 lodsg:
     a void:Dataset ;
-    dct:title "LOD-SG-Beispiel-Datensatz und Vokabular"@de ;
-    dct:title "LOD-SG example dataset and vocabulary"@en ;
-    dct:description """Dieser Datensatz beinhaltet Beispieldaten für das LOD-SG-Projekt (LOD Site Generator) sowie Vokabular zur Erstellung eines Impressums."""@de ;
-    dct:description """This dataset contains example data for the LOD-SG project (LOD Site Generator) as well as vocabulary for creating an imprint page."""@en ;
-    dct:created "2022-12-31"^^xsd:date ;
-    dct:modified "2023-03-28"^^xsd:date ;
-    dct:publisher lodbo:berlinonline ;
+    dct:title "LOD-Organigramme"@de ;
+    dct:title "LOD-Organizational Charts"@en ;
+    dct:description """Organigramme zur Beschreibung der öffentlichen Verwaltung Berlins als RDF / Linked Open Data."""@de ;
+    dct:description """Organizational charts (organogram) describing Berlins public administration as RDF / Linked Open Data."""@en ;
+    dct:created "2024-02-14"^^xsd:date ;
+    dct:modified "2024-02-14"^^xsd:date ;
+    dct:publisher lodbo:berlin ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    foaf:homepage <https://github.com/berlinonline/lod-sg> ;
+    foaf:homepage <https://github.com/berlin/lod-organigram> ;
     void:feature <http://www.w3.org/ns/formats/Turtle> ;
-    void:dataDump <https://raw.githubusercontent.com/berlinonline/lod-sg/main/data/static/vocab.ttl> ;
+    void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigramg/main/data/static/vocab.ttl> ;
     # void:rootResource <...> ;
     # void:exampleResource <...> ;
     # prov:wasGeneratedBy lodsg:triplification ;
