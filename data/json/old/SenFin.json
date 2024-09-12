@@ -1,0 +1,2551 @@
+{
+  "export": {
+    "saveExport": "save",
+    "includeLogo": true,
+    "exportType": "rdf",
+    "rdfType": "turtle",
+    "baseUri": "",
+    "pdfType": "print",
+    "filename": "SenFin"
+  },
+  "document": {
+    "paperSize": "A2",
+    "schemaVersion": "1.1.0",
+    "paperOrientation": "portrait",
+    "title": "Senatsverwaltung für Finanzen",
+    "note": "Organisationsplan\nStand: 19. Juni 2023\nTelefon: (030) 9020-0\nFax: (030) 9020-7704\nAnschrift: Klosterstraße 59, 10179 Berlin\nE-Mail: poststelle@senfin.berlin.de\nInternet: www.berlin.de/sen/finanzen",
+    "version": "2023-06-19",
+    "logo": "data:image/png;name=Screenshot%202023-10-05%20at%2011-54-43%20Organigramm%20Senatsverwaltung%20fu%CC%88r%20Finanzen%20-%20organigramm_senfin.pdf.png;base64,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",
+    "uri": {
+      "uri": "https://berlin.github.io/lod-organigram/organigram-20c5cdb22b"
+    }
+  },
+  "meta": {
+    "about": "This file was created using the Organigramm-Tool: an online, open source tool for creating organizational charts in PDF format, machine-readable JSON format and Linked Open Data (LOD) formats.",
+    "url": "https://github.com/technologiestiftung/organigramming-berlin"
+  },
+  "organisations": [
+    {
+      "name": "Senatsverwaltung für Finanzen",
+      "id": "n20ff52ab-f6dc-4d05-8e06-d8984d09960c",
+      "uri": {
+        "uriSameAs": "http://www.wikidata.org/entity/Q27978789",
+        "uriSameAsLabel": "Senatsverwaltung für Finanzen",
+        "uriSameAsDescription": "Berliner Regierungsbehörde",
+        "uri": "https://berlin.github.io/lod-organigram/organisation-5fe5e3326f"
+      },
+      "isMainOrganisation": true,
+      "address": {},
+      "contact": { "website": "https://www.berlin.de/sen/finanzen/" },
+      "suborganizationOrientation": "horizontal",
+      "type": "Senatsverwaltung",
+      "organisations": [
+        {
+          "isMainOrganisation": false,
+          "layout": {
+            "style": "default",
+            "bgColor": "#999999",
+            "bgStyle": "default",
+            "grid": "none"
+          },
+          "address": {},
+          "contact": {},
+          "uri": {
+            "uri": "https://berlin.github.io/lod-organigram/organisation-2c53b5b606"
+          },
+          "positions": [
+            {
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/position-49a35f69de"
+              },
+              "person": {
+                "gender": "1",
+                "contact": { "telephone": "9020-8027", "fax": "9020-8203" },
+                "uri": {
+                  "uri": "https://berlin.github.io/lod-organigram/person-b591621fd3"
+                },
+                "firstName": "Johannes",
+                "lastName": "Wohlstein"
+              },
+              "positionType": "Leitung des Leitungsstabs"
+            }
+          ],
+          "organisations": [
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#cccccc",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-978f1c5ac2"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-0b74808819"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-8014" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-f7f52346c7"
+                    },
+                    "firstName": "Julius",
+                    "lastName": "Schulz"
+                  }
+                },
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-317a1ef4c4"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-8019" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-f2d3554f1a"
+                    },
+                    "firstName": "Alexander",
+                    "lastName": "Eichner"
+                  }
+                }
+              ],
+              "organisations": [],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Bürgermeisterbüro",
+              "id": "n328bc433-6f9b-48f0-94d5-0b245bf3a426",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#cccccc",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-a27e25374c"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-e43fe43a71"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-8016" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-548ed9c625"
+                    },
+                    "firstName": "Christian",
+                    "lastName": "Tebling"
+                  }
+                },
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-ff8c7b85b4"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-8010" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-7efbef40aa"
+                    },
+                    "firstName": "Milena",
+                    "lastName": "Schrader"
+                  }
+                }
+              ],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Senatorenbüro",
+              "id": "nb8671f35-23ab-48c4-85f6-8ee8b71b7643",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#cccccc",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-82ca25dc18"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-6f2b6bbeda"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-8007", "fax": "9020-8207" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-073b57dbaa"
+                    },
+                    "firstName": "Jan",
+                    "lastName": "Köhler"
+                  }
+                }
+              ],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Finanzreferent, Europaangelegenheiten",
+              "id": "nf12df3b7-11ad-45e0-b7ec-e060e238e136",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#cccccc",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-7a40c758cd"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-5ccc386ab4"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": {
+                      "telephone": " 9020-8030",
+                      "fax": "9020-8202"
+                    },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-bf0e9c15c8"
+                    },
+                    "firstName": "Uta",
+                    "lastName": "Francisco dos Santos"
+                  }
+                }
+              ],
+              "organisations": [],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Gremienangelegenheiten",
+              "id": "nf708038c-8edc-423f-82e7-17d5ee08c33c",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#cccccc",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-afd68e8cab"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-036844f561"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-8017", "fax": "9020-8204" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-2d1f8b1e52"
+                    },
+                    "firstName": "Silke",
+                    "lastName": "Brandt"
+                  }
+                }
+              ],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Presse- und Öffentlichkeitsarbeit",
+              "id": "nfff64f1c-12cc-49fc-aee5-fa550bbe5de5",
+              "purpose": ""
+            }
+          ],
+          "suborganizationOrientation": "vertical",
+          "type": "",
+          "name": "Leitungsstab",
+          "id": "n242f4736-1b53-4b88-95c6-407918368f93",
+          "purpose": ""
+        },
+        {
+          "isMainOrganisation": false,
+          "layout": {
+            "style": "default",
+            "bgColor": "#666666",
+            "bgStyle": "default",
+            "grid": "none"
+          },
+          "address": {},
+          "contact": {},
+          "uri": {
+            "uri": "https://berlin.github.io/lod-organigram/organisation-d88381b2cc"
+          },
+          "positions": [
+            {
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/position-1d25f239bb"
+              },
+              "person": {
+                "gender": "1",
+                "contact": { "telephone": "9020-8025", "fax": "9020-2612" },
+                "uri": {
+                  "uri": "https://berlin.github.io/lod-organigram/person-c617cf768c"
+                },
+                "firstName": "Wolfgang",
+                "lastName": "Schyrocki"
+              },
+              "positionType": "Staatssekretär:in"
+            },
+            {
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/position-6127891c1c"
+              },
+              "person": {
+                "gender": "1",
+                "contact": { "telephone": "9020-8021" },
+                "uri": {
+                  "uri": "https://berlin.github.io/lod-organigram/person-7fc12e653f"
+                },
+                "firstName": "Antje",
+                "lastName": "Winkler"
+              },
+              "positionType": "Referent:in"
+            }
+          ],
+          "departments": [],
+          "organisations": [
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-4c81aa334c"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-b84a2188a8"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-5003" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-980b0ec040"
+                    },
+                    "firstName": "Thorsten",
+                    "lastName": "Steinmann"
+                  },
+                  "positionType": "Abteilungsleitung"
+                }
+              ],
+              "organisations": [
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-72cfea4f15"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-1fd2daa37d"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-5100" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-9962dad18f"
+                        },
+                        "firstName": "Ulrike ",
+                        "lastName": "Hempel-John"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "organisations": [],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat ZS A",
+                  "id": "ndd594e59-25f1-4339-97d0-3be8a832824a",
+                  "purpose": "Erbschaften, Selbstversicherung und Regress"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-a224c1c509"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-b69f1eca4c"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-5200" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-6fc0741023"
+                        },
+                        "firstName": "Matthias",
+                        "lastName": "Voigt"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat ZS B",
+                  "id": "n4567dc16-a120-4062-9982-61a6ca677fb1",
+                  "purpose": "Zentrale Dienstleistungen: Digitalisierung und Geschäftsprozessmanagement, Innerer Dienstbetrieb, Landesausgleichsamt (LAA)"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-587824b5f6"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-654b39274c"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-5300" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-c971222b1d"
+                        },
+                        "firstName": "Thomas",
+                        "lastName": "Biedermann"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat ZS C",
+                  "id": "nff14c6d6-5dc7-46de-ab66-cbcff22163d0",
+                  "purpose": "Personaldienstleistungen: Personalleitstelle, Personalhaushalt und Personalwirtschaft"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d026578102"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-5d53a1eddf"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-5400" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-cb84d7e62d"
+                        },
+                        "firstName": "Anita",
+                        "lastName": "Böckler"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat ZS D",
+                  "id": "na6367cf7-a9d1-48d9-b0ac-7ded8e739154",
+                  "purpose": "Entwicklungs- und Finanzdienstleistungen: Organisations- und Personalentwicklung, audit berufundfamilie, Gesundheits- management, Arbeitsschutz, Fortbildung, grundsätzliche Angelegenheiten der Beschäftigtenvertretungen, Sachhaushalt, Ressort-Controlling und Berichtwesen"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-71354fd73d"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-4520f249cf"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-5500" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-08ec36e1e5"
+                        },
+                        "firstName": "Kristin",
+                        "lastName": "Welle"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "name": "Justitiariat",
+                  "id": "n38a35009-52a0-4fb2-ae4e-9090decc4dc7",
+                  "type": "Justitiariat",
+                  "purpose": "Juristische Dienstleistungen"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-5b9cc1f5ae"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-e575aa3145"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "0151-72783611" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-2ae4f5f491"
+                        },
+                        "firstName": "Remo",
+                        "lastName": "Zuter"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "ZS A EZI",
+                  "id": "n4abaadd1-6301-4e34-93d3-0b7367fff56f",
+                  "purpose": "Entschädigungen nach dem Infektionsschutzgesetz (IfSG)"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-28a14ac2ab"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-cb8ddbd0d8"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-5003" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-980b0ec040"
+                        },
+                        "firstName": "Thorsten",
+                        "lastName": "Steinmann"
+                      },
+                      "positionType": "Ressortleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Ressort",
+                  "name": "Ressort-Digitalisierungsbeauftragter",
+                  "id": "n20405d49-b172-450a-90b2-386b0ddd3e5a",
+                  "purpose": ""
+                }
+              ],
+              "suborganizationOrientation": "vertical",
+              "type": "Abteilung",
+              "name": "Abteilung ZS - Zentraler Service",
+              "id": "n7c97dc45-9cfd-4ce9-976b-bd2f93ec0623",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-f8666d6d81"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-4e4fcc2c34"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-1004", "fax": "9020-1390" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-dd4bb4162a"
+                    },
+                    "firstName": "Anja",
+                    "lastName": "Naujokat"
+                  },
+                  "positionType": "Abteilungsleitung"
+                }
+              ],
+              "organisations": [
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-1efd78d274"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-8f23896b59"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-1800" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-c473eccc9c"
+                        },
+                        "firstName": "Thomas",
+                        "lastName": "Wolf"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat I A",
+                  "id": "na9411596-9cb4-4ca8-85c5-de136eeb4337",
+                  "purpose": "Grundsatzangelegenheiten der Beteiligungspolitik; Energie- Konzessionsangelegenheiten, Zielbilder; BgA und Grund- satzangelegenheiten der Besteuerung des Landes Berlin"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-1ff57f2d68"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-e0c20c763c"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-1200" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-dc5991e8a1"
+                        },
+                        "firstName": "Renate",
+                        "lastName": "Hachtmann"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat I B",
+                  "id": "n0f6e1e73-3a95-4033-bbee-e39404c335d3",
+                  "purpose": "Beteiligungsmanagement I"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-a7304f6bc6"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-8f519513ca"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-1321" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-e6c1d9a72f"
+                        },
+                        "firstName": "Ralf",
+                        "lastName": "Karasch"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "organisations": [],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat I C",
+                  "id": "nd87a3847-4352-4d2c-9b73-a2d0ae51e6b7",
+                  "purpose": "Beteiligungsmanagement II; Koordinierung Flughafenpolitik"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-b0a70e25d0"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-1a6266e84f"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": " 0151-16254406" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-85ddb3a8bb"
+                        },
+                        "firstName": "Harald",
+                        "lastName": "Fuchs"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "organisations": [],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat I D",
+                  "id": "nf7f90a15-2bae-4904-9b10-dadf8a5c75b1",
+                  "purpose": "Liegenschaftspolitik und Immobilienmanagement"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-dfb7c69a92"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-af3a7f673b"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-1500" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-c14be109ee"
+                        },
+                        "firstName": "Steffen",
+                        "lastName": "Hontscha"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat I E",
+                  "id": "n8c24c59c-7c2d-4bbe-8980-7e8cb3e4190c",
+                  "purpose": "Standortförderung, Finanzierungshilfen und Bürgschaften, Beteiligung Berlins an den Anstalten des öffentlichen Rechts"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-7af731f7e0"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-ab38ef6b7c"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-1612" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-a42a77e432"
+                        },
+                        "firstName": "Elke",
+                        "lastName": "Badack-Hebig"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "organisations": [],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Referat I F",
+                  "id": "n82c07a38-4fed-4d9c-8814-4a74518f9a59",
+                  "purpose": "Kreditmanagement"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-a1710958f1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-3dc1d4143d"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-1708" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-bb41c6a595"
+                        },
+                        "firstName": "Stefan",
+                        "lastName": "Frauenstein"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat I G",
+                  "id": "nd1ce4fd5-fd2b-4811-95a0-d1443ede24aa",
+                  "purpose": "Grundsatzangelegenheiten Liegenschaften; Wiedervereinigungsrecht"
+                }
+              ],
+              "suborganizationOrientation": "vertical",
+              "type": "Abteilung",
+              "name": "Abteilung I - Vermögen und Beteiligungen",
+              "id": "nb1802006-b7cc-4435-b69d-d2af0bcc8b8c",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-85e8b4e2a0"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-eadbfcb0f4"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-4006", "fax": "9020-4090" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-2bb3c41339"
+                    },
+                    "firstName": "Martin",
+                    "lastName": "Jammer"
+                  },
+                  "positionType": "Abteilungsleitung"
+                }
+              ],
+              "organisations": [
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-c3811f66ee"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-aa5b999270"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4100" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-7509c256a8"
+                        },
+                        "firstName": "Michael",
+                        "lastName": "Weidenhammer"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat IV A",
+                  "id": "n847a46bf-3bc6-4881-924b-1de918673030",
+                  "purpose": "Grundsatzangelegenheiten Personal, Personalpolitik"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-80dd78dc82"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-fe8020819e"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4200" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-e444f364d2"
+                        },
+                        "firstName": "Simone",
+                        "lastName": "Mayr"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat IV B",
+                  "id": "nf9d66b69-6d32-40c8-89eb-8c21b8c02d51",
+                  "purpose": "Tarifrecht und Recht der Arbeitnehmer, Zusatzversorgung und Lohnsteuer- und Sozialversicherungsrecht"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-b3b40cde6f"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-1ac07410c3"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4300" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-ccf3102505"
+                        },
+                        "firstName": "Martina",
+                        "lastName": "Ruppin"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat IV C",
+                  "id": "ne7b5fe39-d9fd-449a-bd7e-ec0059dd5d5d",
+                  "purpose": "Demografiemanagement und Personalentwicklung"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-c210ae4300"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-5400d9be9f"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4400" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-1ac45eb40d"
+                        },
+                        "firstName": "Sandra",
+                        "lastName": "Winter"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Referat IV D",
+                  "id": "nba5a1d92-acb3-4d39-90ba-94c5d372c3d7",
+                  "purpose": "Öffentliches Dienstrecht"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-92921ce608"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-a4dfaa3825"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "0151-18853029" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-7fb4b1a34e"
+                        },
+                        "firstName": "Sylvia",
+                        "lastName": "Gers"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Referat IV E",
+                  "id": "n9e02218f-e87d-4cdb-85d4-b137f2ea51c6",
+                  "purpose": "Landesweites Personalmarketing und -recruiting"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-e53f79512e"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-bf1543dd4d"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4800" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-1ac4a7c220"
+                        },
+                        "firstName": "Marcus",
+                        "lastName": "Zage"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "PStat",
+                  "id": "ncd9197ec-99a8-4152-a5cb-88c8f69e42f1",
+                  "purpose": "Statistikstelle Personal"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-42a6f88035"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-308c7b6517"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4600" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-3096faa4d8"
+                        },
+                        "firstName": "Sophie",
+                        "lastName": "Finkenauer"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Leitstelle Diversity",
+                  "id": "nfe1ef470-5ca3-40d0-b0ba-2c3ed823e608",
+                  "purpose": "",
+                  "altName": "LSt Diversity"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-2b4981983e"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-fbc53544ed"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-4700" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-93288233fc"
+                        },
+                        "firstName": "Anette",
+                        "lastName": "Schiller"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Serviceorientiertes Personal-Management",
+                  "id": "nbdafa79f-535a-475d-a006-d2229fa97bc1",
+                  "purpose": "",
+                  "altName": "SPM"
+                }
+              ],
+              "suborganizationOrientation": "vertical",
+              "type": "Abteilung",
+              "name": "Abteilung IV - Landespersonal",
+              "id": "ne317a762-160d-424e-8c2e-11f65dcf4259",
+              "purpose": ""
+            }
+          ],
+          "suborganizationOrientation": "horizontal",
+          "type": "",
+          "name": "Staatssekretariat Geschäftsbereich A",
+          "id": "n0fb859ca-4e25-4e00-a2ce-502b88e7bda0",
+          "purpose": ""
+        },
+        {
+          "isMainOrganisation": false,
+          "layout": {
+            "style": "default",
+            "bgColor": "#666666",
+            "bgStyle": "default",
+            "grid": "none"
+          },
+          "address": {},
+          "contact": {},
+          "uri": {
+            "uri": "https://berlin.github.io/lod-organigram/organisation-61a2afb42d"
+          },
+          "positions": [
+            {
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/position-79a5588edf"
+              },
+              "person": {
+                "gender": "1",
+                "contact": { "telephone": "9020-8022", "fax": "9020-2610" },
+                "uri": {
+                  "uriSameAs": "http://www.wikidata.org/entity/Q118130668",
+                  "uriSameAsLabel": "Tanja Mildenberger",
+                  "uriSameAsDescription": "deutsche Verwaltungsjuristin und politische Beamtin",
+                  "uri": "https://berlin.github.io/lod-organigram/person-79630edeb3"
+                },
+                "firstName": "Tanja",
+                "lastName": "Mildenberger"
+              },
+              "positionType": "Staatssekretär:in"
+            },
+            {
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/position-26bfb995f5"
+              },
+              "person": {
+                "gender": "1",
+                "contact": { "telephone": "9020-8024" },
+                "uri": {
+                  "uri": "https://berlin.github.io/lod-organigram/person-0ad5feca4c"
+                },
+                "firstName": "Caroline",
+                "lastName": "Degenhardt"
+              },
+              "positionType": "Referent:in"
+            }
+          ],
+          "departments": [],
+          "organisations": [
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-108182e477"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-632cdb0e18"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-2006" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-06c11f8f08"
+                    },
+                    "firstName": "Katrin",
+                    "lastName": "Dube"
+                  },
+                  "positionType": "Abteilungsleitung"
+                }
+              ],
+              "organisations": [
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-3880047b85"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-1abbee0c6a"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-2100" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-895bf09ee3"
+                        },
+                        "title": "Dr.",
+                        "firstName": "Bernhard",
+                        "lastName": "Speyer"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II A",
+                  "id": "n68f2c35a-3603-4fdf-ab50-be95d8b6c164",
+                  "purpose": "Grundsatzangelegenheiten der Finanzpolitik, Finanzstrategien und Bund-Länder-Finanzbeziehungen"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-7bbe2baeb4"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-b49d828d4f"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": " 9020-2200" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-b08a6fb50c"
+                        },
+                        "firstName": "Oliver",
+                        "lastName": "Rohbeck"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Referat II B",
+                  "id": "n50599261-cb9d-4b84-bbfa-7cf499d7aaa1",
+                  "purpose": "Aufstellung und Ausführung des Haushaltsplans, Grundsatzangelegenheiten des Öffentlichen Rechnungswesens des Landes Berlin, Haushalts-, Gebühren- und Beitragsrecht, Aufsicht über den Landesfinanzservice sowie Angelegenheiten des Einzelplans 29"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-b388afe473"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-48f490648a"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": " 0151-18852995" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-391f1d90e7"
+                        },
+                        "firstName": "René",
+                        "lastName": "Nitschke"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II C",
+                  "id": "ncbe64f78-5366-45da-b8ec-517b2e696a4a",
+                  "purpose": "Angelegenheiten des Einzelplans 10 sowie der entsprechenden Bezirkshaushaltspläne"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-6c34e8a504"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-9fc3bf7895"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "0151-29276406" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-57473aefad"
+                        },
+                        "firstName": "Melanie",
+                        "lastName": "Rubach"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II D",
+                  "id": "n55ac8280-2cfb-464e-9bba-ddef225d37fa",
+                  "purpose": "Angelegenheiten des Einzelplans 11 sowie der entsprechenden Bezirkshaushaltspläne und Entgeltstelle Soziale Dienstleistungen"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-8e2d45c607"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-0e3cc83aac"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-2500" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-f2fc2c4a9d"
+                        },
+                        "firstName": "Iris",
+                        "lastName": "Brockmann"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II E",
+                  "id": "n81420cbf-2d94-4cc4-870b-5ee14714f2da",
+                  "purpose": "Angelegenheiten der Einzelpläne 01, 02, 05, 06, 15, 20, 21, 25 und 29 sowie der entsprechenden Bezirkshaushaltspläne"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-226017243c"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-01c0d168f0"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-2600" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-be7e8f1e90"
+                        },
+                        "firstName": "Jan",
+                        "lastName": "Schubert"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II F",
+                  "id": "nd9c9fbc7-fd75-4642-98b1-41dfe25cb9f7",
+                  "purpose": "Angelegenheiten der Einzelpläne 07, 12 und 13 sowie der entsprechenden Bezirkshaushaltspläne"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-68515c8164"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-06a1d17120"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-2700" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-8b832f61bc"
+                        },
+                        "firstName": "Karola",
+                        "lastName": "Scherler"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II G",
+                  "id": "nc8adffe5-bbff-42e5-afb3-1b4ee014acb8",
+                  "purpose": "Angelegenheiten des Einzelpläne 03, 08 und 09 sowie der entsprechenden Bezirkshaushaltspläne"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-68515c8164"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-4b3f93bae6"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "0151-18852993" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-8b832f61bc"
+                        },
+                        "firstName": "Berthold ",
+                        "lastName": "Minthe"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat II H",
+                  "id": "n7044be78-93d2-437a-91bd-be4b3688a6df",
+                  "purpose": "Angelegenheiten der Bezirke"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-09474c43fe"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-41e0a1ab48"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-2700" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-8b832f61bc"
+                        },
+                        "firstName": "Karola",
+                        "lastName": "Scherler"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "II LFU",
+                  "id": "ndd1507c8-cd35-4d00-8c22-36c30cb3a8dc",
+                  "purpose": "Projekt „Landesweites Forderungsmanagement zum Unterhaltsvorschussgesetz“"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-286c60a2fc"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-c874b07945"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-2800" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-915dc2cfed"
+                        },
+                        "firstName": "Ansgar",
+                        "lastName": "Ostermann"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Leitstelle Investitionsplanung",
+                  "id": "n430ec174-6ba3-4a94-98c0-a4a39e60e264",
+                  "altName": "LIP",
+                  "purpose": ""
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-c29f02513c"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-3419cc832e"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "0151-18852992" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-3464f5dd86"
+                        },
+                        "firstName": "Mara-Anahí",
+                        "lastName": "Kuhl-Wachowski",
+                        "title": "Dr."
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Leitstelle Geschlechtergerechte Haushaltssteuerung",
+                  "id": "nb0262208-2c0d-477c-a769-427cb1dfa708",
+                  "altName": "LGH",
+                  "purpose": ""
+                }
+              ],
+              "suborganizationOrientation": "vertical",
+              "type": "Abteilung",
+              "name": "Abteilung II - Finanzpolitik und Haushalt",
+              "id": "n0c15f571-2897-46cd-8a11-a617458365a5",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-b5fbc576a7"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-19c6762d9a"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "fax": "9020-3007", "telephone": "9020-3001" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-a05738f9c6"
+                    },
+                    "firstName": "Susanne",
+                    "lastName": "Klose"
+                  },
+                  "positionType": "Abteilungsleitung"
+                }
+              ],
+              "departments": [],
+              "organisations": [
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-2c2e6134c6"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-8934e4aa1c"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3080" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-7c619aafa7"
+                        },
+                        "firstName": "Lutz",
+                        "lastName": "Treuter"
+                      }
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "",
+                  "name": "Stabsstelle Behördlicher Datenschutz für die Berliner Steuerverwaltung",
+                  "id": "ne9c9af85-f4ed-41ca-baf5-08250b9d6b84",
+                  "altName": "DSB",
+                  "purpose": ""
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-679b87626e"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3100" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Holger",
+                        "lastName": "Borkamm"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III A",
+                  "id": "nd79120ee-31de-456f-96a2-3fd1bea81e9b",
+                  "purpose": "Grundsatzfragen, Steuerpolitik, internationales Steuerrecht, Körperschaftsteuer, Gewerbesteuer, Gemeinnützigkeitsrecht"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-83a0e905d9"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3200" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Angela",
+                        "lastName": "Herbst"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III B",
+                  "id": "n0882453d-1df4-4c0d-948f-1003f58cae4c",
+                  "purpose": "inkommensteuer, Umwandlungssteuerrecht, Lohnsteuer, Arbeitnehmerbesteuerungsverfahren, Wohnungsbauprämie, Vermögensbildung der Arbeitnehmer, Zinsinformations- verordnung, Investmentsteuergesetz"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-1ae1fd3b28"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3300" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Gerd-Volker",
+                        "lastName": "Olbrich"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III C",
+                  "id": "n3dc0c18a-1d9c-4f55-812c-b1f4acb4472e",
+                  "purpose": "Umsatzsteuer, Zölle und Verbrauchsteuern"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-b22b698448"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3400" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Bettina",
+                        "lastName": "Werth"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III D",
+                  "id": "nc99ea2b6-1596-40f6-92fd-bdea3093f82c",
+                  "purpose": "Grundsteuer, Erbschaft- und Schenkungsteuer, Bewertung, Gemeindesteuern, Spielbankabgabe, besondere Verkehrsteuern"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-9b6ebe7485"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": " 9020-3500" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Susanne",
+                        "lastName": "Ott"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III E",
+                  "id": "n2a4c16e1-1900-4acc-b286-b6bce3d5f103",
+                  "purpose": "Abgabenordnung, Finanzgerichtsordnung, Erhebung, Vollstreckung, Kirchensteuer"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-bb60ccf66c"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3600" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Katharina",
+                        "lastName": "Wehrhahn"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III F",
+                  "id": "na61f186c-14f7-40d4-934e-1d3730113fce",
+                  "purpose": "Außenprüfungsdienste, Steuerfahndung, Steuerstrafrecht, Steuerberatungsrecht"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-2eccfe603b"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3700" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Bettina",
+                        "lastName": "Arlt"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III G",
+                  "id": "n3ff0e3e3-d6fe-4b51-9e69-651a5c0b0a7c",
+                  "purpose": "Controlling in der Berliner Steuerverwaltung, Stellenwirtschaft für die Berliner Finanzämter"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-4418ca8118"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3800" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Matthias",
+                        "lastName": "Pahlitzsch"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III H",
+                  "id": "n8c0dbdc7-3713-4bcd-a965-15d453608ae5",
+                  "purpose": "Organisation und Automation in der Berliner Steuerverwaltung"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-d7825ca020"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": " 9020-3900" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-79fdc4d99a"
+                        },
+                        "firstName": "Frank",
+                        "lastName": "Gerasch"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III K",
+                  "id": "nb67168cb-f899-484e-9758-dd216adeff4c",
+                  "purpose": "Laufbahnordnungsbehörde für die Steuerverwaltung; Personalmanagement, Finanzschule für die Berliner Finanzämter"
+                },
+                {
+                  "isMainOrganisation": false,
+                  "layout": {
+                    "style": "default",
+                    "bgColor": "#cccccc",
+                    "bgStyle": "default",
+                    "grid": "none"
+                  },
+                  "address": {},
+                  "contact": {},
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/organisation-d9454d0cd1"
+                  },
+                  "positions": [
+                    {
+                      "uri": {
+                        "uri": "https://berlin.github.io/lod-organigram/position-60ccd37f57"
+                      },
+                      "person": {
+                        "gender": "1",
+                        "contact": { "telephone": "9020-3093" },
+                        "uri": {
+                          "uri": "https://berlin.github.io/lod-organigram/person-7c619aafa7"
+                        },
+                        "firstName": "Lutz",
+                        "lastName": "Treuter"
+                      },
+                      "positionType": "Referatsleitung"
+                    }
+                  ],
+                  "suborganizationOrientation": "horizontal",
+                  "type": "Referat",
+                  "name": "Referat III R",
+                  "id": "n687a6420-2235-46d0-aee0-85b25fb84485",
+                  "purpose": "Interne Revision und Beschwerdemanagement"
+                }
+              ],
+              "suborganizationOrientation": "vertical",
+              "type": "Abteilung",
+              "name": "Abteilung III - Angelegenheiten der Steuerverwaltung",
+              "id": "n3019db54-627e-4ffe-a10a-525028801998",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": { "zipCode": "11055", "city": "Berlin" },
+              "contact": {
+                "telephone": "(030) 189100-611",
+                "fax": "(030) 189100-618"
+              },
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-f7ea144303"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-efa339ee01"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": {},
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-ebbfb7ef50"
+                    },
+                    "firstName": "William",
+                    "lastName": "Brunton",
+                    "title": "Dr."
+                  }
+                }
+              ],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Zentrale Datenstelle der Landesfinanzminister",
+              "id": "n6b010c0f-e6ac-41f9-86f7-5abd063135d1",
+              "purpose": "",
+              "altName": "ZDL"
+            }
+          ],
+          "suborganizationOrientation": "horizontal",
+          "name": "Staatssekretariat Geschäftsbereich B",
+          "id": "n6aa00c7c-0721-4790-a68c-eed40a369dbc",
+          "type": "staa",
+          "purpose": ""
+        },
+        {
+          "isMainOrganisation": false,
+          "layout": {
+            "style": "hide",
+            "bgColor": "",
+            "bgStyle": "default",
+            "grid": "none"
+          },
+          "address": {},
+          "contact": {},
+          "uri": {
+            "uri": "https://berlin.github.io/lod-organigram/organisation-abd1880c2f"
+          },
+          "organisations": [
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-ab0e531eb0"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-5474dfc662"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-5505" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-1df37d2e24"
+                    },
+                    "firstName": "Alexander",
+                    "lastName": "Lamprecht"
+                  }
+                }
+              ],
+              "suborganizationOrientation": "horizontal",
+              "type": "Stabsstelle",
+              "name": "Stabsstelle Antikorruption und Innenrevision",
+              "id": "n52debd65-62c9-4b94-a39a-c78bedd64066",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-40499818dd"
+              },
+              "positions": [
+                {
+                  "uri": {
+                    "uri": "https://berlin.github.io/lod-organigram/position-fd241f4b52"
+                  },
+                  "person": {
+                    "gender": "1",
+                    "contact": { "telephone": "9020-5511" },
+                    "uri": {
+                      "uri": "https://berlin.github.io/lod-organigram/person-8950ea42ad"
+                    },
+                    "firstName": "Rebekka",
+                    "lastName": "Binder"
+                  }
+                }
+              ],
+              "suborganizationOrientation": "horizontal",
+              "name": "Behördliche Datenschutzbeauftragte",
+              "id": "n9a92ce0c-bd85-477d-b15a-e2fc288710ee",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-ba5030dce9"
+              },
+              "organisations": [],
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Geschäftsstelle des Hauptpersonalrats ",
+              "id": "n34d45a73-2755-448b-b90c-28d21b000f12",
+              "altName": "HPR",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-39841e7dbd"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Geschäftsstelle der Hauptvertrauensperson der schwerbehinderten Menschen ",
+              "id": "na54d916a-c23e-4372-b12e-bce851c50f87",
+              "altName": "HVP",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-f4813dc0c6"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Geschäftsstelle der Haupt-Jugend- und Auszubildendenvertretung ",
+              "id": "na98b4fb9-91b1-4776-9e4a-29101864f071",
+              "altName": "HJAV",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-1daf9d9bf0"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "",
+              "name": "Geschäftsstelle des Landespersonalausschusses/ Einigungsstelle für Personalvertretungssachen ",
+              "id": "n03cb89cd-8f92-4315-9551-00ad3a4857c9",
+              "altName": "LPA/EPV",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Sonderbehörde",
+              "name": "Finanzämter",
+              "id": "n6fa6bcdc-ae02-4e80-8f7d-8405780713d4",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Sonderbehörde",
+              "name": "Landesfinanzservice (einschl. Landeshauptkasse)",
+              "id": "n11f7b733-7105-484e-b2b3-d9e15f5081e8",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Sonderbehörde",
+              "name": "Landesverwaltungsamt",
+              "id": "n6d37f471-b92f-4a2a-a0e7-8dd855772f7a",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Anstalten des Öffentlichen Rechts",
+              "name": "Verwaltungsakademie Berlin",
+              "id": "n3c8382f6-40d6-4a92-9f40-f37f9838c83b",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Landesbetrieb",
+              "name": "Staatliche Münze",
+              "id": "n54d7bde5-eacd-4a01-91b7-db2faf9542ad",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Landesbetrieb",
+              "name": "Landesbetrieb für Gebäudebewirtschaftung",
+              "id": "n8294a255-f77f-40fd-b480-34845a09ca59",
+              "purpose": ""
+            },
+            {
+              "isMainOrganisation": false,
+              "layout": {
+                "style": "default",
+                "bgColor": "#999999",
+                "bgStyle": "default",
+                "grid": "none"
+              },
+              "address": {},
+              "contact": {},
+              "uri": {
+                "uri": "https://berlin.github.io/lod-organigram/organisation-008e936697"
+              },
+              "suborganizationOrientation": "horizontal",
+              "type": "Körperschaft des Öffentlichen Rechts",
+              "name": "Steuerberaterkammer Berlin",
+              "id": "n58c11d75-7744-452e-af27-9a95dc9b81ea",
+              "purpose": ""
+            }
+          ],
+          "suborganizationOrientation": "vertical",
+          "type": "",
+          "name": "Organisation",
+          "id": "n5c1a7300-63fa-4623-a167-823ddb8dff8e",
+          "purpose": ""
+        }
+      ],
+      "purpose": "",
+      "layout": {
+        "style": "emphasized",
+        "bgColor": "#333333",
+        "bgStyle": "default",
+        "grid": "none"
+      },
+      "departments": [],
+      "positions": [
+        {
+          "uri": {
+            "uri": "https://berlin.github.io/lod-organigram/position-c7ed5cc248"
+          },
+          "person": {
+            "gender": "m",
+            "contact": { "telephone": "9020-8001/8002", "fax": "9020-8203" },
+            "uri": {
+              "uriSameAs": "http://www.wikidata.org/entity/Q2336244",
+              "uriSameAsLabel": "Stefan Evers",
+              "uriSameAsDescription": "deutscher Politiker (CDU), Berliner Finanzsenator und Bürgermeister, MdA",
+              "uri": "https://berlin.github.io/lod-organigram/person-f60db6579c"
+            },
+            "firstName": "Stefan",
+            "lastName": "Evers"
+          },
+          "positionType": "Senator:in"
+        }
+      ]
+    }
+  ]
+}

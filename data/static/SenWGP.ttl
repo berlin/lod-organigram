@@ -1,0 +1,418 @@
+@prefix organigram: <https://berlin.github.io/lod-organigram/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>.
+@prefix dcterms: <http://purl.org/dc/terms#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <https://schema.org/>.
+
+organigram:organigram-ee5d05de42 dcterms:created "2024-09-09"^^<xsd:date>;
+    dcterms:creator _:b0_b0;
+    a berorgs:Organogram;
+    rdfs:label "Senatsverwaltung für Wissenschaft, Gesundheit und Pflege"@de;
+    berorgs:contains organigram:organisation-fc88719adc.
+organigram:organisation-0ffd6a6afc a org:Organization, berorgs:Referat;
+    skos:prefLabel "Z D - Infrastruktur"@de;
+    org:hasMember organigram:person-9b09c85930;
+    org:hasPost organigram:position-3c148c1cde;
+    org:purpose "IKT-Betriebsorganisation, Webtechnologien und IT- Verfahrensmanagement, IKT-Management, Informationssicherheit, Open Data, digitale Barrierefreiheit, Facility Management, IKT- Beschaffungen"@de.
+organigram:organisation-14da8cab11 a organigram:orgtype-0000000000;
+    skos:prefLabel "Stab der Senatorin"@de;
+    org:hasMember organigram:person-2d134d0aa8, organigram:person-4d1cffa560, organigram:person-de0ef220c6, organigram:person-ecb6a4130e;
+    org:hasPost organigram:position-08413e4c21, organigram:position-239bc578a7, organigram:position-d1944e1bfc, organigram:position-ed73619d33.
+organigram:organisation-15dddb8140 a organigram:orgtype-0000000000;
+    skos:prefLabel "Patientenbeauftragte:r"@de;
+    org:hasMember organigram:person-e7c6ff9103;
+    org:hasPost organigram:position-7a5f5d326e.
+organigram:organisation-1c52324651 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung II - Pflege"@de;
+    org:hasMember organigram:person-850fc6c911;
+    org:hasPost organigram:position-8e47721531;
+    org:hasSubOrganization organigram:organisation-3533d6a29a, organigram:organisation-5c91ba9bf0, organigram:organisation-ea6cf2a5aa, organigram:organisation-f3223afffe.
+organigram:organisation-20c377f57f a org:Organization, berorgs:Referat;
+    skos:prefLabel "Z A - Recht"@de;
+    org:hasMember organigram:person-51cc83067e;
+    org:hasPost organigram:position-35c6f710a8;
+    org:purpose "Rechtsangelegenheiten; Datenschutz; Antikorruptionsbeauftragter"@de.
+organigram:organisation-2b57d8fd66 a org:Organization, berorgs:Referat;
+    skos:prefLabel "I B"@de;
+    org:hasMember organigram:person-3c665da4d5;
+    org:hasPost organigram:position-f1b0ce21d1;
+    org:purpose "Psychiatrie, Sucht und Gesundheitsvorsorge"@de.
+organigram:organisation-2c9ca52441 a org:Organization, berorgs:Referat;
+    skos:prefLabel "I F"@de;
+    org:hasMember organigram:person-213b3cb4a7;
+    org:hasPost organigram:position-e2070394b7;
+    org:purpose "Prävention/Gesundheitsförderung und ambulante/sektorenübergreifende Versorgung"@de.
+organigram:organisation-3533d6a29a a org:Organization, berorgs:Referat;
+    skos:prefLabel "II D"@de;
+    org:hasMember organigram:person-850fc6c911;
+    org:hasPost organigram:position-c3e227de24;
+    org:purpose "Gemeinschaftliche und häusliche Versorgungssettings; Pflegepolitik Bund- (Pflegeversicherung - SGB XI) und gesamtstädtische Pflegepolitik (Hilfe zur Pflege - SGB XII); Pflegerische Versorgung am Lebensende; Wohnteilhaberecht (Heimrecht); Leistungsmissbrauchsbekämpfung (LMB); Beratungs- und Selbsthilfestrukturen"@de.
+organigram:organisation-35542e6a67 a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Leitungsstab"@de;
+    org:hasMember organigram:person-c0dacd29a3;
+    org:hasPost organigram:position-c13fd61494;
+    org:hasUnit organigram:organisation-14da8cab11, organigram:organisation-8624fc72c3, organigram:organisation-afcafb4997, organigram:organisation-fa314e8de5.
+organigram:organisation-549f95c4ef a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung Z - Zentrales"@de;
+    org:hasMember organigram:person-3c665da4d5;
+    org:hasPost organigram:position-5a8c74b29c;
+    org:hasSubOrganization organigram:organisation-0ffd6a6afc, organigram:organisation-20c377f57f, organigram:organisation-b2de723fcc, organigram:organisation-cda767ebe6, organigram:organisation-fcd529e0f6.
+organigram:organisation-5c91ba9bf0 a org:Organization, berorgs:Referat;
+    skos:prefLabel "II B"@de;
+    org:hasMember organigram:person-c397da1ba7;
+    org:hasPost organigram:position-642c0662e2;
+    org:purpose "Pflegeberufe und Fachkräftesicherung in der Pflege"@de.
+organigram:organisation-6a7e03c821 a organigram:orgtype-0000000000;
+    skos:prefLabel "Geschäftsbereich Gesundheit und Pflege"@de;
+    org:hasMember organigram:person-926bac6591;
+    org:hasPost organigram:position-24fde97446;
+    org:hasSubOrganization organigram:organisation-1c52324651, organigram:organisation-549f95c4ef, organigram:organisation-92ed0e8b9c;
+    org:hasUnit organigram:organisation-8db8aa7986.
+organigram:organisation-6fb5d414a9 a organigram:orgtype-0000000000;
+    skos:prefLabel "Behördliche:r Datenschutzbeauftragte:r"@de.
+organigram:organisation-8624fc72c3 a organigram:orgtype-0000000000;
+    skos:prefLabel "Kabinettsreferat"@de;
+    org:hasMember organigram:person-01310fa089, organigram:person-2608ed2986;
+    org:hasPost organigram:position-0ac6570a8f, organigram:position-5b1e75e8dc.
+organigram:organisation-8db8aa7986 a organigram:orgtype-0000000000;
+    skos:prefLabel "Stab der Staatssekretärin"@de;
+    org:hasMember organigram:person-29416381c8, organigram:person-315dc5284c, organigram:person-fbd93bb725;
+    org:hasPost organigram:position-3754da51e3, organigram:position-7bf2737650, organigram:position-8a587a07e7.
+organigram:organisation-92ed0e8b9c a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung I - Gesundheit"@de;
+    org:hasMember organigram:person-9e3e03e4cc;
+    org:hasPost organigram:position-868c6210a3;
+    org:hasSubOrganization organigram:organisation-2b57d8fd66, organigram:organisation-2c9ca52441, organigram:organisation-9af34818c1, organigram:organisation-a7e3f18441, organigram:organisation-acca1f96e8, organigram:organisation-b8227b9a1f.
+organigram:organisation-9af34818c1 a org:Organization, berorgs:Referat;
+    skos:prefLabel "I D"@de;
+    org:hasMember organigram:person-912b8bf800;
+    org:hasPost organigram:position-1d209ea8f0;
+    org:purpose "Krankenhauswesen und Notfallvorsorge"@de.
+organigram:organisation-9f64ea2c46 a org:Organization, berorgs:NachgeordneteEinrichtung;
+    skos:altLabel "GerMed"@de;
+    skos:prefLabel "Landesinstitut für gerichtliche und soziale Medizin Berlin"@de;
+    org:hasMember organigram:person-9aa9f8c35f;
+    org:hasPost organigram:position-06c13049e1;
+    org:hasSite _:b0_b3.
+organigram:organisation-a7e3f18441 a org:Organization, berorgs:Referat;
+    skos:prefLabel "I E"@de;
+    org:hasMember organigram:person-ed1c719ea9;
+    org:hasPost organigram:position-3b62817751;
+    org:purpose "ÖGD, Familienplanung, Transplantationsmedizin, Infektionsschutz, Umwelthygiene, Arzneimittel, Medizinprodukte"@de.
+organigram:organisation-acca1f96e8 a org:Organization, berorgs:Referat;
+    skos:prefLabel "I A"@de;
+    org:hasMember organigram:person-aadd0f3435;
+    org:hasPost organigram:position-c3661942ed;
+    org:purpose "Gesundheitsberichterstattung; Epidemiologie; Gesundheitsinformationssysteme, Statistikstelle"@de.
+organigram:organisation-afcafb4997 a organigram:orgtype-0000000000;
+    skos:prefLabel "Verbindungsstelle"@de;
+    org:hasMember organigram:person-ddcad5965b;
+    org:hasPost organigram:position-1e7065e574.
+organigram:organisation-b2de723fcc a org:Organization, berorgs:Referat;
+    skos:prefLabel "Z E"@de;
+    org:hasMember organigram:person-a12898b2c1;
+    org:hasPost organigram:position-853c4030f7;
+    org:purpose "Haushaltsservice Kopfkapitel und zentraler Vergabeservice"@de.
+organigram:organisation-b8227b9a1f a org:Organization, berorgs:Referat;
+    skos:prefLabel "I C"@de;
+    org:hasMember organigram:person-36da1670e0;
+    org:hasPost organigram:position-d1117b0c28;
+    org:purpose "Rechtsaufsicht (SGB V); Berufs- und Kammerrecht der Gesundheits- und Veterinärberufe; Prüfung in der Sozialversicherung; Gesetzliche Krankenversicherung"@de.
+organigram:organisation-cda767ebe6 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Z C - Finanzen"@de;
+    org:hasMember organigram:person-3c665da4d5;
+    org:hasPost organigram:position-fa6cf79ce0;
+    org:purpose "Zentrale Haushaltsrevision/Stelle für den Einzelplan, Personalwirtschaft sowie Zuwendungsprüfung Politikfelder Gesundheit und Pflege"@de.
+organigram:organisation-dac74f24a8 a organigram:orgtype-0000000000;
+    skos:prefLabel "Personalrat"@de.
+organigram:organisation-dd93dc8172 a organigram:orgtype-0000000000;
+    skos:prefLabel "Berlin-Brandenburgische Akademie der Wissenschaften"@de.
+organigram:organisation-ea6cf2a5aa a org:Organization, berorgs:Referat;
+    skos:prefLabel "II A"@de;
+    org:hasMember organigram:person-2d031b5757;
+    org:hasPost organigram:position-9848a2cb16;
+    org:purpose "Zukunft der Pflege und Digitalisierung; Grundsatzangelegenheiten der Altenhilfe und des Altenhilfesystems; Angelegenheiten der Interkulturellen Öffnung der Pflege- und Altenhilfestrukturen; Landespflegestrukturplanung"@de.
+organigram:organisation-f3223afffe a org:Organization, berorgs:Referat;
+    skos:prefLabel "II C"@de;
+    org:hasMember organigram:person-1eeb6c7c5c;
+    org:hasPost organigram:position-fb2d04185d;
+    org:purpose "Verträge für Pflegeeinrichtungen; Vertragsangelegenheiten des Sozialhilfeträgers nach SGB XII und SGB XI; Grundsatz und Einzelangelegenheiten der Förderung und Finanzierung stationärer und teilstationärer Pflegeeinrichtungen einschließlich Bauplanung; Landesbehörde für Investitionsentgelte von Pflegeeinrichtungen; Maßnahmen zur Erweiterung landeseigener Pflegestrukturen"@de.
+organigram:organisation-fa314e8de5 a organigram:orgtype-0000000000;
+    skos:prefLabel "Presse- und Öffentlichkeitsarbeit"@de;
+    org:hasMember organigram:person-4fe4f66460;
+    org:hasPost organigram:position-cfb48c493e.
+organigram:organisation-fc88719adc a org:Organization, berorgs:Senatsverwaltung;
+    skos:altLabel "SenWGP"@de;
+    skos:prefLabel "Senatsverwaltung für Wissenschaft, Gesundheit und Pflege"@de;
+    org:hasMember organigram:person-b6ae62ad16;
+    org:hasPost organigram:position-dd98814b7f;
+    org:hasSite _:b0_b1;
+    org:hasSubOrganization organigram:organisation-15dddb8140, organigram:organisation-35542e6a67, organigram:organisation-6a7e03c821, organigram:organisation-6fb5d414a9, organigram:organisation-9f64ea2c46, organigram:organisation-dac74f24a8, organigram:organisation-dd93dc8172.
+organigram:organisation-fcd529e0f6 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Z B - Personal"@de;
+    org:hasMember organigram:person-aef0918a0a;
+    org:hasPost organigram:position-d497149c24;
+    org:purpose "Personalangelegenheiten und Beschwerdestelle AGG"@de.
+organigram:orgtype-0000000000 a rdfs:Class;
+    rdfs:label ""@de;
+    rdfs:subClassOf org:Organization.
+organigram:orgtype-001ef35f4d a rdfs:Class;
+    rdfs:label "Hausleitung"@de;
+    rdfs:subClassOf org:Organization.
+organigram:person-01310fa089 a vcard:Individual;
+    vcard:family-name "Prinz";
+    vcard:given-name "Tanja";
+    vcard:tel "9028-2512";
+    org:holds organigram:position-5b1e75e8dc.
+organigram:person-1eeb6c7c5c a vcard:Individual;
+    vcard:family-name "Dittmar";
+    vcard:given-name "Kirsten";
+    vcard:tel "9028-2183";
+    vcard:title "Dr.";
+    org:holds organigram:position-fb2d04185d.
+organigram:person-213b3cb4a7 a vcard:Individual;
+    vcard:family-name "von Dewitz";
+    vcard:given-name "Christian";
+    vcard:tel "9028-2766";
+    vcard:title "Dr.";
+    org:holds organigram:position-e2070394b7.
+organigram:person-2608ed2986 a vcard:Individual;
+    vcard:family-name "Sexauer";
+    vcard:given-name "Katharina";
+    vcard:tel "9028-5300";
+    org:holds organigram:position-0ac6570a8f.
+organigram:person-29416381c8 a vcard:Individual;
+    vcard:family-name "Möbius";
+    vcard:given-name "Sandy";
+    vcard:tel "9028-1301";
+    org:holds organigram:position-7bf2737650.
+organigram:person-2d031b5757 a vcard:Individual;
+    vcard:family-name "Ludwig";
+    vcard:given-name "Anja";
+    vcard:tel "9028-1158";
+    vcard:title "Dr.";
+    org:holds organigram:position-9848a2cb16.
+organigram:person-2d134d0aa8 a vcard:Individual;
+    vcard:family-name "Ahrens";
+    vcard:given-name "Katja";
+    vcard:tel "9028-1947";
+    org:holds organigram:position-239bc578a7.
+organigram:person-315dc5284c a vcard:Individual;
+    vcard:family-name "Mollenhauer-Koch";
+    vcard:given-name "Tessa";
+    vcard:tel "9028-1164";
+    org:holds organigram:position-8a587a07e7.
+organigram:person-36da1670e0 a vcard:Individual;
+    vcard:family-name "Fischer";
+    vcard:given-name "Sebastian";
+    vcard:tel "9028-2403";
+    org:holds organigram:position-d1117b0c28.
+organigram:person-3c665da4d5 a vcard:Individual;
+    vcard:family-name "Mutter", "Stoye", "Wenzel";
+    vcard:given-name "Heide", "Katrin", "Volkmar";
+    vcard:tel "9028-1312", "9028-2342", "9028-2962";
+    vcard:title "Dr.";
+    org:holds organigram:position-5a8c74b29c, organigram:position-f1b0ce21d1, organigram:position-fa6cf79ce0.
+organigram:person-4d1cffa560 a vcard:Individual;
+    vcard:family-name "Lempert";
+    vcard:given-name "Hans";
+    vcard:tel "9028-1808";
+    vcard:title "Dr.";
+    org:holds organigram:position-d1944e1bfc.
+organigram:person-4fe4f66460 a vcard:Individual;
+    vcard:family-name "Arnold";
+    vcard:given-name "Dörthe";
+    vcard:tel "9028-2853";
+    org:holds organigram:position-cfb48c493e.
+organigram:person-51cc83067e a vcard:Individual;
+    vcard:family-name "Mäder";
+    vcard:given-name "Volker";
+    vcard:tel "9028-2645";
+    org:holds organigram:position-35c6f710a8.
+organigram:person-850fc6c911 a vcard:Individual;
+    vcard:family-name "Ilte", "Wanke";
+    vcard:given-name "Donald", "Manja";
+    vcard:tel "9028-2110", "9028-2974";
+    org:holds organigram:position-8e47721531, organigram:position-c3e227de24.
+organigram:person-912b8bf800 a vcard:Individual;
+    vcard:family-name "Wrede";
+    vcard:given-name "Brigitte";
+    vcard:tel "9028-1339";
+    vcard:title "Dr.";
+    org:holds organigram:position-1d209ea8f0.
+organigram:person-926bac6591 a vcard:Individual;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1331825>;
+    vcard:family-name "Haußdörfer";
+    vcard:given-name "Ellen";
+    vcard:tel "9028-1300";
+    org:holds organigram:position-24fde97446;
+    schema:gender schema:Female.
+organigram:person-9aa9f8c35f a vcard:Individual;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1929609>;
+    vcard:family-name "Tsokos";
+    vcard:given-name "Michael";
+    vcard:tel "90172-28-100";
+    vcard:title "Prof. Dr.";
+    org:holds organigram:position-06c13049e1.
+organigram:person-9b09c85930 a vcard:Individual;
+    vcard:family-name "Habeck";
+    vcard:given-name "Klaus";
+    vcard:tel "9028-2582";
+    org:holds organigram:position-3c148c1cde.
+organigram:person-9e3e03e4cc a vcard:Individual;
+    vcard:family-name "Franz";
+    vcard:given-name "Helge";
+    vcard:tel "9028-2410";
+    org:holds organigram:position-868c6210a3.
+organigram:person-a12898b2c1 a vcard:Individual;
+    vcard:family-name "Bremicker";
+    vcard:given-name "Roger";
+    vcard:tel "9028-1203";
+    org:holds organigram:position-853c4030f7.
+organigram:person-aadd0f3435 a vcard:Individual;
+    vcard:family-name "Hermann";
+    vcard:given-name "Sabine";
+    vcard:tel "9028-2858";
+    vcard:title "Dr.";
+    org:holds organigram:position-c3661942ed.
+organigram:person-aef0918a0a a vcard:Individual;
+    vcard:family-name "Charbonnier";
+    vcard:given-name "Katjana";
+    vcard:tel "9028-2641";
+    org:holds organigram:position-d497149c24.
+organigram:person-b6ae62ad16 a vcard:Individual;
+    vcard:family-name "Czyborra";
+    vcard:given-name "Ina";
+    vcard:tel "9028-2700";
+    vcard:title "Dr.";
+    org:holds organigram:position-dd98814b7f;
+    schema:gender schema:Female.
+organigram:person-c0dacd29a3 a vcard:Individual;
+    vcard:family-name "Philipps";
+    vcard:given-name "Vera";
+    vcard:tel "9028-1804";
+    org:holds organigram:position-c13fd61494.
+organigram:person-c397da1ba7 a vcard:Individual;
+    vcard:family-name "Lull";
+    vcard:given-name "Anja";
+    vcard:tel "9028-2126";
+    org:holds organigram:position-642c0662e2.
+organigram:person-ddcad5965b a vcard:Individual;
+    vcard:family-name "Neumann";
+    vcard:given-name "Martin";
+    vcard:tel "9028-2446";
+    org:holds organigram:position-1e7065e574.
+organigram:person-de0ef220c6 a vcard:Individual;
+    vcard:family-name "Köppe-Schneider";
+    vcard:given-name "Susann";
+    vcard:tel "9028-2701";
+    org:holds organigram:position-ed73619d33.
+organigram:person-e7c6ff9103 a vcard:Individual;
+    vcard:family-name "Gaedigk";
+    vcard:given-name "Ursula";
+    vcard:tel "9028-2010";
+    org:holds organigram:position-7a5f5d326e.
+organigram:person-ecb6a4130e a vcard:Individual;
+    vcard:family-name "Heidenreich";
+    vcard:given-name "Jacqueline";
+    vcard:tel "9028-2983";
+    org:holds organigram:position-08413e4c21.
+organigram:person-ed1c719ea9 a vcard:Individual;
+    vcard:family-name "Suckau-Hagel";
+    vcard:given-name "Marlen";
+    vcard:tel "9028-1610";
+    vcard:title "Dr.";
+    org:holds organigram:position-3b62817751.
+organigram:person-fbd93bb725 a vcard:Individual;
+    vcard:family-name "Jahn-Günther";
+    vcard:given-name "Katharina";
+    vcard:tel "9028-1164";
+    org:holds organigram:position-3754da51e3.
+organigram:position-06c13049e1 a org:Post;
+    org:role organigram:role-000eadf684.
+organigram:position-08413e4c21 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-0ac6570a8f a org:Post.
+organigram:position-1d209ea8f0 a org:Post;
+    rdfs:comment "kommissarisch";
+    org:role berorgs:Referatsleitung.
+organigram:position-1e7065e574 a org:Post;
+    org:role berorgs:Leitung.
+organigram:position-239bc578a7 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-24fde97446 a org:Post;
+    owl:sameAs <https://www.wikidata.org/wiki/Q736559>;
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-35c6f710a8 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-3754da51e3 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-3b62817751 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-3c148c1cde a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-5a8c74b29c a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-5b1e75e8dc a org:Post.
+organigram:position-642c0662e2 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-7a5f5d326e a org:Post;
+    org:role berorgs:LandesbeauftragteR.
+organigram:position-7bf2737650 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-853c4030f7 a org:Post.
+organigram:position-868c6210a3 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-8a587a07e7 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-8e47721531 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-9848a2cb16 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-c13fd61494 a org:Post;
+    org:role berorgs:LeitungDesLeitungsstabs.
+organigram:position-c3661942ed a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-c3e227de24 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-cfb48c493e a org:Post;
+    org:role berorgs:PressesprecherIn.
+organigram:position-d1117b0c28 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-d1944e1bfc a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-d497149c24 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-dd98814b7f a org:Post;
+    org:role berorgs:SenatorIn.
+organigram:position-e2070394b7 a org:Post.
+organigram:position-ed73619d33 a org:Post;
+    org:role berorgs:SekretaerIn.
+organigram:position-f1b0ce21d1 a org:Post;
+    rdfs:comment "kommissarisch";
+    org:role berorgs:Referatsleitung.
+organigram:position-fa6cf79ce0 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-fb2d04185d a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:role-000eadf684 a org:Role;
+    skos:prefLabel "Direktor"@de.
+_:b0_b0 schema:name "William Treherne"@de.
+_:b0_b1 a org:Site;
+    vcard:url "https://www.berlin.de/sen/wgp/";
+    org:siteAddress _:b0_b2.
+_:b0_b2 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10969";
+    vcard:street-address "Oranienstr. 106".
+_:b0_b3 a org:Site;
+    vcard:url "https://www.berlin.de/germed/";
+    org:siteAddress _:b0_b4.
+_:b0_b4 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10559";
+    vcard:street-address "Turmstr. 21 | Gebäude: Haus L".

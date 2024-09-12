@@ -8,666 +8,506 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix schema: <https://schema.org/>.
 
-organigram:organigram-20c5cdb22b dcterms:created "2023-06-19"^^<xsd:date>;
+organigram:organigram-140f45b5a5 dcterms:created "2024-05-14"^^<xsd:date>;
+    dcterms:creator _:b1_b0;
     a berorgs:Organogram;
     rdfs:label "Senatsverwaltung für Finanzen"@de;
-    berorgs:contains organigram:organisation-5fe5e3326f.
-organigram:organisation-09474c43fe a organigram:orgtype-0000000000;
-    skos:prefLabel "II LFU"@de;
-    org:hasMember organigram:person-8b832f61bc;
-    org:hasPost organigram:position-41e0a1ab48;
-    org:purpose "Projekt „Landesweites Forderungsmanagement zum Unterhaltsvorschussgesetz“"@de.
-organigram:organisation-108182e477 a org:Organization, berorgs:Abteilung;
-    skos:prefLabel "Abteilung II - Finanzpolitik und Haushalt"@de;
-    org:hasMember organigram:person-06c11f8f08;
-    org:hasPost organigram:position-632cdb0e18;
-    org:hasSubOrganization organigram:organisation-09474c43fe, organigram:organisation-226017243c, organigram:organisation-286c60a2fc, organigram:organisation-3880047b85, organigram:organisation-68515c8164, organigram:organisation-6c34e8a504, organigram:organisation-7bbe2baeb4, organigram:organisation-8e2d45c607, organigram:organisation-b388afe473, organigram:organisation-c29f02513c.
-organigram:organisation-1efd78d274 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat I A"@de;
-    org:hasMember organigram:person-c473eccc9c;
-    org:hasPost organigram:position-8f23896b59;
-    org:purpose "Grundsatzangelegenheiten der Beteiligungspolitik; Energie- Konzessionsangelegenheiten, Zielbilder; BgA und Grund- satzangelegenheiten der Besteuerung des Landes Berlin"@de.
-organigram:organisation-1ff57f2d68 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat I B"@de;
-    org:hasMember organigram:person-dc5991e8a1;
-    org:hasPost organigram:position-e0c20c763c;
-    org:purpose "Beteiligungsmanagement I"@de.
-organigram:organisation-226017243c a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat II F"@de;
-    org:hasMember organigram:person-be7e8f1e90;
-    org:hasPost organigram:position-01c0d168f0;
-    org:purpose "Angelegenheiten der Einzelpläne 07, 12 und 13 sowie der entsprechenden Bezirkshaushaltspläne"@de.
-organigram:organisation-286c60a2fc a organigram:orgtype-0000000000;
-    skos:altLabel "LIP"@de;
-    skos:prefLabel "Leitstelle Investitionsplanung"@de;
-    org:hasMember organigram:person-915dc2cfed;
-    org:hasPost organigram:position-c874b07945.
-organigram:organisation-28a14ac2ab a org:Organization, berorgs:Ressort;
-    skos:prefLabel "Ressort-Digitalisierungsbeauftragter"@de;
-    org:hasMember organigram:person-980b0ec040;
-    org:hasPost organigram:position-cb8ddbd0d8.
-organigram:organisation-2b4981983e a org:Organization, berorgs:Referat;
-    skos:altLabel "SPM"@de;
-    skos:prefLabel "Serviceorientiertes Personal-Management"@de;
-    org:hasMember organigram:person-93288233fc;
-    org:hasPost organigram:position-fbc53544ed.
-organigram:organisation-2c2e6134c6 a organigram:orgtype-0000000000;
-    skos:altLabel "DSB"@de;
-    skos:prefLabel "Stabsstelle Behördlicher Datenschutz für die Berliner Steuerverwaltung"@de;
-    org:hasMember organigram:person-7c619aafa7;
-    org:hasPost organigram:position-8934e4aa1c.
-organigram:organisation-2c53b5b606 a organigram:orgtype-0000000000;
+    berorgs:contains organigram:organisation-b185e3f70f.
+organigram:organisation-035d6dbeff a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Geschäftsbereich A"@de;
+    org:hasMember organigram:person-30062e5f2a, organigram:person-4c34048b75;
+    org:hasPost organigram:position-1f467dc05f, organigram:position-fe45544ea6;
+    org:hasSubOrganization organigram:organisation-4bf1b96ead, organigram:organisation-8ee9572784, organigram:organisation-aabace653a.
+organigram:organisation-063f91053f a org:Organization, berorgs:Stabsstelle;
+    skos:prefLabel "Stabsstelle Antikorruption und Innenrevision"@de;
+    org:hasMember organigram:person-68c46b192a;
+    org:hasPost organigram:position-bf616360a1.
+organigram:organisation-09d1159c50 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I F"@de;
+    org:hasMember organigram:person-47467b23ec;
+    org:hasPost organigram:position-27b68e19b3;
+    org:purpose "Kreditmanagement"@de.
+organigram:organisation-0c375e0a3a a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Gremienangelegenheiten"@de;
+    org:hasMember organigram:person-0e12346c70;
+    org:hasPost organigram:position-367f778e9e.
+organigram:organisation-0ea5a94582 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat ZS B"@de;
+    org:hasMember organigram:person-85cce17fb5;
+    org:hasPost organigram:position-fbc35af171;
+    org:purpose "Digitalisierung"@de.
+organigram:organisation-1f3b985087 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat ZS D"@de;
+    org:hasPost organigram:position-d5952a2924;
+    org:purpose "Organisations- und Personalentwicklung, Sachhaushalt, Ressort-Controlling"@de.
+organigram:organisation-25ce42c196 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat IV B"@de;
+    org:hasMember organigram:person-585d2d0163;
+    org:hasPost organigram:position-d7f24b6ab1;
+    org:purpose "Tarifrecht und Recht der Arbeitnehmer, Zusatzversorgung und Lohnsteuer- und Sozialversicherungsrecht"@de.
+organigram:organisation-36afeeffef a org:Organization, berorgs:Leitungsstab;
     skos:prefLabel "Leitungsstab"@de;
-    org:hasMember organigram:person-b591621fd3;
-    org:hasPost organigram:position-49a35f69de;
-    org:hasSubOrganization organigram:organisation-7a40c758cd, organigram:organisation-82ca25dc18, organigram:organisation-978f1c5ac2, organigram:organisation-a27e25374c, organigram:organisation-afd68e8cab.
-organigram:organisation-3880047b85 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat II A"@de;
-    org:hasMember organigram:person-895bf09ee3;
-    org:hasPost organigram:position-1abbee0c6a;
-    org:purpose "Grundsatzangelegenheiten der Finanzpolitik, Finanzstrategien und Bund-Länder-Finanzbeziehungen"@de.
-organigram:organisation-42a6f88035 a organigram:orgtype-0000000000;
+    org:hasMember organigram:person-0f019ffb0f;
+    org:hasPost organigram:position-015300e560;
+    org:hasUnit organigram:organisation-0c375e0a3a, organigram:organisation-7e1d4503bc, organigram:organisation-ade803b779, organigram:organisation-e6090f5e4f, organigram:organisation-f125db65ef.
+organigram:organisation-3790f88c16 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I C"@de;
+    org:hasMember organigram:person-31fb7cb66d;
+    org:hasPost organigram:position-4132547e34;
+    org:purpose "Beteiligungsmanagement II; Koordinierung Flughafenpolitik"@de.
+organigram:organisation-4049552cad a org:Organization, berorgs:NachgeordneteEinrichtung;
+    skos:prefLabel "Berliner Finanzämter"@de;
+    org:hasSite _:b1_b3;
+    org:purpose "Sonderbehörde"@de.
+organigram:organisation-40808782fa a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I D"@de;
+    org:hasMember organigram:person-f4d04a0ec6;
+    org:hasPost organigram:position-041d884cb2;
+    org:purpose "Liegenschaftsolitik und Immobilienmanagement"@de.
+organigram:organisation-44ea2d5b3c a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat ZS A"@de;
+    org:hasMember organigram:person-dd3b8dad33;
+    org:hasPost organigram:position-34c7d5c628;
+    org:hasSubOrganization organigram:organisation-88cb96a0b0;
+    org:purpose "Erbschaften, Selbstversicherung und Regress, Innerer Dienstbetrieb, Landesausgleichsamt (LAA)"@de.
+organigram:organisation-4bf1b96ead a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung IV"@de;
+    org:hasMember organigram:person-db95f4a4ff;
+    org:hasPost organigram:position-ba448ff03b;
+    org:hasSubOrganization organigram:organisation-25ce42c196, organigram:organisation-5ddcebe311, organigram:organisation-7efdf8b353, organigram:organisation-ce806272d6, organigram:organisation-e12be67ae2, organigram:organisation-e16388ffaf, organigram:organisation-f4141e7be1;
+    org:purpose "Landespersonal"@de.
+organigram:organisation-530b0a6ddb a org:Organization, berorgs:Ressort;
+    skos:prefLabel "Ressort-Digitalisierungsbeauftragter"@de;
+    org:hasMember organigram:person-9e1ab8d68c;
+    org:hasPost organigram:position-01069d7888.
+organigram:organisation-59448bbb49 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I B"@de;
+    org:hasMember organigram:person-02ed77a62b;
+    org:hasPost organigram:position-1746e9c270;
+    org:purpose "Beteiligungsmanagement I"@de.
+organigram:organisation-5ddcebe311 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat IV E"@de;
+    org:hasMember organigram:person-dd7d647ee2;
+    org:hasPost organigram:position-ffb40a8974;
+    org:purpose "Landesweites Personalmarketing und -recruiting"@de.
+organigram:organisation-68faaa0c3a a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat ZS C"@de;
+    org:hasMember organigram:person-610a43d845;
+    org:hasPost organigram:position-8b494ad019;
+    org:purpose "Personaldienstleistungen: Personalleitstelle, Personalhaushalt und Personalwirtschaft"@de.
+organigram:organisation-76c04a4d87 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I E"@de;
+    org:hasMember organigram:person-1ce93c0913;
+    org:hasPost organigram:position-1c22c86c9d;
+    org:purpose "Standortförderung, Finanzierungshilfen und Bürgschaften, beteiligung Berlins an den Anstalten des öffentlichen Rechts"@de.
+organigram:organisation-7e1d4503bc a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Presse- und Öffentlichkeitsarbeit"@de;
+    org:hasMember organigram:person-e02d7b5fdf;
+    org:hasPost organigram:position-2cf6d5608c.
+organigram:organisation-7efdf8b353 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat IV C"@de;
+    org:hasPost organigram:position-25e812dcff;
+    org:purpose "Demografiemanagement und Personalentwicklung"@de.
+organigram:organisation-8402d28ad9 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I A"@de;
+    org:hasMember organigram:person-a41c09be1c;
+    org:hasPost organigram:position-36f8a51b60;
+    org:purpose "Grundsatzangelegenheiten der Beteiligungspolitik; Energie-Konzessionsangelegenheiten, Grundsatzangelegenheiten der Besteuerung der Körperschaft Berlin"@de.
+organigram:organisation-88cb96a0b0 a organigram:orgtype-0000000000;
+    skos:prefLabel "ZS A EZI"@de;
+    org:hasMember organigram:person-d52f61f3e0;
+    org:hasPost organigram:position-cc1b39e772;
+    org:purpose "Entschädigungen nach dem Infektionsschutzgesetz (IfSG)"@de.
+organigram:organisation-8ee9572784 a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung I"@de;
+    org:hasMember organigram:person-7dea6530d7;
+    org:hasPost organigram:position-a05e9d9dfb;
+    org:hasSubOrganization organigram:organisation-09d1159c50, organigram:organisation-3790f88c16, organigram:organisation-40808782fa, organigram:organisation-59448bbb49, organigram:organisation-76c04a4d87, organigram:organisation-8402d28ad9, organigram:organisation-c0a5650cb6;
+    org:purpose "Vermögen und Beteiligungen"@de.
+organigram:organisation-95ff4e1363 a org:Organization, berorgs:Justitiariat;
+    skos:prefLabel "Justitiariat"@de;
+    org:hasMember organigram:person-0b8d5a85b4;
+    org:hasPost organigram:position-6f60d288f5;
+    org:purpose "Juristische Dienstleistungen"@de.
+organigram:organisation-aabace653a a org:Organization, berorgs:Abteilung;
+    skos:prefLabel "Abteilung ZS"@de;
+    org:hasMember organigram:person-9e1ab8d68c;
+    org:hasPost organigram:position-b270af85d7;
+    org:hasSubOrganization organigram:organisation-0ea5a94582, organigram:organisation-1f3b985087, organigram:organisation-44ea2d5b3c, organigram:organisation-530b0a6ddb, organigram:organisation-68faaa0c3a, organigram:organisation-95ff4e1363;
+    org:purpose "Zentraler Service"@de.
+organigram:organisation-ade803b779 a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Bürgermeisterbüro"@de;
+    org:hasMember organigram:person-6253994cc6, organigram:person-86bfe57f7d;
+    org:hasPost organigram:position-798f06eeae, organigram:position-a09e10eb62.
+organigram:organisation-b185e3f70f a org:Organization, berorgs:Senatsverwaltung;
+    skos:altLabel "SenFin"@de;
+    skos:prefLabel "Senatsverwaltung für Finanzen"@de;
+    org:hasMember organigram:person-6a01f65e2c;
+    org:hasPost organigram:position-81ca170010;
+    org:hasSite _:b1_b1;
+    org:hasSubOrganization organigram:organisation-035d6dbeff, organigram:organisation-063f91053f, organigram:organisation-36afeeffef, organigram:organisation-4049552cad.
+organigram:organisation-c0a5650cb6 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat I G"@de;
+    org:hasMember organigram:person-33993da422;
+    org:hasPost organigram:position-0cbbce58be;
+    org:purpose "Grundsatzangelegenheiten Liegenschaften; wiedervereinigungsrecht"@de.
+organigram:organisation-ce806272d6 a org:Organization, berorgs:Referat;
+    skos:prefLabel "Referat IV A"@de;
+    org:hasMember organigram:person-105fb360da;
+    org:hasPost organigram:position-c00e2adf60;
+    org:purpose "Grundsatzangelegenheiten Personal, Personalpolitik"@de.
+organigram:organisation-e12be67ae2 a org:Organization, berorgs:Leitstelle;
     skos:altLabel "LSt Diversity"@de;
     skos:prefLabel "Leitstelle Diversity"@de;
-    org:hasMember organigram:person-3096faa4d8;
-    org:hasPost organigram:position-308c7b6517.
-organigram:organisation-4c81aa334c a org:Organization, berorgs:Abteilung;
-    skos:prefLabel "Abteilung ZS - Zentraler Service"@de;
-    org:hasMember organigram:person-980b0ec040;
-    org:hasPost organigram:position-b84a2188a8;
-    org:hasSubOrganization organigram:organisation-28a14ac2ab, organigram:organisation-587824b5f6, organigram:organisation-5b9cc1f5ae, organigram:organisation-71354fd73d, organigram:organisation-72cfea4f15, organigram:organisation-a224c1c509, organigram:organisation-d026578102.
-organigram:organisation-587824b5f6 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat ZS C"@de;
-    org:hasMember organigram:person-c971222b1d;
-    org:hasPost organigram:position-654b39274c;
-    org:purpose "Personaldienstleistungen: Personalleitstelle, Personalhaushalt und Personalwirtschaft"@de.
-organigram:organisation-5b9cc1f5ae a organigram:orgtype-0000000000;
-    skos:prefLabel "ZS A EZI"@de;
-    org:hasMember organigram:person-2ae4f5f491;
-    org:hasPost organigram:position-e575aa3145;
-    org:purpose "Entschädigungen nach dem Infektionsschutzgesetz (IfSG)"@de.
-organigram:organisation-5fe5e3326f a org:Organization, berorgs:Senatsverwaltung;
-    owl:sameAs <http://www.wikidata.org/entity/Q27978789>;
-    skos:prefLabel "Senatsverwaltung für Finanzen"@de;
-    org:hasMember organigram:person-f60db6579c;
-    org:hasPost organigram:position-c7ed5cc248;
-    org:hasSite _:b0_b0;
-    org:hasSubOrganization organigram:organisation-2c53b5b606, organigram:organisation-61a2afb42d, organigram:organisation-ab0e531eb0, organigram:organisation-d88381b2cc.
-organigram:organisation-61a2afb42d a organigram:orgtype-0000360641;
-    skos:prefLabel "Staatssekretariat Geschäftsbereich B"@de;
-    org:hasMember organigram:person-0ad5feca4c, organigram:person-79630edeb3;
-    org:hasPost organigram:position-26bfb995f5, organigram:position-79a5588edf;
-    org:hasSubOrganization organigram:organisation-108182e477, organigram:organisation-b5fbc576a7, organigram:organisation-f7ea144303.
-organigram:organisation-68515c8164 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat II G"@de, "Referat II H"@de;
-    org:hasMember organigram:person-8b832f61bc;
-    org:hasPost organigram:position-06a1d17120, organigram:position-4b3f93bae6;
-    org:purpose "Angelegenheiten der Bezirke"@de, "Angelegenheiten des Einzelpläne 03, 08 und 09 sowie der entsprechenden Bezirkshaushaltspläne"@de.
-organigram:organisation-6c34e8a504 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat II D"@de;
-    org:hasMember organigram:person-57473aefad;
-    org:hasPost organigram:position-9fc3bf7895;
-    org:purpose "Angelegenheiten des Einzelplans 11 sowie der entsprechenden Bezirkshaushaltspläne und Entgeltstelle Soziale Dienstleistungen"@de.
-organigram:organisation-71354fd73d a org:Organization, berorgs:Justitiariat;
-    skos:prefLabel "Justitiariat"@de;
-    org:hasMember organigram:person-08ec36e1e5;
-    org:hasPost organigram:position-4520f249cf;
-    org:purpose "Juristische Dienstleistungen"@de.
-organigram:organisation-72cfea4f15 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat ZS A"@de;
-    org:hasMember organigram:person-9962dad18f;
-    org:hasPost organigram:position-1fd2daa37d;
-    org:purpose "Erbschaften, Selbstversicherung und Regress"@de.
-organigram:organisation-7a40c758cd a organigram:orgtype-0000000000;
-    skos:prefLabel "Gremienangelegenheiten"@de;
-    org:hasMember organigram:person-bf0e9c15c8;
-    org:hasPost organigram:position-5ccc386ab4.
-organigram:organisation-7af731f7e0 a organigram:orgtype-0000000000;
-    skos:prefLabel "Referat I F"@de;
-    org:hasMember organigram:person-a42a77e432;
-    org:hasPost organigram:position-ab38ef6b7c;
-    org:purpose "Kreditmanagement"@de.
-organigram:organisation-7bbe2baeb4 a organigram:orgtype-0000000000;
-    skos:prefLabel "Referat II B"@de;
-    org:hasMember organigram:person-b08a6fb50c;
-    org:hasPost organigram:position-b49d828d4f;
-    org:purpose "Aufstellung und Ausführung des Haushaltsplans, Grundsatzangelegenheiten des Öffentlichen Rechnungswesens des Landes Berlin, Haushalts-, Gebühren- und Beitragsrecht, Aufsicht über den Landesfinanzservice sowie Angelegenheiten des Einzelplans 29"@de.
-organigram:organisation-80dd78dc82 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat IV B"@de;
-    org:hasMember organigram:person-e444f364d2;
-    org:hasPost organigram:position-fe8020819e;
-    org:purpose "Tarifrecht und Recht der Arbeitnehmer, Zusatzversorgung und Lohnsteuer- und Sozialversicherungsrecht"@de.
-organigram:organisation-82ca25dc18 a organigram:orgtype-0000000000;
-    skos:prefLabel "Finanzreferent, Europaangelegenheiten"@de;
-    org:hasMember organigram:person-073b57dbaa;
-    org:hasPost organigram:position-6f2b6bbeda.
-organigram:organisation-85e8b4e2a0 a org:Organization, berorgs:Abteilung;
-    skos:prefLabel "Abteilung IV - Landespersonal"@de;
-    org:hasMember organigram:person-2bb3c41339;
-    org:hasPost organigram:position-eadbfcb0f4;
-    org:hasSubOrganization organigram:organisation-2b4981983e, organigram:organisation-42a6f88035, organigram:organisation-80dd78dc82, organigram:organisation-92921ce608, organigram:organisation-b3b40cde6f, organigram:organisation-c210ae4300, organigram:organisation-c3811f66ee, organigram:organisation-e53f79512e.
-organigram:organisation-8e2d45c607 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat II E"@de;
-    org:hasMember organigram:person-f2fc2c4a9d;
-    org:hasPost organigram:position-0e3cc83aac;
-    org:purpose "Angelegenheiten der Einzelpläne 01, 02, 05, 06, 15, 20, 21, 25 und 29 sowie der entsprechenden Bezirkshaushaltspläne"@de.
-organigram:organisation-92921ce608 a organigram:orgtype-0000000000;
-    skos:prefLabel "Referat IV E"@de;
-    org:hasMember organigram:person-7fb4b1a34e;
-    org:hasPost organigram:position-a4dfaa3825;
-    org:purpose "Landesweites Personalmarketing und -recruiting"@de.
-organigram:organisation-978f1c5ac2 a organigram:orgtype-0000000000;
-    skos:prefLabel "Bürgermeisterbüro"@de;
-    org:hasMember organigram:person-f2d3554f1a, organigram:person-f7f52346c7;
-    org:hasPost organigram:position-0b74808819, organigram:position-317a1ef4c4.
-organigram:organisation-a1710958f1 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat I G"@de;
-    org:hasMember organigram:person-bb41c6a595;
-    org:hasPost organigram:position-3dc1d4143d;
-    org:purpose "Grundsatzangelegenheiten Liegenschaften; Wiedervereinigungsrecht"@de.
-organigram:organisation-a224c1c509 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat ZS B"@de;
-    org:hasMember organigram:person-6fc0741023;
-    org:hasPost organigram:position-b69f1eca4c;
-    org:purpose "Zentrale Dienstleistungen: Digitalisierung und Geschäftsprozessmanagement, Innerer Dienstbetrieb, Landesausgleichsamt (LAA)"@de.
-organigram:organisation-a27e25374c a organigram:orgtype-0000000000;
-    skos:prefLabel "Senatorenbüro"@de;
-    org:hasMember organigram:person-548ed9c625, organigram:person-7efbef40aa;
-    org:hasPost organigram:position-e43fe43a71, organigram:position-ff8c7b85b4.
-organigram:organisation-a7304f6bc6 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat I C"@de;
-    org:hasMember organigram:person-e6c1d9a72f;
-    org:hasPost organigram:position-8f519513ca;
-    org:purpose "Beteiligungsmanagement II; Koordinierung Flughafenpolitik"@de.
-organigram:organisation-ab0e531eb0 a org:Organization, berorgs:Stabsstelle;
-    skos:prefLabel "Stabsstelle Antikorruption und Innenrevision"@de;
-    org:hasMember organigram:person-1df37d2e24;
-    org:hasPost organigram:position-5474dfc662.
-organigram:organisation-afd68e8cab a organigram:orgtype-0000000000;
-    skos:prefLabel "Presse- und Öffentlichkeitsarbeit"@de;
-    org:hasMember organigram:person-2d1f8b1e52;
-    org:hasPost organigram:position-036844f561.
-organigram:organisation-b0a70e25d0 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat I D"@de;
-    org:hasMember organigram:person-85ddb3a8bb;
-    org:hasPost organigram:position-1a6266e84f;
-    org:purpose "Liegenschaftspolitik und Immobilienmanagement"@de.
-organigram:organisation-b388afe473 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat II C"@de;
-    org:hasMember organigram:person-391f1d90e7;
-    org:hasPost organigram:position-48f490648a;
-    org:purpose "Angelegenheiten des Einzelplans 10 sowie der entsprechenden Bezirkshaushaltspläne"@de.
-organigram:organisation-b3b40cde6f a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat IV C"@de;
-    org:hasMember organigram:person-ccf3102505;
-    org:hasPost organigram:position-1ac07410c3;
-    org:purpose "Demografiemanagement und Personalentwicklung"@de.
-organigram:organisation-b5fbc576a7 a org:Organization, berorgs:Abteilung;
-    skos:prefLabel "Abteilung III - Angelegenheiten der Steuerverwaltung"@de;
-    org:hasMember organigram:person-a05738f9c6;
-    org:hasPost organigram:position-19c6762d9a;
-    org:hasSubOrganization organigram:organisation-2c2e6134c6, organigram:organisation-d9454d0cd1.
-organigram:organisation-c210ae4300 a organigram:orgtype-0000000000;
+    org:hasMember organigram:person-039197e1ce;
+    org:hasPost organigram:position-64ad636479.
+organigram:organisation-e16388ffaf a org:Organization, berorgs:Referat;
     skos:prefLabel "Referat IV D"@de;
-    org:hasMember organigram:person-1ac45eb40d;
-    org:hasPost organigram:position-5400d9be9f;
+    org:hasMember organigram:person-bfcf4a6592;
+    org:hasPost organigram:position-1d8f89a97a;
     org:purpose "Öffentliches Dienstrecht"@de.
-organigram:organisation-c29f02513c a organigram:orgtype-0000000000;
-    skos:altLabel "LGH"@de;
-    skos:prefLabel "Leitstelle Geschlechtergerechte Haushaltssteuerung"@de;
-    org:hasMember organigram:person-3464f5dd86;
-    org:hasPost organigram:position-3419cc832e.
-organigram:organisation-c3811f66ee a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat IV A"@de;
-    org:hasMember organigram:person-7509c256a8;
-    org:hasPost organigram:position-aa5b999270;
-    org:purpose "Grundsatzangelegenheiten Personal, Personalpolitik"@de.
-organigram:organisation-d026578102 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat ZS D"@de;
-    org:hasMember organigram:person-cb84d7e62d;
-    org:hasPost organigram:position-5d53a1eddf;
-    org:purpose "Entwicklungs- und Finanzdienstleistungen: Organisations- und Personalentwicklung, audit berufundfamilie, Gesundheits- management, Arbeitsschutz, Fortbildung, grundsätzliche Angelegenheiten der Beschäftigtenvertretungen, Sachhaushalt, Ressort-Controlling und Berichtwesen"@de.
-organigram:organisation-d88381b2cc a organigram:orgtype-0000000000;
-    skos:prefLabel "Staatssekretariat Geschäftsbereich A"@de;
-    org:hasMember organigram:person-7fc12e653f, organigram:person-c617cf768c;
-    org:hasPost organigram:position-1d25f239bb, organigram:position-6127891c1c;
-    org:hasSubOrganization organigram:organisation-4c81aa334c, organigram:organisation-85e8b4e2a0, organigram:organisation-f8666d6d81.
-organigram:organisation-d9454d0cd1 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat III A"@de, "Referat III B"@de, "Referat III C"@de, "Referat III D"@de, "Referat III E"@de, "Referat III F"@de, "Referat III G"@de, "Referat III H"@de, "Referat III K"@de, "Referat III R"@de;
-    org:hasMember organigram:person-79fdc4d99a, organigram:person-7c619aafa7;
-    org:hasPost organigram:position-1ae1fd3b28, organigram:position-2eccfe603b, organigram:position-4418ca8118, organigram:position-60ccd37f57, organigram:position-679b87626e, organigram:position-83a0e905d9, organigram:position-9b6ebe7485, organigram:position-b22b698448, organigram:position-bb60ccf66c, organigram:position-d7825ca020;
-    org:purpose "Abgabenordnung, Finanzgerichtsordnung, Erhebung, Vollstreckung, Kirchensteuer"@de, "Außenprüfungsdienste, Steuerfahndung, Steuerstrafrecht, Steuerberatungsrecht"@de, "Controlling in der Berliner Steuerverwaltung, Stellenwirtschaft für die Berliner Finanzämter"@de, "Grundsatzfragen, Steuerpolitik, internationales Steuerrecht, Körperschaftsteuer, Gewerbesteuer, Gemeinnützigkeitsrecht"@de, "Grundsteuer, Erbschaft- und Schenkungsteuer, Bewertung, Gemeindesteuern, Spielbankabgabe, besondere Verkehrsteuern"@de, "Interne Revision und Beschwerdemanagement"@de, "Laufbahnordnungsbehörde für die Steuerverwaltung; Personalmanagement, Finanzschule für die Berliner Finanzämter"@de, "Organisation und Automation in der Berliner Steuerverwaltung"@de, "Umsatzsteuer, Zölle und Verbrauchsteuern"@de, "inkommensteuer, Umwandlungssteuerrecht, Lohnsteuer, Arbeitnehmerbesteuerungsverfahren, Wohnungsbauprämie, Vermögensbildung der Arbeitnehmer, Zinsinformations- verordnung, Investmentsteuergesetz"@de.
-organigram:organisation-dfb7c69a92 a org:Organization, berorgs:Referat;
-    skos:prefLabel "Referat I E"@de;
-    org:hasMember organigram:person-c14be109ee;
-    org:hasPost organigram:position-af3a7f673b;
-    org:purpose "Standortförderung, Finanzierungshilfen und Bürgschaften, Beteiligung Berlins an den Anstalten des öffentlichen Rechts"@de.
-organigram:organisation-e53f79512e a organigram:orgtype-0000000000;
-    skos:prefLabel "PStat"@de;
-    org:hasMember organigram:person-1ac4a7c220;
-    org:hasPost organigram:position-bf1543dd4d;
-    org:purpose "Statistikstelle Personal"@de.
-organigram:organisation-f7ea144303 a organigram:orgtype-0000000000;
-    skos:altLabel "ZDL"@de;
-    skos:prefLabel "Zentrale Datenstelle der Landesfinanzminister"@de;
-    org:hasMember organigram:person-ebbfb7ef50;
-    org:hasPost organigram:position-efa339ee01;
-    org:hasSite _:b0_b1.
-organigram:organisation-f8666d6d81 a org:Organization, berorgs:Abteilung;
-    skos:prefLabel "Abteilung I - Vermögen und Beteiligungen"@de;
-    org:hasMember organigram:person-dd4bb4162a;
-    org:hasPost organigram:position-4e4fcc2c34;
-    org:hasSubOrganization organigram:organisation-1efd78d274, organigram:organisation-1ff57f2d68, organigram:organisation-7af731f7e0, organigram:organisation-a1710958f1, organigram:organisation-a7304f6bc6, organigram:organisation-b0a70e25d0, organigram:organisation-dfb7c69a92.
+organigram:organisation-e6090f5e4f a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Senatorenbüro"@de;
+    org:hasMember organigram:person-b8547f6b80, organigram:person-e30c1816e4;
+    org:hasPost organigram:position-6af7e65bb1, organigram:position-f27508dc4d.
+organigram:organisation-f125db65ef a org:Organization, berorgs:Leitungsstab;
+    skos:prefLabel "Finanzreferent, Europaangelegenheiten"@de;
+    org:hasMember organigram:person-8b3f352d18;
+    org:hasPost organigram:position-0aefab262a.
+organigram:organisation-f4141e7be1 a org:Organization, berorgs:Referat;
+    skos:altLabel "PStat"@de;
+    skos:prefLabel "Statistikstelle Personal"@de;
+    org:hasMember organigram:person-5346e0a5d1;
+    org:hasPost organigram:position-817f574956.
 organigram:orgtype-0000000000 a rdfs:Class;
     rdfs:label ""@de;
     rdfs:subClassOf org:Organization.
-organigram:orgtype-0000360641 a rdfs:Class;
-    rdfs:label "staa"@de;
+organigram:orgtype-001ef35f4d a rdfs:Class;
+    rdfs:label "Hausleitung"@de;
     rdfs:subClassOf org:Organization.
-organigram:orgtype-00150e2f96 a rdfs:Class;
-    rdfs:label "Körperschaft des Öffentlichen Rechts"@de;
+organigram:orgtype-0050c8e3f1 a rdfs:Class;
+    rdfs:label "Projekt"@de;
     rdfs:subClassOf org:Organization.
-organigram:orgtype-003a9c2c7d a rdfs:Class;
-    rdfs:label "Sonderbehörde"@de;
-    rdfs:subClassOf org:Organization.
-organigram:orgtype-003c65bf0c a rdfs:Class;
-    rdfs:label "Landesbetrieb"@de;
-    rdfs:subClassOf org:Organization.
-organigram:orgtype-005574b2ad a rdfs:Class;
-    rdfs:label "Anstalten des Öffentlichen Rechts"@de;
-    rdfs:subClassOf org:Organization.
-organigram:person-06c11f8f08 a vcard:Individual;
-    vcard:family-name "Dube";
-    vcard:given-name "Katrin";
-    vcard:tel "9020-2006";
-    org:holds organigram:position-632cdb0e18.
-organigram:person-073b57dbaa a vcard:Individual;
-    vcard:family-name "Köhler";
-    vcard:fax "9020-8207";
-    vcard:given-name "Jan";
-    vcard:tel "9020-8007";
-    org:holds organigram:position-6f2b6bbeda.
-organigram:person-08ec36e1e5 a vcard:Individual;
-    vcard:family-name "Welle";
-    vcard:given-name "Kristin";
-    vcard:tel "9020-5500";
-    org:holds organigram:position-4520f249cf.
-organigram:person-0ad5feca4c a vcard:Individual;
-    vcard:family-name "Degenhardt";
-    vcard:given-name "Caroline";
-    vcard:tel "9020-8024";
-    org:holds organigram:position-26bfb995f5.
-organigram:person-1ac45eb40d a vcard:Individual;
-    vcard:family-name "Winter";
-    vcard:given-name "Sandra";
-    vcard:tel "9020-4400";
-    org:holds organigram:position-5400d9be9f.
-organigram:person-1ac4a7c220 a vcard:Individual;
-    vcard:family-name "Zage";
-    vcard:given-name "Marcus";
-    vcard:tel "9020-4800";
-    org:holds organigram:position-bf1543dd4d.
-organigram:person-1df37d2e24 a vcard:Individual;
-    vcard:family-name "Lamprecht";
-    vcard:given-name "Alexander";
-    vcard:tel "9020-5505";
-    org:holds organigram:position-5474dfc662.
-organigram:person-2ae4f5f491 a vcard:Individual;
-    vcard:family-name "Zuter";
-    vcard:given-name "Remo";
-    vcard:tel "0151-72783611";
-    org:holds organigram:position-e575aa3145.
-organigram:person-2bb3c41339 a vcard:Individual;
-    vcard:family-name "Jammer";
-    vcard:fax "9020-4090";
-    vcard:given-name "Martin";
-    vcard:tel "9020-4006";
-    org:holds organigram:position-eadbfcb0f4.
-organigram:person-2d1f8b1e52 a vcard:Individual;
-    vcard:family-name "Brandt";
-    vcard:fax "9020-8204";
-    vcard:given-name "Silke";
-    vcard:tel "9020-8017";
-    org:holds organigram:position-036844f561.
-organigram:person-3096faa4d8 a vcard:Individual;
-    vcard:family-name "Finkenauer";
-    vcard:given-name "Sophie";
-    vcard:tel "9020-4600";
-    org:holds organigram:position-308c7b6517.
-organigram:person-3464f5dd86 a vcard:Individual;
-    vcard:family-name "Kuhl-Wachowski";
-    vcard:given-name "Mara-Anahí";
-    vcard:tel "0151-18852992";
-    vcard:title "Dr.";
-    org:holds organigram:position-3419cc832e.
-organigram:person-391f1d90e7 a vcard:Individual;
-    vcard:family-name "Nitschke";
-    vcard:given-name "René";
-    vcard:tel " 0151-18852995";
-    org:holds organigram:position-48f490648a.
-organigram:person-548ed9c625 a vcard:Individual;
-    vcard:family-name "Tebling";
-    vcard:given-name "Christian";
-    vcard:tel "9020-8016";
-    org:holds organigram:position-e43fe43a71.
-organigram:person-57473aefad a vcard:Individual;
-    vcard:family-name "Rubach";
-    vcard:given-name "Melanie";
-    vcard:tel "0151-29276406";
-    org:holds organigram:position-9fc3bf7895.
-organigram:person-6fc0741023 a vcard:Individual;
-    vcard:family-name "Voigt";
-    vcard:given-name "Matthias";
-    vcard:tel "9020-5200";
-    org:holds organigram:position-b69f1eca4c.
-organigram:person-7509c256a8 a vcard:Individual;
-    vcard:family-name "Weidenhammer";
-    vcard:given-name "Michael";
-    vcard:tel "9020-4100";
-    org:holds organigram:position-aa5b999270.
-organigram:person-79630edeb3 a vcard:Individual;
-    owl:sameAs <http://www.wikidata.org/entity/Q118130668>;
-    vcard:family-name "Mildenberger";
-    vcard:fax "9020-2610";
-    vcard:given-name "Tanja";
-    vcard:tel "9020-8022";
-    org:holds organigram:position-79a5588edf.
-organigram:person-79fdc4d99a a vcard:Individual;
-    vcard:family-name "Arlt", "Borkamm", "Gerasch", "Herbst", "Olbrich", "Ott", "Pahlitzsch", "Wehrhahn", "Werth";
-    vcard:given-name "Angela", "Bettina", "Frank", "Gerd-Volker", "Holger", "Katharina", "Matthias", "Susanne";
-    vcard:tel " 9020-3500", " 9020-3900", "9020-3100", "9020-3200", "9020-3300", "9020-3400", "9020-3600", "9020-3700", "9020-3800";
-    org:holds organigram:position-1ae1fd3b28, organigram:position-2eccfe603b, organigram:position-4418ca8118, organigram:position-679b87626e, organigram:position-83a0e905d9, organigram:position-9b6ebe7485, organigram:position-b22b698448, organigram:position-bb60ccf66c, organigram:position-d7825ca020.
-organigram:person-7c619aafa7 a vcard:Individual;
-    vcard:family-name "Treuter";
-    vcard:given-name "Lutz";
-    vcard:tel "9020-3080", "9020-3093";
-    org:holds organigram:position-60ccd37f57, organigram:position-8934e4aa1c.
-organigram:person-7efbef40aa a vcard:Individual;
-    vcard:family-name "Schrader";
-    vcard:given-name "Milena";
-    vcard:tel "9020-8010";
-    org:holds organigram:position-ff8c7b85b4.
-organigram:person-7fb4b1a34e a vcard:Individual;
-    vcard:family-name "Gers";
-    vcard:given-name "Sylvia";
-    vcard:tel "0151-18853029";
-    org:holds organigram:position-a4dfaa3825.
-organigram:person-7fc12e653f a vcard:Individual;
-    vcard:family-name "Winkler";
-    vcard:given-name "Antje";
-    vcard:tel "9020-8021";
-    org:holds organigram:position-6127891c1c.
-organigram:person-85ddb3a8bb a vcard:Individual;
-    vcard:family-name "Fuchs";
-    vcard:given-name "Harald";
-    vcard:tel " 0151-16254406";
-    org:holds organigram:position-1a6266e84f.
-organigram:person-895bf09ee3 a vcard:Individual;
-    vcard:family-name "Speyer";
-    vcard:given-name "Bernhard";
-    vcard:tel "9020-2100";
-    vcard:title "Dr.";
-    org:holds organigram:position-1abbee0c6a.
-organigram:person-8b832f61bc a vcard:Individual;
-    vcard:family-name "Minthe", "Scherler";
-    vcard:given-name "Berthold ", "Karola";
-    vcard:tel "0151-18852993", "9020-2700";
-    org:holds organigram:position-06a1d17120, organigram:position-41e0a1ab48, organigram:position-4b3f93bae6.
-organigram:person-915dc2cfed a vcard:Individual;
-    vcard:family-name "Ostermann";
-    vcard:given-name "Ansgar";
-    vcard:tel "9020-2800";
-    org:holds organigram:position-c874b07945.
-organigram:person-93288233fc a vcard:Individual;
-    vcard:family-name "Schiller";
-    vcard:given-name "Anette";
-    vcard:tel "9020-4700";
-    org:holds organigram:position-fbc53544ed.
-organigram:person-980b0ec040 a vcard:Individual;
-    vcard:family-name "Steinmann";
-    vcard:given-name "Thorsten";
-    vcard:tel "9020-5003";
-    org:holds organigram:position-b84a2188a8, organigram:position-cb8ddbd0d8.
-organigram:person-9962dad18f a vcard:Individual;
-    vcard:family-name "Hempel-John";
-    vcard:given-name "Ulrike ";
-    vcard:tel "9020-5100";
-    org:holds organigram:position-1fd2daa37d.
-organigram:person-a05738f9c6 a vcard:Individual;
-    vcard:family-name "Klose";
-    vcard:fax "9020-3007";
-    vcard:given-name "Susanne";
-    vcard:tel "9020-3001";
-    org:holds organigram:position-19c6762d9a.
-organigram:person-a42a77e432 a vcard:Individual;
-    vcard:family-name "Badack-Hebig";
-    vcard:given-name "Elke";
-    vcard:tel "9020-1612";
-    org:holds organigram:position-ab38ef6b7c.
-organigram:person-b08a6fb50c a vcard:Individual;
-    vcard:family-name "Rohbeck";
-    vcard:given-name "Oliver";
-    vcard:tel " 9020-2200";
-    org:holds organigram:position-b49d828d4f.
-organigram:person-b591621fd3 a vcard:Individual;
-    vcard:family-name "Wohlstein";
-    vcard:fax "9020-8203";
-    vcard:given-name "Johannes";
-    vcard:tel "9020-8027";
-    org:holds organigram:position-49a35f69de.
-organigram:person-bb41c6a595 a vcard:Individual;
-    vcard:family-name "Frauenstein";
-    vcard:given-name "Stefan";
-    vcard:tel "9020-1708";
-    org:holds organigram:position-3dc1d4143d.
-organigram:person-be7e8f1e90 a vcard:Individual;
-    vcard:family-name "Schubert";
-    vcard:given-name "Jan";
-    vcard:tel "9020-2600";
-    org:holds organigram:position-01c0d168f0.
-organigram:person-bf0e9c15c8 a vcard:Individual;
-    vcard:family-name "Francisco dos Santos";
-    vcard:fax "9020-8202";
-    vcard:given-name "Uta";
-    vcard:tel " 9020-8030";
-    org:holds organigram:position-5ccc386ab4.
-organigram:person-c14be109ee a vcard:Individual;
-    vcard:family-name "Hontscha";
-    vcard:given-name "Steffen";
-    vcard:tel "9020-1500";
-    org:holds organigram:position-af3a7f673b.
-organigram:person-c473eccc9c a vcard:Individual;
-    vcard:family-name "Wolf";
-    vcard:given-name "Thomas";
-    vcard:tel "9020-1800";
-    org:holds organigram:position-8f23896b59.
-organigram:person-c617cf768c a vcard:Individual;
-    vcard:family-name "Schyrocki";
-    vcard:fax "9020-2612";
-    vcard:given-name "Wolfgang";
-    vcard:tel "9020-8025";
-    org:holds organigram:position-1d25f239bb.
-organigram:person-c971222b1d a vcard:Individual;
-    vcard:family-name "Biedermann";
-    vcard:given-name "Thomas";
-    vcard:tel "9020-5300";
-    org:holds organigram:position-654b39274c.
-organigram:person-cb84d7e62d a vcard:Individual;
-    vcard:family-name "Böckler";
-    vcard:given-name "Anita";
-    vcard:tel "9020-5400";
-    org:holds organigram:position-5d53a1eddf.
-organigram:person-ccf3102505 a vcard:Individual;
-    vcard:family-name "Ruppin";
-    vcard:given-name "Martina";
-    vcard:tel "9020-4300";
-    org:holds organigram:position-1ac07410c3.
-organigram:person-dc5991e8a1 a vcard:Individual;
+organigram:person-02ed77a62b a vcard:Individual;
     vcard:family-name "Hachtmann";
     vcard:given-name "Renate";
-    vcard:tel "9020-1200";
-    org:holds organigram:position-e0c20c763c.
-organigram:person-dd4bb4162a a vcard:Individual;
-    vcard:family-name "Naujokat";
-    vcard:fax "9020-1390";
-    vcard:given-name "Anja";
-    vcard:tel "9020-1004";
-    org:holds organigram:position-4e4fcc2c34.
-organigram:person-e444f364d2 a vcard:Individual;
-    vcard:family-name "Mayr";
-    vcard:given-name "Simone";
-    vcard:tel "9020-4200";
-    org:holds organigram:position-fe8020819e.
-organigram:person-e6c1d9a72f a vcard:Individual;
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90201200";
+    org:holds organigram:position-1746e9c270;
+    schema:gender schema:Female.
+organigram:person-039197e1ce a vcard:Individual;
+    vcard:family-name "Finkenauer";
+    vcard:given-name "Sophie";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90204600";
+    org:holds organigram:position-64ad636479;
+    schema:gender schema:Female.
+organigram:person-0b8d5a85b4 a vcard:Individual;
+    vcard:family-name "Holtz";
+    vcard:given-name "Marion";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90205500";
+    org:holds organigram:position-6f60d288f5;
+    schema:gender schema:Female.
+organigram:person-0e12346c70 a vcard:Individual;
+    vcard:family-name "Francisco dos Santos";
+    vcard:fax "+49 30 90208202";
+    vcard:given-name "Uta";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90208030";
+    org:holds organigram:position-367f778e9e;
+    schema:gender schema:Female.
+organigram:person-0f019ffb0f a vcard:Individual;
+    vcard:family-name "Wohlstein";
+    vcard:fax "+49 30 90208203";
+    vcard:given-name "Johannes";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208027";
+    org:holds organigram:position-015300e560;
+    schema:gender schema:Male.
+organigram:person-105fb360da a vcard:Individual;
+    vcard:family-name "Weidenhammer";
+    vcard:given-name "Michael";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90204100";
+    org:holds organigram:position-c00e2adf60;
+    schema:gender schema:Male.
+organigram:person-1ce93c0913 a vcard:Individual;
+    vcard:family-name "Hontscha";
+    vcard:given-name "Steffen";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90201500";
+    org:holds organigram:position-1c22c86c9d;
+    schema:gender schema:Male.
+organigram:person-30062e5f2a a vcard:Individual;
+    vcard:family-name "Winkler";
+    vcard:given-name "Antje";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90208021";
+    org:holds organigram:position-1f467dc05f;
+    schema:gender schema:Female.
+organigram:person-31fb7cb66d a vcard:Individual;
     vcard:family-name "Karasch";
     vcard:given-name "Ralf";
-    vcard:tel "9020-1321";
-    org:holds organigram:position-8f519513ca.
-organigram:person-ebbfb7ef50 a vcard:Individual;
-    vcard:family-name "Brunton";
-    vcard:given-name "William";
-    vcard:title "Dr.";
-    org:holds organigram:position-efa339ee01.
-organigram:person-f2d3554f1a a vcard:Individual;
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90201301";
+    org:holds organigram:position-4132547e34;
+    schema:gender schema:Male.
+organigram:person-33993da422 a vcard:Individual;
+    vcard:family-name "Frauenstein";
+    vcard:given-name "Stefan";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90201700";
+    org:holds organigram:position-0cbbce58be;
+    schema:gender schema:Male.
+organigram:person-47467b23ec a vcard:Individual;
+    vcard:family-name "Badack-Hebig";
+    vcard:given-name "Elke";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90201612";
+    org:holds organigram:position-27b68e19b3;
+    schema:gender schema:Female.
+organigram:person-4c34048b75 a vcard:Individual;
+    vcard:family-name "Schyrocki";
+    vcard:given-name "Wolfgang";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208025";
+    org:holds organigram:position-fe45544ea6;
+    schema:gender schema:Male.
+organigram:person-5346e0a5d1 a vcard:Individual;
+    vcard:family-name "Zager";
+    vcard:given-name "Marcus";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90204800";
+    org:holds organigram:position-817f574956;
+    schema:gender schema:Male.
+organigram:person-585d2d0163 a vcard:Individual;
+    vcard:family-name "Mayr";
+    vcard:given-name "Simone";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90204200";
+    org:holds organigram:position-d7f24b6ab1;
+    schema:gender schema:Female.
+organigram:person-610a43d845 a vcard:Individual;
+    vcard:family-name "Biedermann";
+    vcard:given-name "Thomas";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90205300";
+    org:holds organigram:position-8b494ad019;
+    schema:gender schema:Male.
+organigram:person-6253994cc6 a vcard:Individual;
     vcard:family-name "Eichner";
     vcard:given-name "Alexander";
-    vcard:tel "9020-8019";
-    org:holds organigram:position-317a1ef4c4.
-organigram:person-f2fc2c4a9d a vcard:Individual;
-    vcard:family-name "Brockmann";
-    vcard:given-name "Iris";
-    vcard:tel "9020-2500";
-    org:holds organigram:position-0e3cc83aac.
-organigram:person-f60db6579c a vcard:Individual;
-    owl:sameAs <http://www.wikidata.org/entity/Q2336244>;
-    vcard:family-name "Evers";
-    vcard:fax "9020-8203";
-    vcard:given-name "Stefan";
-    vcard:tel "9020-8001/8002";
-    org:holds organigram:position-c7ed5cc248;
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208019";
+    org:holds organigram:position-798f06eeae;
     schema:gender schema:Male.
-organigram:person-f7f52346c7 a vcard:Individual;
+organigram:person-68c46b192a a vcard:Individual;
+    vcard:family-name "Lamprecht";
+    vcard:given-name "Alexander ";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90205505";
+    org:holds organigram:position-bf616360a1;
+    schema:gender schema:Male.
+organigram:person-6a01f65e2c a vcard:Individual;
+    vcard:family-name "Evers";
+    vcard:fax "+49 30 90208203";
+    vcard:given-name "Stefan";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208001/02";
+    org:holds organigram:position-81ca170010.
+organigram:person-7dea6530d7 a vcard:Individual;
+    vcard:family-name "Naujokat";
+    vcard:fax "+49 30 90201390";
+    vcard:given-name "Anja";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90201004";
+    org:holds organigram:position-a05e9d9dfb;
+    schema:gender schema:Female.
+organigram:person-85cce17fb5 a vcard:Individual;
+    vcard:family-name "Meyer";
+    vcard:given-name "Ralf";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 151 72780640";
+    org:holds organigram:position-fbc35af171.
+organigram:person-86bfe57f7d a vcard:Individual;
     vcard:family-name "Schulz";
     vcard:given-name "Julius";
-    vcard:tel "9020-8014";
-    org:holds organigram:position-0b74808819.
-organigram:position-01c0d168f0 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-036844f561 a org:Post.
-organigram:position-06a1d17120 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-0b74808819 a org:Post.
-organigram:position-0e3cc83aac a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-19c6762d9a a org:Post;
-    org:role berorgs:Abteilungsleitung.
-organigram:position-1a6266e84f a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-1abbee0c6a a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-1ac07410c3 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-1ae1fd3b28 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-1d25f239bb a org:Post;
-    org:role berorgs:StaatssekretaerIn.
-organigram:position-1fd2daa37d a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-26bfb995f5 a org:Post;
-    org:role berorgs:ReferentIn.
-organigram:position-2eccfe603b a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-308c7b6517 a org:Post.
-organigram:position-317a1ef4c4 a org:Post.
-organigram:position-3419cc832e a org:Post.
-organigram:position-3dc1d4143d a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-41e0a1ab48 a org:Post.
-organigram:position-4418ca8118 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-4520f249cf a org:Post.
-organigram:position-48f490648a a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-49a35f69de a org:Post;
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208014";
+    org:holds organigram:position-a09e10eb62;
+    schema:gender schema:Male.
+organigram:person-8b3f352d18 a vcard:Individual;
+    vcard:family-name "Köhler";
+    vcard:fax "+49 30 90208207";
+    vcard:given-name "Jan";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208007";
+    org:holds organigram:position-0aefab262a;
+    schema:gender schema:Male.
+organigram:person-9e1ab8d68c a vcard:Individual;
+    vcard:family-name "Steinmann";
+    vcard:given-name "Thorsten";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90205004";
+    org:holds organigram:position-01069d7888, organigram:position-b270af85d7;
+    schema:gender schema:Male.
+organigram:person-a41c09be1c a vcard:Individual;
+    vcard:family-name "Widlak";
+    vcard:given-name "Jana";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90201801";
+    org:holds organigram:position-36f8a51b60;
+    schema:gender schema:Female.
+organigram:person-b8547f6b80 a vcard:Individual;
+    vcard:family-name "Tebling";
+    vcard:given-name "Christian";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90208016";
+    org:holds organigram:position-6af7e65bb1;
+    schema:gender schema:Male.
+organigram:person-bfcf4a6592 a vcard:Individual;
+    vcard:family-name "Winter";
+    vcard:given-name "Sandra";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90204400";
+    org:holds organigram:position-1d8f89a97a.
+organigram:person-d52f61f3e0 a vcard:Individual;
+    vcard:family-name "Zuter";
+    vcard:given-name "Remo";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 151 72783611";
+    org:holds organigram:position-cc1b39e772;
+    schema:gender schema:Male.
+organigram:person-db95f4a4ff a vcard:Individual;
+    vcard:family-name "Çavdarci";
+    vcard:fax "+49 30 90204090";
+    vcard:given-name "Ellen";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90204007";
+    org:holds organigram:position-ba448ff03b;
+    schema:gender schema:Female.
+organigram:person-dd3b8dad33 a vcard:Individual;
+    vcard:family-name "Voigt";
+    vcard:given-name "Matthias";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 30 90205200";
+    org:holds organigram:position-34c7d5c628;
+    schema:gender schema:Male.
+organigram:person-dd7d647ee2 a vcard:Individual;
+    vcard:family-name "Gers";
+    vcard:given-name "Sylvia";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 151 18853029";
+    org:holds organigram:position-ffb40a8974;
+    schema:gender schema:Female.
+organigram:person-e02d7b5fdf a vcard:Individual;
+    vcard:family-name "Brandt";
+    vcard:fax "+49 30 90208204";
+    vcard:given-name "Silke";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90208017";
+    org:holds organigram:position-2cf6d5608c;
+    schema:gender schema:Female.
+organigram:person-e30c1816e4 a vcard:Individual;
+    vcard:family-name "Schrader";
+    vcard:given-name "Milena";
+    vcard:honorific-prefix "Frau";
+    vcard:tel "+49 30 90208010";
+    org:holds organigram:position-f27508dc4d;
+    schema:gender schema:Female.
+organigram:person-f4d04a0ec6 a vcard:Individual;
+    vcard:family-name "Fuchs";
+    vcard:given-name "Harald";
+    vcard:honorific-prefix "Herr";
+    vcard:tel "+49 151 16254406";
+    org:holds organigram:position-041d884cb2;
+    schema:gender schema:Male.
+organigram:position-01069d7888 a org:Post.
+organigram:position-015300e560 a org:Post;
     org:role berorgs:LeitungDesLeitungsstabs.
-organigram:position-4b3f93bae6 a org:Post;
+organigram:position-041d884cb2 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-4e4fcc2c34 a org:Post;
-    org:role berorgs:Abteilungsleitung.
-organigram:position-5400d9be9f a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-5474dfc662 a org:Post.
-organigram:position-5ccc386ab4 a org:Post.
-organigram:position-5d53a1eddf a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-60ccd37f57 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-6127891c1c a org:Post;
+organigram:position-0aefab262a a org:Post;
     org:role berorgs:ReferentIn.
-organigram:position-632cdb0e18 a org:Post;
-    org:role berorgs:Abteilungsleitung.
-organigram:position-654b39274c a org:Post;
+organigram:position-0cbbce58be a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-679b87626e a org:Post;
+organigram:position-1746e9c270 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-6f2b6bbeda a org:Post.
-organigram:position-79a5588edf a org:Post;
-    org:role berorgs:StaatssekretaerIn.
-organigram:position-83a0e905d9 a org:Post;
+organigram:position-1c22c86c9d a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-8934e4aa1c a org:Post.
-organigram:position-8f23896b59 a org:Post;
+organigram:position-1d8f89a97a a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-8f519513ca a org:Post;
+organigram:position-1f467dc05f a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-25e812dcff a org:Post;
+    rdfs:comment "N.N.";
     org:role berorgs:Referatsleitung.
-organigram:position-9b6ebe7485 a org:Post;
+organigram:position-27b68e19b3 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-9fc3bf7895 a org:Post;
+organigram:position-2cf6d5608c a org:Post;
+    org:role berorgs:PressesprecherIn.
+organigram:position-34c7d5c628 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-a4dfaa3825 a org:Post;
+organigram:position-367f778e9e a org:Post;
+    org:role berorgs:Leitung.
+organigram:position-36f8a51b60 a org:Post;
+    rdfs:comment "kommissarisch";
     org:role berorgs:Referatsleitung.
-organigram:position-aa5b999270 a org:Post;
+organigram:position-4132547e34 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-ab38ef6b7c a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-af3a7f673b a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-b22b698448 a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-b49d828d4f a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-b69f1eca4c a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-b84a2188a8 a org:Post;
-    org:role berorgs:Abteilungsleitung.
-organigram:position-bb60ccf66c a org:Post;
-    org:role berorgs:Referatsleitung.
-organigram:position-bf1543dd4d a org:Post.
-organigram:position-c7ed5cc248 a org:Post;
+organigram:position-64ad636479 a org:Post;
+    org:role berorgs:Leitung.
+organigram:position-6af7e65bb1 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-6f60d288f5 a org:Post;
+    rdfs:comment "kommissarisch";
+    org:role berorgs:Leitung.
+organigram:position-798f06eeae a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-817f574956 a org:Post;
+    org:role berorgs:Leitung.
+organigram:position-81ca170010 a org:Post;
+    rdfs:comment "Bürgermeister";
     org:role berorgs:SenatorIn.
-organigram:position-c874b07945 a org:Post.
-organigram:position-cb8ddbd0d8 a org:Post;
-    org:role organigram:role-000dd15a0c.
-organigram:position-d7825ca020 a org:Post;
+organigram:position-8b494ad019 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-e0c20c763c a org:Post.
-organigram:position-e43fe43a71 a org:Post.
-organigram:position-e575aa3145 a org:Post.
-organigram:position-eadbfcb0f4 a org:Post;
+organigram:position-a05e9d9dfb a org:Post;
     org:role berorgs:Abteilungsleitung.
-organigram:position-efa339ee01 a org:Post.
-organigram:position-fbc53544ed a org:Post.
-organigram:position-fe8020819e a org:Post;
+organigram:position-a09e10eb62 a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-b270af85d7 a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-ba448ff03b a org:Post;
+    org:role berorgs:Abteilungsleitung.
+organigram:position-bf616360a1 a org:Post;
+    org:role berorgs:Leitung.
+organigram:position-c00e2adf60 a org:Post;
     org:role berorgs:Referatsleitung.
-organigram:position-ff8c7b85b4 a org:Post.
-organigram:role-000dd15a0c a org:Role;
-    skos:prefLabel "Ressortleitung"@de.
-_:b0_b0 a org:Site;
-    vcard:url "https://www.berlin.de/sen/finanzen/".
-_:b0_b1 a org:Site;
-    vcard:fax "(030) 189100-618";
-    vcard:tel "(030) 189100-611";
-    org:siteAddress _:b0_b2.
-_:b0_b2 a vcard:Address;
+organigram:position-cc1b39e772 a org:Post;
+    rdfs:comment "kommissarisch";
+    org:role berorgs:Leitung.
+organigram:position-d5952a2924 a org:Post;
+    rdfs:comment "N.N.";
+    org:role berorgs:Referatsleitung.
+organigram:position-d7f24b6ab1 a org:Post;
+    org:role berorgs:Referatsleitung.
+organigram:position-f27508dc4d a org:Post;
+    org:role berorgs:ReferentIn.
+organigram:position-fbc35af171 a org:Post;
+    rdfs:comment "kommissarisch";
+    org:role berorgs:Referatsleitung.
+organigram:position-fe45544ea6 a org:Post;
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-ffb40a8974 a org:Post;
+    org:role berorgs:Referatsleitung.
+_:b1_b0 schema:name "Julia Schabos"@de.
+_:b1_b1 a org:Site;
+    vcard:url "https://www.berlin.de/sen/finanzen/";
+    org:siteAddress _:b1_b2.
+_:b1_b2 a vcard:Address;
     vcard:locality "Berlin";
-    vcard:postal-code "11055".
+    vcard:postal-code "10179";
+    vcard:street-address "Klosterstraße  59".
+_:b1_b3 a org:Site;
+    vcard:url "https://www.berlin.de/sen/finanzen/steuern/finanzaemter/".
