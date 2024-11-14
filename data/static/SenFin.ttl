@@ -11,7 +11,7 @@
 organigram:organigram-140f45b5a5 dcterms:created "2024-05-14"^^<xsd:date>;
     dcterms:creator _:b1_b0;
     a berorgs:Organogram;
-    rdfs:label "Senatsverwaltung für Finanzen"@de;
+    rdfs:label "Organigramm der Senatsverwaltung für Finanzen"@de;
     berorgs:contains organigram:organisation-b185e3f70f.
 organigram:organisation-035d6dbeff a org:Organization, berorgs:Leitungsstab;
     skos:prefLabel "Geschäftsbereich A"@de;
