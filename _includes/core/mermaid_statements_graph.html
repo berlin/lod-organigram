@@ -25,7 +25,7 @@
                 {%- capture input_array_string %}<{{ statement.subject.iri }}>,<{{ statement.predicate.iri }}>{% endcapture %}
                 {%- assign input_array = input_array_string | split: ',' -%}
                 {%- assign bnode_statements = input_array | sparql_query: bnode_query -%}
-                {%- include bnode_graph.html statements=bnode_statements -%}
+                {%- include core/bnode_graph.html statements=bnode_statements -%}
             {%- endif %}
         {%- else -%}
             {%- comment -%} The object is a literal, render a box. {%- endcomment -%}
