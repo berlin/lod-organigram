@@ -1,0 +1,167 @@
+---
+rdf_prefix_path: "conf/prefixes.sparql"
+---
+{% assign page_link = page.url | absolute_url | replace: '.html', '' %}
+{% capture role_tile_query %}
+  SELECT ?role_title
+  WHERE {
+    ?resourceUri
+      org:role/rdfs:label ?role_title .
+    FILTER(lang(?role_title) = "de")
+  }
+{% endcapture %}
+{% assign titles = page.rdf | sparql_query: role_tile_query %}
+{% if titles.size > 0 %}
+  {% for row in titles %}
+    {% assign title = row.role_title %}
+  {% endfor %}
+{% endif %}
+
+{% unless title %}
+  {% assign title = "Unknown" %}
+{% endunless %}
+
+<html>
+  {% include core/page_head.html title = title %}
+  <body>
+    {% include core/content_header.html title = title page_link = page_link icon = "briefcase" %}
+    <div class="container">
+      <div class="row breadcrumbs">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="{{ site.dataset_url }}">
+                  {{ site.dataset_breadcrumb }}
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                {{ title }}
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <table class="table table-striped align-middle">
+            <tbody>
+              {% include core/type_row.html %}
+
+              {% assign post_at = page.rdf | rdf_inverse_property: "org:hasPost" %}
+              {% if post_at %}
+                <tr>
+                    <td>Posten bei:</td>
+                    <td><a href="{{ post_at.page_url | relative_url }}">
+                      {{ post_at | rdf_property: "skos:prefLabel" }}
+                    </a></td>
+                </tr>
+              {% endif %}
+
+              {% assign post_held_by = page.rdf | rdf_inverse_property: "org:holds" %}
+              {% if post_held_by %}
+                {% assign family_name = post_held_by | rdf_property: "vcard:family-name" %}
+                {% assign given_name = post_held_by | rdf_property: "vcard:given-name" %}
+                {% assign name = given_name | append: " " | append: family_name %}
+                <tr>
+                    <td>Posten von:</td>
+                    <td><a href="{{ post_held_by.page_url | relative_url }}">
+                      {{ name }}
+                    </a></td>
+                </tr>
+              {% endif %}
+
+
+              {% assign phone = page.rdf | rdf_property: "vcard:hasTelephone" %}
+              {% if phone %}
+                <tr>
+                    <td>Telefon:</td>
+                    <td>{{ phone }}</td>
+                </tr>
+              {% endif %}
+
+              {% assign fax = page.rdf | rdf_property: "vcard:fax" %}
+              {% if fax %}
+                <tr>
+                    <td>Fax:</td>
+                    <td>{{ fax }}</td>
+                </tr>
+              {% endif %}
+
+              {% comment %} {% capture membership_query %}
+                SELECT ?org ?org_name
+                WHERE {
+                    ?org
+                        org:hasMember ?resourceUri .
+                    ?org
+                        skos:prefLabel ?org_name .
+                        FILTER(lang(?org_name)="de")
+                }
+                ORDER BY ?org_name
+              {% endcapture %}
+              {% assign orgs = page.rdf | sparql_query: membership_query %}
+              {% if orgs.size > 0 %}
+                {% for row in orgs %}
+                  <tr>
+                    <td>Gehört zu:</td>
+                    <td>
+                      <a href="{{ row.org.page_url | relative_url }}">
+                        {{ row.org_name }}
+                      </a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              {% endif %} {% endcomment %}
+
+              {% capture post_query %}
+                SELECT ?post ?post_name ?organization ?org_name
+                WHERE {
+                  ?resourceUri
+                    org:holds ?post .
+                  ?organization
+                    org:hasPost ?post ;
+                    skos:prefLabel ?org_name .  
+                  OPTIONAL {
+                    ?post
+                      org:role/rdfs:label ?label .
+                    FILTER(lang(?label)="de")
+                  }
+                  BIND(IF(bound(?label), ?label, "(Name undefiniert)") AS ?post_name)
+                }
+                ORDER BY ?post_name
+              {% endcapture %}
+              {% assign posts = page.rdf | sparql_query: post_query %}
+              {% if posts.size > 0 %}
+                {% for row in posts %}
+                  <tr>
+                    <td>Posten:</td>
+                    <td>
+                      <a href="{{ row.post.page_url | relative_url }}">
+                        {{ row.post_name }}
+                      </a>
+                      (<a href="{{ row.organization.page_url | relative_url }}">
+                        {{ row.org_name }}
+                      </a>)
+                    </td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+
+              </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {% include core/local_graph.html %}
+        </div>
+      </div>
+    </div>
+    {% include core/content_footer.html %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

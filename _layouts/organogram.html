@@ -1,0 +1,97 @@
+---
+rdf_prefix_path: "conf/prefixes.sparql"
+---
+{% assign title = page.rdf | rdf_property: "rdfs:label", "de" %}
+{% assign page_link = page.url | absolute_url | replace: '.html', '' %}
+<html>
+  {% include core/page_head.html title = title %}
+  <body>
+    {% include core/content_header.html title = title page_link = page_link icon = "diagram-3" %}
+    <div class="container">
+      <div class="row breadcrumbs">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="{{ site.dataset_url }}">
+                  {{ site.dataset_breadcrumb }}
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                {{ title }}
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>{{ page.rdf | rdf_property: "rdfs:comment", "de" }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+          <table class="table table-striped align-middle">
+            <tbody>
+              {% include core/type_row.html %}
+
+              {% assign date_created = page.rdf | rdf_property: "dct:created" %}
+              {% if date_created %}
+                <tr>
+                  <td>erstellt am:</td>
+                  <td>{{ date_created }}</td>
+                </tr>
+              {% endif %}
+              
+              {% capture creator_query %}
+                SELECT ?creator
+                WHERE {
+                  ?resourceUri dct:creator/schema:name ?creator ;
+                }
+              {% endcapture %}
+              {% assign creators = page.rdf | sparql_query: creator_query %}
+              {% if creators.size > 0 %}
+                {% for row in creators %}
+                  <tr>
+                    <td>erstellt von:</td>
+                    <td>{{ row.creator }}</td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+              
+              {% capture orgs_query %}
+                SELECT ?organization ?org_label
+                WHERE {
+                  ?resourceUri berorgs:contains ?organization .
+                  ?organization skos:prefLabel ?org_label .
+                  FILTER(lang(?org_label)="de")
+                } ORDER BY ?org_label
+              {% endcapture %}
+              {% assign organizations = page.rdf | sparql_query: orgs_query %}
+              {% if organizations.size > 0 %}
+                {% for row in organizations %}
+                  <tr>
+                    <td>Organisation:</td>
+                    <td>
+                      <a href="{{ row.organization.page_url | relative_url }}">{{ row.org_label }}</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row local-graph">
+        <div class="col-12">
+          {% include core/local_graph.html %}
+        </div>
+      </div>
+    </div>
+    {% include core/content_footer.html %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

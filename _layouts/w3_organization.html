@@ -20,33 +20,89 @@ rdf_prefix_path: "conf/prefixes.sparql"
                   {{ site.dataset_breadcrumb }}
                 </a>
               </li>
-
-              
-              {%  capture containment_query %}
-                SELECT ?place
+              {%  capture organogram_query %}
+                SELECT ?organogram
                   WHERE {
-                    ?resourceUri schema:containedInPlace* ?place
+                    ?organogram berorgs:contains/(org:hasSubOrganization | org:hasUnit)* ?resourceUri
                   }
               {% endcapture %}
-              {% assign containments = page.rdf | sparql_query: containment_query %}
-              {% if containments.size > 0 %}
-                {% for row in containments reversed %}
+              {% assign organograms = page.rdf | sparql_query: organogram_query %}
+              {% if organograms.size > 0 %}
+                {% for row in organograms %}
                   <li class="breadcrumb-item">
-                    {% if forloop.last %}
-                      {{ row.place | rdf_get | rdf_property: "schema:name" }}
-                    {% if lor_code %}({{ type_label }} {{ lor_code }}){% endif %}
-                    {% else %}
-                      <a href="{{ row.place.page_url | relative_url }}">{{ row.place | rdf_get | rdf_property: "schema:name" }}</a>
-                    {% endif %}
+                    <a href="{{ row.organogram.page_url | relative_url }}">
+                      {{ row.organogram | rdf_property: "rdfs:label" }}
+                    </a>
                   </li>
                 {% endfor %}
               {% endif %}
 
-              <li class="breadcrumb-item">
-                {{ title }}
-              </li>
+              {% capture super_org_query %}
+                SELECT ?super_org
+                  WHERE {
+                    ?super_org (org:hasSubOrganization | org:hasUnit)* ?resourceUri
+                  }
+              {% endcapture %}
+              {% assign super_orgs = page.rdf | sparql_query: super_org_query %}
+              {% if super_orgs.size > 0 %}
+                {% for row in super_orgs reversed %}
+                  <li class="breadcrumb-item">
+                    {% if forloop.last %}
+                      {{ row.super_org | rdf_property: "skos:prefLabel" }}
+                    {% else %}
+                      <a href="{{ row.super_org.page_url | relative_url }}">{{ row.super_org | rdf_property: "skos:prefLabel" }}</a>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              {% endif %}
             </ol>
           </nav>
+        </div>
+      </div>
+
+      {% assign description = page.rdf | rdf_property: "rdfs:comment", "de" %}
+      {% unless description %}
+        {% assign description = page.rdf | rdf_property: "dct:description", "de" %}
+      {% endunless %}
+      {% unless description %}
+        {% assign description = page.rdf | rdf_property: "org:purpose", "de" %}
+      {% endunless %}
+      {% if description %}
+        <div class="row">
+          <div class="col-12">
+            <p>{{ description }}</p>
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="row">
+        <div class="col-md-5 containment-lists">
+          {% capture contains_query %}
+            SELECT ?sub_org ?org_label
+            WHERE {
+              {
+                ?resourceUri org:hasSubOrganization ?sub_org .
+              } UNION {
+                ?resourceUri org:hasUnit ?sub_org .
+              }
+              ?sub_org skos:prefLabel ?org_label .
+              FILTER langMatches( lang(?org_label), "DE" )
+            }
+            ORDER BY ?org_label
+          {% endcapture %}
+          {% assign sub_orgs = page.rdf | sparql_query: contains_query %}
+          {% if sub_orgs.size > 0 %}
+            <div class="unit-contains">
+              <h2 class="unit-attribute">Untereinheiten</h2>
+              <ul>
+                {% for row in sub_orgs %}
+                  <li>
+                    <a href="{{ row.sub_org.page_url | relative_url }}">{{ row.org_label }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
         </div>
       </div>
       <div class="row">
@@ -55,92 +111,108 @@ rdf_prefix_path: "conf/prefixes.sparql"
             <tbody>
               {% include core/type_row.html %}
 
-              <div class="row">
-                <div class="col-md-5 containment-lists">
-                  {% capture contains_query %}
-                    SELECT ?sub_org ?type_label
-                    WHERE {
-                      ?resourceUri org:hasSubOrganization ?sub_org .
-                      ?sub_org rdf:type ?type .
-                      FILTER(?type != org:Organization)
-                      # ?type rdfs:label ?type_label .
-                      # FILTER langMatches( lang(?type_label), "DE" )
-                    }
-                    ORDER BY ?sub_org
-                  {% endcapture %}
-                  {% assign sub_orgs = page.rdf | sparql_query: contains_query %}
-                  {% if sub_orgs.size > 0 %}
-                    <div class="unit-contains">
-                      <h2 class="unit-attribute">Untereinheiten</h2>
-                      <ul>
-                        {% for row in sub_orgs %}
-                          <li>
-                            <a href="{{ row.sub_org.page_url | relative_url }}">{{ row.sub_org | rdf_property: "skos:prefLabel" }}</a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                  {% endif %}
-                </div>
-              </div>
-        
-
-              {% assign org_url = page.rdf | rdf_property: "schema:url" %}
-              {% if org_url %}
+              {% assign alt_name = page.rdf | rdf_property: "skos:altLabel" %}
+              {% if alt_name %}
                 <tr>
-                  <td>Webseite:</td>
-                  <td><a href="{{ org_url }}">
-                    {{ org_url }}
-                    </a>
-                  </td>
-                </tr>
-              {% endif %}   
-              {% assign phone = page.rdf | rdf_property: "schema:telephone" %}
-              {% if phone %}
-                <tr>
-                  <td>Telefon:</td>
-                  <td>{{ phone }}</td>
-                </tr>
-              {% endif %}   
-              {% assign fax = page.rdf | rdf_property: "schema:faxNumber" %}
-              {% if fax %}
-                <tr>
-                  <td>Fax:</td>
-                  <td>{{ fax }}</td>
-                </tr>
-              {% endif %}   
-              {% assign tax_id = page.rdf | rdf_property: "schema:taxID" %}
-              {% if tax_id %}
-                <tr>
-                  <td>USt-IdNr:</td>
-                  <td>{{ tax_id }}</td>
+                  <td>Alternativer Name:</td>
+                  <td>{{ alt_name }}</td>
                 </tr>
               {% endif %}
-            </tbody>
+
+
+              {% comment %} 
+                {% capture member_query %}
+                  SELECT ?person ?person_name
+                  WHERE {
+                    ?resourceUri
+                      org:hasMember ?person .
+                    ?person
+                      vcard:family-name ?family_name .
+                    OPTIONAL {
+                      ?person
+                        vcard:given-name ?given_name .
+                    }
+                    BIND (CONCAT(?given_name, " ", ?family_name) AS ?person_name)
+                  }
+                  ORDER BY ?family_name
+                {% endcapture %}
+                {% assign members = page.rdf | sparql_query: member_query %}
+                {% if members.size > 0 %}
+                  {% for row in members %}
+                    <tr>
+                      <td>Person:</td>
+                      <td>
+                        <a href="{{ row.person.page_url | relative_url }}">
+                          {{ row.person_name }}
+                        </a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% endif %}
+              {% endcomment %}
+
+              {% capture post_query %}
+                SELECT ?post ?post_name ?person ?person_name
+                WHERE {
+                  ?resourceUri
+                    org:hasPost ?post .
+                  ?person
+                    org:holds ?post ;
+                    vcard:family-name ?family_name ;
+                    vcard:given-name ?given_name ;
+                  .
+                  BIND(CONCAT(?given_name, " ", ?family_name) AS ?person_name)
+                  OPTIONAL {
+                    ?post
+                      org:role/rdfs:label ?label .
+                    FILTER(lang(?label)="de")
+                  }
+                  BIND(IF(bound(?label), ?label, "(Name undefiniert)") AS ?post_name)
+                }
+                ORDER BY ?post_name
+              {% endcapture %}
+              {% assign posts = page.rdf | sparql_query: post_query %}
+              {% if posts.size > 0 %}
+                {% for row in posts %}
+                  <tr>
+                    <td>Posten:</td>
+                    <td>
+                      <a href="{{ row.post.page_url | relative_url }}">
+                        {{ row.post_name }}
+                      </a>
+                      (<a href="{{ row.person.page_url | relative_url }}">
+                        {{ row.person_name }}
+                      </a>)
+                    </td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
+
+              </tbody>
           </table>
         </div>
         <div class="col-lg-6 col-sm-12">
           {%  capture address_query %}
-            SELECT ?street_address ?postal_code ?locality ?country
+            SELECT ?street_address ?postal_code ?locality
             WHERE {
-              ?resourceUri 
-              schema:address/schema:streetAddress ?street_address ;
-              schema:address/schema:postalCode ?postal_code ;
-              schema:address/schema:addressLocality ?locality ;
-              schema:address/schema:addressCountry ?country ;
-              }
-            {% endcapture %}
-            {% assign addresses = page.rdf | sparql_query: address_query %}
-            {% if addresses.size > 0 %}
-              {% for row in addresses %}
-                <h5>Adresse</h5>
-                <address>
-                  {{ row.street_address }}<br/>
-                  {{ row.postal_code }} {{ row.locality }}<br/>
-                  {{ row.country }}
-                </address>
-              {% endfor %}
-            {% endif %}
+              ?resourceUri
+                org:hasSite/org:siteAddress ?address .
+              ?address
+                vcard:street-address ?street_address ;
+                vcard:postal-code ?postal_code ;
+                vcard:locality ?locality ;
+            }
+          {% endcapture %}
+          {% assign addresses = page.rdf | sparql_query: address_query %}
+          {% if addresses.size > 0 %}
+            {% for row in addresses %}
+              <h5>Adresse</h5>
+              <address>
+                {{ row.street_address }}<br/>
+                {{ row.postal_code }} {{ row.locality }}
+              </address>
+            {% endfor %}
+          {% endif %}
 
         </div>
       </div>

@@ -19,13 +19,17 @@ plugins:
 
 # Jekyll RDF settings
 jekyll_rdf:
+  include_blank: true
   path: "data/temp/all.nt"
   restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?predicate ?object FILTER(STRSTARTS(STR(?resourceUri), 'https://berlin.github.io/lod-organigram')) }"
   default_template: "core/default"
   class_template_mappings:
-    "http://rdfs.org/ns/void#Dataset": "core/dataset"
+    "http://rdfs.org/ns/void#Dataset": "dataset"
     "https://schema.org/Organization": "core/organization"
     "http://www.w3.org/ns/org#Organization": "w3_organization"
+    "http://www.w3.org/ns/org#Post": "post"
+    "http://www.w3.org/2006/vcard/ns#Individual": "individual"
+    "https://berlin.github.io/lod-vocabulary/berorgs/Organogram": "organogram"
     "https://berlin.github.io/lod-organigram/ImprintPage": "core/imprint"
     "http://www.w3.org/2002/07/owl#Ontology": "core/voc_ontology"
     "http://www.w3.org/2002/07/owl#Class": "core/voc_class"

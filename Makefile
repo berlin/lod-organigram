@@ -1,13 +1,19 @@
 base_uri = https://berlin.github.io/lod-organigram
+berorgs_uri = https://raw.githubusercontent.com/berlin/lod-vocabulary/fix_roles/data/static/berorgs.ttl
 log_sg_repo = https://github.com/berlinonline/lod-sg
 
 # This target creates the RDF file that serves as the input to the static site generator.
 # All data should be merged in this file. This should include at least the VOID dataset
 # description and the actual data.
 # The target works by merging all prerequisites.
-data/temp/all.nt: data/temp void.ttl data/static/SenFin.ttl
+data/temp/all.nt: data/temp void.ttl data/static/SenFin.ttl data/temp/berorgs.ttl
 	@echo "combining $(filter-out $<,$^) to $@ ..."
 	@rdfpipe -o ntriples $(filter-out $<,$^) > $@
+
+data/temp/berorgs.ttl: data/temp
+	@echo "downloading $(berorgs_uri) ..."
+	@echo "writing to $@ ..."
+	@curl -s -o $@ "$(berorgs_uri)"
 
 cbds: _includes/cbds data/temp/all.nt
 	@echo "computing concise bounded descriptions for all subjects in input data"

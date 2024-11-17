@@ -65,6 +65,7 @@ rdf_prefix_path: "conf/prefixes.sparql"
                   </td>
                 </tr>
               {% endif %}
+
               {% assign root_resource = page.rdf | rdf_property: "void:rootResource" %}
               {% if root_resource %}
                 <tr>
@@ -72,38 +73,45 @@ rdf_prefix_path: "conf/prefixes.sparql"
                   <td>{% include core/prefix_url.html iri = root_resource.iri %}</td>
                 </tr>
               {% endif %}
-              {%  capture examples_query %}
-                SELECT ?resource
+
+              {% capture organogram_query %}
+                SELECT ?organogram ?organogram_label
                 WHERE {
-                  ?resourceUri void:exampleResource ?resource ;
-                } ORDER BY ?resource
+                  ?resourceUri a ?type .
+                  ?organogram
+                    a berorgs:Organogram ;
+                    rdfs:label ?organogram_label
+                    FILTER(lang(?organogram_label)='de')
+                } ORDER BY ?organogram_label
               {% endcapture %}
-              {% assign resources = page.rdf | sparql_query: examples_query %}
-              {% if resources.size > 0 %}
-                {% for row in resources %}
+              {% assign organograms = page.rdf | sparql_query: organogram_query %}
+              {% if organograms.size > 0 %}
+                {% for row in organograms %}
                   <tr>
-                    <td>Beispielressource:</td>
-                    <td>{% include core/prefix_url.html iri = row.resource.iri %}</td>
+                    <td>Organigramm:</td>
+                    <td><a href="{{ row.organogram.page_url | relative_url }}">
+                      {{ row.organogram_label }}
+                    </a></td>
                   </tr>
                 {% endfor %}
               {% endif %}
+
               {%  capture vocabs_query %}
-                SELECT ?vocab ?label
+                SELECT ?vocab
                 WHERE {
-                  ?resourceUri void:vocabulary ?vocab .
-                  ?vocab rdfs:label ?label .
-                  FILTER(lang(?label)="de")
+                  ?resourceUri void:vocabulary ?vocab ;
                 } ORDER BY ?vocab
               {% endcapture %}
               {% assign vocabs = page.rdf | sparql_query: vocabs_query %}
               {% if vocabs.size > 0 %}
                 {% for row in vocabs %}
                   <tr>
-                    <td>Enthaltenes Vokabular:</td>
-                    <td><a href="{{ row.vocab.iri | replace_first: site.true_url, "" }}">{{ row.label }}</a></td>
+                    <td>Genutztes Vokabular:</td>
+                    <td>{% include core/prefix_url.html iri = row.vocab.iri %}</td>
                   </tr>
                 {% endfor %}
               {% endif %}
+
               {% assign versions = page.rdf | rdf_property: "dct:hasVersion", nil, true %}
               {% for version in versions %}
                 <tr>

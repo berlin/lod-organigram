@@ -5,8 +5,13 @@
 
 ## [0.0.1](https://github.com/berlin/lod-organigram/releases/tag/0.2.1)
 
-_(2024-11-13)_
+_(2024-11-18)_
 
-- Fix templates to make LOD static site workable.
-    - Default template needs to be "core/default", not just "default".
-    - Import of bnode_graph.html in mermaid-template needs to be "core/bnode_graph.html".
+- Create custom templates for:
+  - Organogram (https://berlin.github.io/lod-vocabulary/berorgs/Organogram)
+  - W3C-Org organizations (http://www.w3.org/ns/org#Organization)
+  - W3C-Org posts (http://www.w3.org/ns/org#Post)
+  - vCard Infdividual (http://www.w3.org/2006/vcard/ns#Individual)
+- Fix use of core templates to make LOD static site workable.
+- Fix Ruby setup in github workflow.
+- Add this CHANGELOG.
