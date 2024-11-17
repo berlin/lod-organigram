@@ -3,7 +3,7 @@
 ## Development
 
 
-## [0.0.1](https://github.com/berlin/lod-organigram/releases/tag/0.2.1)
+## [0.0.1](https://github.com/berlin/lod-organigram/releases/tag/0.0.1)
 
 _(2024-11-18)_
 
