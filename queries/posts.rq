@@ -1,0 +1,24 @@
+# Show all instances of org:Post with the organogram they belong to,
+# their organization and their role's label.
+
+PREFIX berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX organigram: <https://berlin.github.io/lod-organigram/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?post ?organogram ?org_name ?role_title
+WHERE {
+    ?post
+        a org:Post ;
+        org:role/rdfs:label ?role_title .
+    ?organization
+        org:hasPost ?post ;
+        skos:prefLabel ?org_name ;
+    .
+    ?organogram
+        berorgs:contains/(org:hasSubOrganization | org:hasUnit)* ?organization .
+    FILTER(lang(?role_title) = "de")
+}
+ORDER BY ?organogram ?org_name
+ 

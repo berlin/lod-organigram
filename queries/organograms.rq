@@ -1,0 +1,12 @@
+# Return all organograms with their German label.
+
+PREFIX berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?organogram ?organogram_label
+WHERE {
+    ?organogram
+        a berorgs:Organogram ;
+        rdfs:label ?organogram_label
+    FILTER(lang(?organogram_label)='de')
+} ORDER BY ?organogram_label

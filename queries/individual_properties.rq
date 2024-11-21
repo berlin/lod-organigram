@@ -1,0 +1,13 @@
+# Which properties are used for instances of vcard:Individual?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+SELECT DISTINCT ?property
+WHERE {
+    ?person 
+        a vcard:Individual ;
+        ?property ?object .
+    FILTER(?property != rdf:type)
+}
+ORDER BY ?property
