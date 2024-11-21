@@ -35,6 +35,8 @@ lodorganigram:
     void:exampleResource <https://berlin.github.io/lod-organigram/person-6a01f65e2c> ;
     void:exampleResource <https://berlin.github.io/lod-organigram/position-81ca170010> ;
     void:vocabulary berorgs: , org: , vcard: , skos: ;
+    void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigram/refs/heads/main/data/static/SenFin.ttl> ;
+    void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigram/refs/heads/main/data/static/SenWGP.ttl> ;
 .
 
 # lodbo:impressum

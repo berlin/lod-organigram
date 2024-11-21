@@ -7,6 +7,7 @@
 _(2024-11-21)_
 
 - Fix and add SenWGP organogram.
+- Add datadumps to `void.ttl`.
 
 ## [0.0.1](https://github.com/berlin/lod-organigram/releases/tag/0.0.1)
 
