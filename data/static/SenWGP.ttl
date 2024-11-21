@@ -3,7 +3,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>.
-@prefix dcterms: <http://purl.org/dc/terms#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix schema: <https://schema.org/>.
@@ -11,7 +11,7 @@
 organigram:organigram-ee5d05de42 dcterms:created "2024-09-09"^^<xsd:date>;
     dcterms:creator _:b0_b0;
     a berorgs:Organogram;
-    rdfs:label "Senatsverwaltung für Wissenschaft, Gesundheit und Pflege"@de;
+    rdfs:label "Organigramm der Senatsverwaltung für Wissenschaft, Gesundheit und Pflege"@de;
     berorgs:contains organigram:organisation-fc88719adc.
 organigram:organisation-0ffd6a6afc a org:Organization, berorgs:Referat;
     skos:prefLabel "Z D - Infrastruktur"@de;

@@ -2,6 +2,11 @@
 
 ## Development
 
+## [0.0.2](https://github.com/berlin/lod-organigram/releases/tag/0.0.2)
+
+_(2024-11-21)_
+
+- Fix and add SenWGP organogram.
 
 ## [0.0.1](https://github.com/berlin/lod-organigram/releases/tag/0.0.1)
 
