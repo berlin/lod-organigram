@@ -1,0 +1,1709 @@
+@prefix organigram: <https://berlin.github.io/lod-organigram/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix berorgs: <https://berlin.github.io/lod-vocabulary/berorgs/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <https://schema.org/>.
+
+organigram:organigram-91c907afeb dcterms:created "2026-01-15"^^<xsd:date>;
+    a berorgs:Organogram;
+    rdfs:label "Organigramm der SenBJF"@de;
+    berorgs:contains organigram:organisation-8ddd4b0014.
+organigram:organisation-056aabb055 a org:Organization, berorgs:Referat;
+    rdfs:label "V C"@de;
+    skos:prefLabel "V C"@de;
+    org:hasMember organigram:person-64be43747f;
+    org:hasPost organigram:position-0b102dde53;
+    org:hasSubOrganization organigram:organisation-1a8ec45e67;
+    org:purpose " Gesamtjugendhilfeplanung und Finanzierung "@de.
+organigram:organisation-0b1a1eb424 a org:Organization, berorgs:Geschaeftsstelle;
+    rdfs:label "Personalrat"@de;
+    skos:altLabel "PR"@de;
+    skos:prefLabel "Personalrat"@de;
+    org:hasPost organigram:position-15c98200da;
+    org:hasSite _:b1_b116;
+    org:hasSubOrganization organigram:organisation-1ec21669f7.
+organigram:organisation-0bbba91e31 a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung VII"@de;
+    skos:altLabel "VII AbtL"@de;
+    skos:prefLabel "Abteilung VII"@de;
+    org:hasMember organigram:person-365ac8a7b5;
+    org:hasPost organigram:position-458434781c;
+    org:hasSubOrganization organigram:organisation-b7609da9c1;
+    org:purpose "Schule in der digitalen Welt"@de.
+organigram:organisation-135ab2daa3 a org:Organization, berorgs:Referat;
+    rdfs:label "III E "@de;
+    skos:prefLabel "III E "@de;
+    org:hasMember organigram:person-1812467791;
+    org:hasPost organigram:position-aac38e8118;
+    org:hasSubOrganization organigram:organisation-ce8de98a74;
+    org:purpose "Grundsatz Hilfen zur Erziehung (HzE), Erziehungs- und Familienberatung, Vollzeitpflege, Fach- und Finanzcontrolling HzE und Eingliederungshilfe "@de.
+organigram:organisation-13d7b905e8 a org:Organization;
+    rdfs:label "Pressearbeit und Kommunikation"@de;
+    skos:prefLabel "Pressearbeit und Kommunikation"@de;
+    org:hasMember organigram:person-130bed15bc, organigram:person-2225c9acc3, organigram:person-91be076e34;
+    org:hasPost organigram:position-0be4cb35ff, organigram:position-6005c2ab52, organigram:position-90bd657cbc;
+    org:hasSubOrganization organigram:organisation-3499e929ec.
+organigram:organisation-15f2f793cd a org:Organization, berorgs:Referat;
+    rdfs:label "II A "@de;
+    skos:prefLabel "II A "@de;
+    org:hasMember organigram:person-399ca198c5;
+    org:hasPost organigram:position-9416f2e8be;
+    org:hasSubOrganization organigram:organisation-c7f2f2c841;
+    org:purpose "Schulartenübergreifende Angelegenheiten, Inklusion, Ganztag, Sprachbildung, Qualitäts- und Bildungsmonitoring, Schulsport"@de.
+organigram:organisation-183968e147 a org:Organization;
+    rdfs:label "I 03 Schulaufsicht Region Pankow "@de;
+    skos:prefLabel "I 03 Schulaufsicht Region Pankow "@de;
+    org:hasMember organigram:person-5c7f1c46e8;
+    org:hasPost organigram:position-6d354f215f.
+organigram:organisation-1a8ec45e67 a org:Organization, berorgs:Referat;
+    rdfs:label "V D "@de;
+    skos:prefLabel "V D "@de;
+    org:hasMember organigram:person-b07c3b3022;
+    org:hasPost organigram:position-832aab5867;
+    org:hasSubOrganization organigram:organisation-be5101fdd1;
+    org:purpose "Einrichtungsaufsicht Kita und HzE "@de.
+organigram:organisation-1ca44207f2 a org:Organization, berorgs:Referat;
+    rdfs:label "V A "@de;
+    skos:prefLabel "V A "@de;
+    org:hasMember organigram:person-2981e22a3b;
+    org:hasPost organigram:position-20c4861eed;
+    org:hasSubOrganization organigram:organisation-55821182b7;
+    org:purpose "Frühkindliche Bildung und Kindertagesbetreuung "@de.
+organigram:organisation-1dbcac57b7 a org:Organization;
+    rdfs:label "I 06 Schulaufsicht Region Steglitz-Zehlendorf "@de;
+    skos:prefLabel "I 06 Schulaufsicht Region Steglitz-Zehlendorf "@de;
+    org:hasMember organigram:person-0c5ead9dd1;
+    org:hasPost organigram:position-7ea44a1b55.
+organigram:organisation-1ec21669f7 a org:Organization, berorgs:Geschaeftsstelle;
+    rdfs:label "Schwerbehindertenvertretung, Vertrauensperson der schwerbehinderten Menschen "@de;
+    skos:altLabel "SbV"@de;
+    skos:prefLabel "Schwerbehindertenvertretung, Vertrauensperson der schwerbehinderten Menschen "@de;
+    org:hasMember organigram:person-41348cd8e0;
+    org:hasPost organigram:position-91e1912849;
+    org:hasSubOrganization organigram:organisation-4f2c3c68eb.
+organigram:organisation-210742b4fe a org:Organization, berorgs:Buero;
+    rdfs:label "Büro der Senatorin"@de;
+    skos:prefLabel "Büro der Senatorin"@de;
+    org:hasMember organigram:person-45bec6be90, organigram:person-9804c2ee5f, organigram:person-e5c13ac58f;
+    org:hasPost organigram:position-8ad044fe84, organigram:position-9a623256f9, organigram:position-db2ea856fd;
+    org:hasSubOrganization organigram:organisation-b37182ead6.
+organigram:organisation-27be840010 a org:Organization, berorgs:Referat;
+    rdfs:label "I B / I AbtL (V) "@de;
+    skos:prefLabel "I B / I AbtL (V) "@de;
+    org:hasMember organigram:person-596028318f;
+    org:hasPost organigram:position-f3fdfd4ddf;
+    org:hasSubOrganization organigram:organisation-9c5dd6cdc5;
+    org:purpose "Personal der Schulen; Personalmanagement, Organisation des Schuljahres "@de.
+organigram:organisation-2a8cb2fb1b a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "Pestalozzi-Fröbel-Haus "@de;
+    skos:prefLabel "Pestalozzi-Fröbel-Haus "@de;
+    org:hasMember organigram:person-30ae1b9e86;
+    org:hasPost organigram:position-d5b4fa6120;
+    org:hasSite _:b1_b47;
+    org:hasSubOrganization organigram:organisation-5b658ffe61.
+organigram:organisation-2b5c8dffd9 a org:Organization, berorgs:Abteilung;
+    rdfs:label "III A / III AbtL (V) "@de;
+    skos:prefLabel "III A / III AbtL (V) "@de;
+    org:hasMember organigram:person-735410d44f;
+    org:hasPost organigram:position-1b69804493, organigram:position-5e78a34d5c;
+    org:hasSubOrganization organigram:organisation-d70e01c622;
+    org:purpose "Jugend- und Familienrecht "@de.
+organigram:organisation-2c94fb2cbe a org:Organization;
+    rdfs:label "I 02 Schulaufsicht Region Friedrichshain-Kreuzberg"@de;
+    skos:prefLabel "I 02 Schulaufsicht Region Friedrichshain-Kreuzberg"@de;
+    org:hasMember organigram:person-b05a9c79f6;
+    org:hasPost organigram:position-c7e4444f07.
+organigram:organisation-2cdeb2777f a org:Organization, berorgs:Referat;
+    rdfs:label "V F "@de;
+    skos:prefLabel "V F "@de;
+    org:hasMember organigram:person-e270ddbb1c;
+    org:hasPost organigram:position-d2c6b9e376;
+    org:hasSubOrganization organigram:organisation-a8896ab33f;
+    org:purpose "Sozialpädagogische Fachkräfte "@de.
+organigram:organisation-31f1b1fbb3 a org:Organization, berorgs:Referat;
+    rdfs:label "III C "@de;
+    skos:prefLabel "III C "@de;
+    org:hasMember organigram:person-d68c12d310;
+    org:hasPost organigram:position-4e14d94a2b;
+    org:hasSubOrganization organigram:organisation-fdfefece03;
+    org:purpose "Jugendarbeit, Jugendsozialarbeit, Kinder- und Jugenddelinquenz "@de.
+organigram:organisation-32e755adf5 a org:Organization, berorgs:Referat;
+    rdfs:label "II E / II AbtL (V) "@de;
+    skos:prefLabel "II E / II AbtL (V) "@de;
+    org:hasMember organigram:person-b992ab61a0;
+    org:hasPost organigram:position-dd113be123;
+    org:hasSubOrganization organigram:organisation-bfef7ae9a1;
+    org:purpose "Aus-, Fort-, Weiterbildung für Lehrkräfte, Bildungsmedien, Prüfungsamt für Lehramtsprüfungen "@de.
+organigram:organisation-3499e929ec a org:Organization, berorgs:Leitungsstab;
+    rdfs:label "Qualitäts- und Beschwerdemanagement"@de;
+    skos:prefLabel "Qualitäts- und Beschwerdemanagement"@de;
+    org:hasMember organigram:person-2d977353e0, organigram:person-a04f269a22, organigram:person-bf72667af4;
+    org:hasPost organigram:position-067a9271a8, organigram:position-5a97ab7a32, organigram:position-b2ae94d985.
+organigram:organisation-38ed7c62d8 a org:Organization;
+    rdfs:label "I 11 Schulaufsicht Region Lichtenberg "@de;
+    skos:prefLabel "I 11 Schulaufsicht Region Lichtenberg "@de;
+    org:hasMember organigram:person-a434e5ec9e;
+    org:hasPost organigram:position-d673fe81f6.
+organigram:organisation-3b747c5536 a org:Organization;
+    rdfs:label "Taskforce und Steuergruppe Schulbau/-sanierung"@de;
+    skos:prefLabel "Taskforce und Steuergruppe Schulbau/-sanierung"@de;
+    org:hasMember organigram:person-ce5f52cfc1;
+    org:hasPost organigram:position-9361d199f9.
+organigram:organisation-3eb95da4d4 a org:Organization, berorgs:Referat;
+    rdfs:label "ZS C "@de;
+    skos:prefLabel "ZS C "@de;
+    org:hasMember organigram:person-786a00356e;
+    org:hasPost organigram:position-b28f7cf143;
+    org:hasSubOrganization organigram:organisation-5bc8d3ec84;
+    org:purpose "IT-Steuerung und IT-Board des Ressorts"@de.
+organigram:organisation-3f52e2c9cb a org:Organization, berorgs:Referat;
+    rdfs:label "ZS I "@de;
+    skos:prefLabel "ZS I "@de;
+    org:hasMember organigram:person-863e45116b;
+    org:hasPost organigram:position-3cda54063c;
+    org:hasSubOrganization organigram:organisation-babb14d5e0;
+    org:purpose "Information & Kommunikation, Bürgerberatung, Fachkräftegewinnung und -beratung (Servicestelle) "@de.
+organigram:organisation-40b7cb9cd3 a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung III"@de;
+    skos:altLabel "III AbtL "@de;
+    skos:prefLabel "Abteilung III"@de;
+    org:hasMember organigram:person-b648f8aa68;
+    org:hasPost organigram:position-0fd8c04f68;
+    org:hasSubOrganization organigram:organisation-2b5c8dffd9;
+    org:purpose "Jugend und Kinderschutz III AbtL Kerstin Stappenbeck Tel. 90227 5533"@de.
+organigram:organisation-427faf0f16 a org:Organization, berorgs:Organisationseinheit;
+    rdfs:label "Behördlicher Datenschutzbeauftragter "@de;
+    skos:prefLabel "Behördlicher Datenschutzbeauftragter "@de;
+    org:hasMember organigram:person-ce0b7b796d;
+    org:hasPost organigram:position-24f3f919c2;
+    org:hasSubOrganization organigram:organisation-c68af51d80.
+organigram:organisation-4353da90eb a org:Organization;
+    rdfs:label "I 07 Schulaufsicht Region Tempelhof-Schöneberg "@de;
+    skos:prefLabel "I 07 Schulaufsicht Region Tempelhof-Schöneberg "@de;
+    org:hasMember organigram:person-e8858f7ce6;
+    org:hasPost organigram:position-93c700f883.
+organigram:organisation-4a05fdbf8e a org:Organization, berorgs:Organisationseinheit;
+    rdfs:label "Informationssicherheitsbeauftragter "@de;
+    skos:prefLabel "Informationssicherheitsbeauftragter "@de;
+    org:hasMember organigram:person-b98cdd9df7;
+    org:hasPost organigram:position-8cf927d3fc;
+    org:hasSubOrganization organigram:organisation-427faf0f16.
+organigram:organisation-4b28a46f94 a org:Organization, berorgs:Referat;
+    rdfs:label "VI B "@de;
+    skos:prefLabel "VI B "@de;
+    org:hasMember organigram:person-e07071a88a;
+    org:hasPost organigram:position-7f3e758432;
+    org:hasSubOrganization organigram:organisation-da02a898c4;
+    org:purpose "Schulbau "@de.
+organigram:organisation-4f2c3c68eb a org:Organization, berorgs:Geschaeftsstelle;
+    rdfs:label "Frauenvertreterin"@de;
+    skos:altLabel "FV"@de;
+    skos:prefLabel "Frauenvertreterin"@de;
+    org:hasMember organigram:person-5ebfc85aed;
+    org:hasPost organigram:position-78e29f3dda.
+organigram:organisation-55821182b7 a org:Organization, berorgs:Referat;
+    rdfs:label "V B"@de;
+    skos:prefLabel "V B"@de;
+    org:hasMember organigram:person-bdc606e1bc;
+    org:hasPost organigram:position-57b71bb4a2;
+    org:hasSubOrganization organigram:organisation-056aabb055;
+    org:purpose " Familienpolitik und Familienförderung"@de.
+organigram:organisation-5b658ffe61 a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "Lette-Verein "@de;
+    skos:prefLabel "Lette-Verein "@de;
+    org:hasMember organigram:person-ca774d8be2;
+    org:hasPost organigram:position-87a554d6aa;
+    org:hasSite _:b1_b50;
+    org:hasSubOrganization organigram:organisation-c68c3e3323.
+organigram:organisation-5bc8d3ec84 a org:Organization, berorgs:Referat;
+    rdfs:label "ZS D "@de;
+    skos:prefLabel "ZS D "@de;
+    org:hasMember organigram:person-0b064693a7;
+    org:hasPost organigram:position-baca3dd5c9;
+    org:hasSubOrganization organigram:organisation-f00369e950;
+    org:purpose "Rechtsreferat (Justiziariat)"@de.
+organigram:organisation-5f7c8fc4f0 a org:Organization, berorgs:Referat;
+    rdfs:label "II G "@de;
+    skos:prefLabel "II G "@de;
+    org:hasMember organigram:person-2de13d4877;
+    org:hasPost organigram:position-38d8cf9006;
+    org:hasSite _:b1_b43;
+    org:hasSubOrganization organigram:organisation-7c963d1c3c;
+    org:purpose "Erwachsenen- und Grundbildung, Lebens- langes Lernen, außerschulische Bildung "@de.
+organigram:organisation-701736c0d1 a org:Organization;
+    rdfs:label "Staatssekretär für Jugend und Familie "@de;
+    skos:prefLabel "Staatssekretär für Jugend und Familie "@de;
+    org:hasMember organigram:person-0985c320f0;
+    org:hasPost organigram:position-f079883c29;
+    org:hasSubOrganization organigram:organisation-40b7cb9cd3, organigram:organisation-76eed125f3;
+    org:hasUnit organigram:organisation-e807af0d90.
+organigram:organisation-7292944639 a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung ZS "@de;
+    skos:altLabel "ZS AbtL"@de;
+    skos:prefLabel "Abteilung ZS "@de;
+    org:hasMember organigram:person-fbbed45760;
+    org:hasPost organigram:position-063d9a9b67;
+    org:hasSubOrganization organigram:organisation-a83dc101a2;
+    org:purpose "Zentraler Service"@de.
+organigram:organisation-76ed58557d a org:Organization, berorgs:Buero;
+    rdfs:label "Referent"@de;
+    skos:prefLabel "Referent"@de;
+    org:hasMember organigram:person-e43ca50168;
+    org:hasPost organigram:position-b43574fd8e.
+organigram:organisation-76eed125f3 a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung V "@de;
+    skos:altLabel "V AbtL"@de;
+    skos:prefLabel "Abteilung V "@de;
+    org:hasMember organigram:person-3209fc0122;
+    org:hasPost organigram:position-220f21acfe;
+    org:hasSubOrganization organigram:organisation-1ca44207f2;
+    org:purpose "Familie und frühkindliche Bildung "@de.
+organigram:organisation-787da09ce9 a org:Organization;
+    rdfs:label "Staatssekretär für Schulbau und Schuldigitalisierung "@de;
+    skos:prefLabel "Staatssekretär für Schulbau und Schuldigitalisierung "@de;
+    org:hasMember organigram:person-526e71b66a;
+    org:hasPost organigram:position-4d6c61ed13;
+    org:hasSubOrganization organigram:organisation-0bbba91e31, organigram:organisation-7292944639, organigram:organisation-ef36e05ac6;
+    org:hasUnit organigram:organisation-8f387642e8.
+organigram:organisation-796d3526a5 a org:Organization, berorgs:Abteilung;
+    rdfs:label "I A "@de;
+    skos:prefLabel "I A "@de;
+    org:hasMember organigram:person-b335037721;
+    org:hasPost organigram:position-a6e7927a6c;
+    org:hasSubOrganization organigram:organisation-dd11fd40c1;
+    org:purpose "Koordinierung der regionalen Außenstellen der Schulaufsicht, Unterstützung und Beratung der Schulen, Disziplinarangelegenheiten der Schulen (Beamte), proSchul, Bonus-Programm "@de.
+organigram:organisation-7c963d1c3c a org:Organization, berorgs:Referat;
+    rdfs:label "II H (komm)"@de;
+    skos:prefLabel "II H (komm)"@de;
+    org:hasMember organigram:person-4521718e2d;
+    org:hasPost organigram:position-115812245b;
+    org:purpose " Grundsätze und Aufsicht über allgemeinbildende Schulen in freier Trägerschaft "@de.
+organigram:organisation-8108f2fbc1 a org:Organization, berorgs:Buero;
+    rdfs:label "Referent"@de;
+    skos:prefLabel "Referent"@de;
+    org:hasMember organigram:person-14757726f0;
+    org:hasPost organigram:position-1d7cc104d4.
+organigram:organisation-85afbbd44f a org:Organization;
+    rdfs:label "Staatsekretärin für Bildung"@de;
+    owl:sameAs <http://www.wikidata.org/entity/Q118069462>;
+    skos:prefLabel "Staatsekretärin für Bildung"@de;
+    org:hasMember organigram:person-e390ada8a0;
+    org:hasPost organigram:position-a2e9b4d1be;
+    org:hasSubOrganization organigram:organisation-97042de4bc, organigram:organisation-ef1555eb63;
+    org:hasUnit organigram:organisation-76ed58557d, organigram:organisation-8108f2fbc1.
+organigram:organisation-8891c5d176 a org:Organization, berorgs:Landesinstitut;
+    rdfs:label "ISQ – Institut für Schulqualität der Länder Berlin und Brandenburg e.V."@de;
+    skos:prefLabel "ISQ – Institut für Schulqualität der Länder Berlin und Brandenburg e.V."@de;
+    org:hasMember organigram:person-8fb4f9884d;
+    org:hasPost organigram:position-945b4451df;
+    org:hasSubOrganization organigram:organisation-d5772fb907.
+organigram:organisation-8ddd4b0014 a org:Organization, berorgs:Senatsverwaltung;
+    rdfs:label "Senatorin für Bildung, Jugend und Familie"@de;
+    skos:altLabel "SenBJF"@de;
+    skos:prefLabel "Senatorin für Bildung, Jugend und Familie"@de;
+    org:hasMember organigram:person-77d7d2fcb7;
+    org:hasPost organigram:position-c5a13f37c2;
+    org:hasSite _:b1_b1;
+    org:hasSubOrganization organigram:organisation-0b1a1eb424, organigram:organisation-3b747c5536, organigram:organisation-4a05fdbf8e, organigram:organisation-701736c0d1, organigram:organisation-787da09ce9, organigram:organisation-85afbbd44f, organigram:organisation-c465f856c0.
+organigram:organisation-8f387642e8 a org:Organization, berorgs:Buero;
+    rdfs:label "Referent"@de;
+    skos:prefLabel "Referent"@de;
+    org:hasMember organigram:person-4d8dc80a6b;
+    org:hasPost organigram:position-d7ea7a5995.
+organigram:organisation-91c6df295c a org:Organization;
+    rdfs:label "I 05 Schulaufsicht Region Spandau "@de;
+    skos:prefLabel "I 05 Schulaufsicht Region Spandau "@de;
+    org:hasMember organigram:person-ce5bbc6794;
+    org:hasPost organigram:position-4426896a8b.
+organigram:organisation-92a05c4b69 a org:Organization;
+    rdfs:label "I 09 Schulaufsicht Region Treptow-Köpenick "@de;
+    skos:prefLabel "I 09 Schulaufsicht Region Treptow-Köpenick "@de;
+    org:hasMember organigram:person-0febcd1179;
+    org:hasPost organigram:position-9d7e67e20a.
+organigram:organisation-97042de4bc a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung II"@de;
+    skos:altLabel "II AbtL"@de;
+    skos:prefLabel "Abteilung II"@de;
+    org:hasMember organigram:person-a8e06a4f46;
+    org:hasPost organigram:position-5965f04845;
+    org:hasSubOrganization organigram:organisation-15f2f793cd, organigram:organisation-2a8cb2fb1b;
+    org:purpose "Grundsatzangelegenheiten und Recht des Bildungswesens; allgemein bildende Schulen; Lehrkräftebildung"@de.
+organigram:organisation-9842e3982a a org:Organization, berorgs:Referat;
+    rdfs:label "II C"@de;
+    skos:prefLabel "II C"@de;
+    org:hasMember organigram:person-05be6b7eff;
+    org:hasPost organigram:position-23535d78c4;
+    org:hasSubOrganization organigram:organisation-ff7115da6b;
+    org:purpose "Schul- und Lehrerbildungsrecht, Dienst- und Arbeitsrecht, Zeugnisanerkennung, Schulen in feier Trägerschaft (Verwaltungsverfahren und Finanzierung) "@de.
+organigram:organisation-9c5dd6cdc5 a org:Organization, berorgs:Abteilung;
+    rdfs:label "I C "@de;
+    skos:prefLabel "I C "@de;
+    org:hasMember organigram:person-ccc029fccc;
+    org:hasPost organigram:position-61449337df;
+    org:purpose "Bildungsstatistik und Prognose "@de.
+organigram:organisation-9c608a2880 a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "Stiftung Grundbildung "@de;
+    skos:prefLabel "Stiftung Grundbildung "@de;
+    org:hasMember organigram:person-8057b7efe9;
+    org:hasPost organigram:position-2105f38d48;
+    org:hasSite _:b1_b59;
+    org:hasSubOrganization organigram:organisation-8891c5d176.
+organigram:organisation-a83dc101a2 a org:Organization, berorgs:Referat;
+    rdfs:label "ZS A"@de;
+    skos:prefLabel "ZS A"@de;
+    org:hasMember organigram:person-8fb12fe284;
+    org:hasPost organigram:position-2f3c53823d;
+    org:hasSubOrganization organigram:organisation-d5b8f1cd97;
+    org:purpose "Innere Dienste, Bau- und Immobilienangelegenheiten, Geschäftsprozessmanagement"@de.
+organigram:organisation-a8896ab33f a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg  "@de;
+    skos:altLabel "(SFBB)"@de;
+    skos:prefLabel "Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg  "@de;
+    org:hasMember organigram:person-474437e607;
+    org:hasPost organigram:position-b75e45c917;
+    org:hasSite _:b1_b109.
+organigram:organisation-b06e398de8 a org:Organization, berorgs:Referat;
+    rdfs:label "VI D "@de;
+    skos:prefLabel "VI D "@de;
+    org:hasMember organigram:person-4fa1fda330;
+    org:hasPost organigram:position-d72a5d4276;
+    org:purpose "Grundsatzangelegenheiten "@de.
+organigram:organisation-b37182ead6 a org:Organization;
+    rdfs:label "Koordination"@de;
+    skos:prefLabel "Koordination"@de;
+    org:hasMember organigram:person-50cd43e22e, organigram:person-7fca7d28b0, organigram:person-bbfb19c29c, organigram:person-f525c5a462;
+    org:hasPost organigram:position-39efa3abe1, organigram:position-4ff2577455, organigram:position-849851aff8, organigram:position-e8d27b1192;
+    org:hasSubOrganization organigram:organisation-13d7b905e8;
+    org:purpose "Bundes-, Kabinetts- und Parlamentsangelegenheiten"@de.
+organigram:organisation-b71d6a96f7 a org:Organization, berorgs:Referat;
+    rdfs:label "VII B "@de;
+    skos:prefLabel "VII B "@de;
+    org:hasMember organigram:person-16166b3868;
+    org:hasPost organigram:position-b8d98849e4;
+    org:hasSubOrganization organigram:organisation-e0489db952;
+    org:purpose "Digitale Lösungen & Infrastruktur "@de.
+organigram:organisation-b7609da9c1 a org:Organization;
+    rdfs:label "VII A "@de;
+    skos:prefLabel "VII A "@de;
+    org:hasPost organigram:position-7db6cbb648;
+    org:hasSubOrganization organigram:organisation-b71d6a96f7;
+    org:purpose "Digital Hub "@de.
+organigram:organisation-b8f5c91e80 a org:Organization;
+    rdfs:label "I 12 Schulaufsicht Region Reinickendorf"@de;
+    skos:prefLabel "I 12 Schulaufsicht Region Reinickendorf"@de;
+    org:hasMember organigram:person-dd994bea24;
+    org:hasPost organigram:position-fbacbbee78.
+organigram:organisation-babb14d5e0 a org:Organization, berorgs:Referat;
+    rdfs:label "ZS P "@de;
+    skos:prefLabel "ZS P "@de;
+    org:hasMember organigram:person-b3856ef21c;
+    org:hasPost organigram:position-fc79fa6359;
+    org:hasSite _:b1_b76;
+    org:purpose "Personalstelle "@de.
+organigram:organisation-be5101fdd1 a org:Organization, berorgs:Referat;
+    rdfs:label "V E "@de;
+    skos:prefLabel "V E "@de;
+    org:hasMember organigram:person-8593274a8d;
+    org:hasPost organigram:position-d27bd3b63a;
+    org:hasSite _:b1_b105;
+    org:hasSubOrganization organigram:organisation-2cdeb2777f;
+    org:purpose "Integrierte Software Berliner Jugendhilfe (ISBJ), Verfahrensbetrieb und Weiterentwicklung, Zentrale Kasse für Unterhaltsvorschuss "@de.
+organigram:organisation-bfef7ae9a1 a org:Organization, berorgs:Referat;
+    rdfs:label "II F (komm) "@de;
+    skos:prefLabel "II F (komm) "@de;
+    org:hasMember organigram:person-dd312cea97;
+    org:hasPost organigram:position-28dae332fb;
+    org:hasSite _:b1_b40;
+    org:hasSubOrganization organigram:organisation-5f7c8fc4f0;
+    org:purpose "Schulinspektion "@de.
+organigram:organisation-c0994dbd63 a org:Organization;
+    rdfs:label "I 04 Schulaufsicht Region Charlottenburg-Wilmersdorf "@de;
+    skos:prefLabel "I 04 Schulaufsicht Region Charlottenburg-Wilmersdorf "@de;
+    org:hasMember organigram:person-161e532b21;
+    org:hasPost organigram:position-04794639d1.
+organigram:organisation-c465f856c0 a org:Organization, berorgs:Stabsstelle;
+    rdfs:label "Leitungsstab"@de;
+    skos:prefLabel "Leitungsstab"@de;
+    org:hasMember organigram:person-63cfe216af;
+    org:hasPost organigram:position-3444bf90b3;
+    org:hasSubOrganization organigram:organisation-210742b4fe.
+organigram:organisation-c68af51d80 a org:Organization, berorgs:Organisationseinheit;
+    rdfs:label "Behördlicher Beauftragter des Business Continuity Management"@de;
+    skos:prefLabel "Behördlicher Beauftragter des Business Continuity Management"@de;
+    org:hasMember organigram:person-c5254f8301;
+    org:hasPost organigram:position-4ffc98aef9;
+    org:hasSubOrganization organigram:organisation-ca0787618b.
+organigram:organisation-c68c3e3323 a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "Berliner Landeszentrale für politische Bildung "@de;
+    skos:prefLabel "Berliner Landeszentrale für politische Bildung "@de;
+    org:hasMember organigram:person-948ad6edd8;
+    org:hasPost organigram:position-a529788769;
+    org:hasSite _:b1_b53;
+    org:hasSubOrganization organigram:organisation-f53c3dde31.
+organigram:organisation-c7f2f2c841 a org:Organization, berorgs:Referat;
+    rdfs:label "II B "@de;
+    skos:prefLabel "II B "@de;
+    org:hasMember organigram:person-7881307d4e;
+    org:hasPost organigram:position-c5f0571e56;
+    org:hasSubOrganization organigram:organisation-9842e3982a;
+    org:purpose "Fächer der Berliner Schule, Rahmenlehrpläne"@de.
+organigram:organisation-ca0787618b a org:Organization, berorgs:Geschaeftsstelle;
+    rdfs:label "Koordinierungsstelle Landesgleichberechtigungsgesetz "@de;
+    skos:prefLabel "Koordinierungsstelle Landesgleichberechtigungsgesetz "@de;
+    org:hasMember organigram:person-878a631c97;
+    org:hasPost organigram:position-5a6bac8cd4.
+organigram:organisation-cd4cff8184 a org:Organization;
+    rdfs:label "I 10 Schulaufsicht Region Marzahn-Hellersdorf "@de;
+    skos:prefLabel "I 10 Schulaufsicht Region Marzahn-Hellersdorf "@de;
+    org:hasMember organigram:person-2660ab5898;
+    org:hasPost organigram:position-df6d5e147d.
+organigram:organisation-ce8de98a74 a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "FEZ "@de;
+    skos:prefLabel "FEZ "@de;
+    org:hasMember organigram:person-6535fbc329;
+    org:hasPost organigram:position-02b8d04377;
+    org:hasSite _:b1_b97;
+    org:purpose "Kinder- und Jugendfreizeitzentrum Wuhlheide - Landesmusikakademie gemeinnützige Betriebsgesellschaft mbH "@de.
+organigram:organisation-d0cffadf8a a org:Organization, berorgs:Referat;
+    rdfs:label "VI A "@de;
+    skos:prefLabel "VI A "@de;
+    org:hasMember organigram:person-0664809e58;
+    org:hasPost organigram:position-e76a3b87b8;
+    org:hasSubOrganization organigram:organisation-4b28a46f94;
+    org:purpose "Schulplanung"@de.
+organigram:organisation-d5772fb907 a org:Organization, berorgs:Landesinstitut;
+    rdfs:label "BLiQ – Landesinstitut für Qualifizierung und Qualitätsentwicklung an Schulen "@de;
+    skos:prefLabel "BLiQ – Landesinstitut für Qualifizierung und Qualitätsentwicklung an Schulen "@de;
+    org:hasMember organigram:person-5fd34d0dfa;
+    org:hasPost organigram:position-75f9fca69e;
+    org:hasSite _:b1_b63.
+organigram:organisation-d5b8f1cd97 a org:Organization, berorgs:Referat;
+    rdfs:label "ZS B / ZS AbtL (V)"@de;
+    skos:prefLabel "ZS B / ZS AbtL (V)"@de;
+    org:hasMember organigram:person-e76d342039;
+    org:hasPost organigram:position-b4faca26c5;
+    org:hasSubOrganization organigram:organisation-3eb95da4d4;
+    org:purpose " Finanzen, Haushalt, KLR, Zuwendungsprüfung "@de.
+organigram:organisation-d70e01c622 a org:Organization, berorgs:Referat;
+    rdfs:label "III B "@de;
+    skos:altLabel "Operative Leistungen gem. SGB VIII und JGG, Inobhutnahme UMF, Bewährungshilfe, zentrale Jugendhilfe "@de;
+    skos:prefLabel "III B "@de;
+    org:hasMember organigram:person-b6aaed1d51;
+    org:hasPost organigram:position-3c58e771c5;
+    org:hasSite _:b1_b91;
+    org:hasSubOrganization organigram:organisation-31f1b1fbb3.
+organigram:organisation-da02a898c4 a org:Organization, berorgs:Referat;
+    rdfs:label "VI C "@de;
+    skos:prefLabel "VI C "@de;
+    org:hasMember organigram:person-04faa75ca1;
+    org:hasPost organigram:position-68bb406b2b;
+    org:hasSubOrganization organigram:organisation-b06e398de8;
+    org:purpose "Finanzen "@de.
+organigram:organisation-dd11fd40c1 a org:Organization;
+    rdfs:label "Schulaufsicht in den Regionen"@de;
+    skos:prefLabel "Schulaufsicht in den Regionen"@de;
+    org:hasPost organigram:position-75442acca4;
+    org:hasUnit organigram:organisation-183968e147, organigram:organisation-1dbcac57b7, organigram:organisation-2c94fb2cbe, organigram:organisation-38ed7c62d8, organigram:organisation-4353da90eb, organigram:organisation-91c6df295c, organigram:organisation-92a05c4b69, organigram:organisation-b8f5c91e80, organigram:organisation-c0994dbd63, organigram:organisation-cd4cff8184, organigram:organisation-f4f881e25b, organigram:organisation-f9915ac6b6;
+    org:purpose "Schulaufsicht "@de.
+organigram:organisation-e0489db952 a org:Organization, berorgs:Referat;
+    rdfs:label "VII C "@de;
+    skos:prefLabel "VII C "@de;
+    org:hasMember organigram:person-4cc672369c;
+    org:hasPost organigram:position-e7a4cfbf3b;
+    org:purpose "Schulservice-Zentrum Berlin "@de.
+organigram:organisation-e807af0d90 a org:Organization, berorgs:Buero;
+    rdfs:label "Referent"@de;
+    skos:prefLabel "Referent"@de;
+    org:hasMember organigram:person-40f2c968b4;
+    org:hasPost organigram:position-2b485a646a.
+organigram:organisation-ef1555eb63 a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung I "@de;
+    skos:altLabel "I AbtL"@de;
+    skos:prefLabel "Abteilung I "@de;
+    org:hasMember organigram:person-05d6b69733;
+    org:hasPost organigram:position-fe1162d839;
+    org:hasSubOrganization organigram:organisation-27be840010, organigram:organisation-796d3526a5;
+    org:purpose "Unterstützung und Beratung der Schulen, operative Schulaufsicht, Schulpsychologie, Personalmanagement, Bildungsstatistik und Prognose  "@de.
+organigram:organisation-ef36e05ac6 a org:Organization, berorgs:Abteilung;
+    rdfs:label "Abteilung VI"@de;
+    skos:altLabel "VI Abtl"@de;
+    skos:prefLabel "Abteilung VI"@de;
+    org:hasMember organigram:person-04faa75ca1;
+    org:hasPost organigram:position-67cc46b7af;
+    org:hasSubOrganization organigram:organisation-d0cffadf8a;
+    org:purpose "Schulentwicklungsplanung und Schulinfrastruktur im Land Berlin"@de.
+organigram:organisation-f00369e950 a org:Organization, berorgs:Referat;
+    rdfs:label "ZS E "@de;
+    skos:prefLabel "ZS E "@de;
+    org:hasMember organigram:person-50e479b74c;
+    org:hasPost organigram:position-055b9a1922;
+    org:hasSubOrganization organigram:organisation-3f52e2c9cb;
+    org:purpose "Personal-, Gesundheits- und Organisationsmanagement im Ministerialbereich, Personal- und Stellenwirtschaft für den Verwaltungs-/Ministerialbereich "@de.
+organigram:organisation-f4f881e25b a org:Organization;
+    rdfs:label "I 01 Schulaufsicht Region Mitte "@de;
+    skos:prefLabel "I 01 Schulaufsicht Region Mitte "@de;
+    org:hasMember organigram:person-8a74315059;
+    org:hasPost organigram:position-6e69c4cccf.
+organigram:organisation-f53c3dde31 a org:Organization, berorgs:NachgeordneteEinrichtung;
+    rdfs:label "Stiftung Planetarium Berlin "@de;
+    skos:prefLabel "Stiftung Planetarium Berlin "@de;
+    org:hasMember organigram:person-67205d8f35;
+    org:hasPost organigram:position-7d9ead3881;
+    org:hasSite _:b1_b56;
+    org:hasSubOrganization organigram:organisation-9c608a2880.
+organigram:organisation-f9915ac6b6 a org:Organization;
+    rdfs:label "I 08 Schulaufsicht Region Neukölln "@de;
+    skos:prefLabel "I 08 Schulaufsicht Region Neukölln "@de;
+    org:hasMember organigram:person-a66d8f42bc;
+    org:hasPost organigram:position-aadbeaf565.
+organigram:organisation-fdfefece03 a org:Organization, berorgs:Referat;
+    rdfs:label "III D"@de;
+    skos:prefLabel "III D"@de;
+    org:hasMember organigram:person-c34f595562;
+    org:hasPost organigram:position-c80791ce0e;
+    org:hasSubOrganization organigram:organisation-135ab2daa3;
+    org:purpose " Kinderschutz und frühe Hilfen, Grundsatz Eingliederungshilfen und Teilhabeleistungen, Grundsatz Rahmenvertrag (BRVJug), Berliner Notdienst Kinderschutz (BNK) "@de.
+organigram:organisation-ff7115da6b a org:Organization, berorgs:Referat;
+    rdfs:label "II D "@de;
+    skos:prefLabel "II D "@de;
+    org:hasMember organigram:person-b7de383e23;
+    org:hasPost organigram:position-22b751d5a6;
+    org:hasSubOrganization organigram:organisation-32e755adf5;
+    org:purpose "Grundsatzangelegenheiten und Aufsicht der allgemeinbildenden Schularten "@de.
+organigram:person-04faa75ca1 a vcard:Individual;
+    rdfs:label "Mario  Bade ", "Mario Bade";
+    vcard:family-name "Bade ", "Bade";
+    vcard:given-name "Mario ", "Mario";
+    vcard:hasTelephone _:b1_b78, _:b1_b81;
+    org:holds organigram:position-67cc46b7af, organigram:position-68bb406b2b.
+organigram:person-05be6b7eff a vcard:Individual;
+    rdfs:label " Nadja  von Bernuth ";
+    vcard:family-name "von Bernuth ";
+    vcard:given-name " Nadja ";
+    vcard:hasTelephone _:b1_b36;
+    org:holds organigram:position-23535d78c4.
+organigram:person-05d6b69733 a vcard:Individual;
+    rdfs:label "Christian  Blume ";
+    vcard:family-name " Blume ";
+    vcard:given-name "Christian";
+    vcard:hasTelephone _:b1_b17;
+    org:holds organigram:position-fe1162d839.
+organigram:person-0664809e58 a vcard:Individual;
+    rdfs:label " Josefine  Reichert ";
+    vcard:family-name "Reichert ";
+    vcard:given-name " Josefine ";
+    vcard:hasTelephone _:b1_b79;
+    org:holds organigram:position-e76a3b87b8.
+organigram:person-0985c320f0 a vcard:Individual;
+    rdfs:label "Falko  Liecke ";
+    owl:sameAs <http://www.wikidata.org/entity/Q1394384>;
+    vcard:family-name "Liecke ";
+    vcard:given-name "Falko ";
+    vcard:hasTelephone _:b1_b88;
+    org:holds organigram:position-f079883c29.
+organigram:person-0b064693a7 a vcard:Individual;
+    rdfs:label "Ulrich  Bernhardt ";
+    vcard:family-name "Bernhardt ";
+    vcard:given-name "Ulrich ";
+    vcard:hasTelephone _:b1_b72;
+    vcard:title " Dr. ";
+    org:holds organigram:position-baca3dd5c9.
+organigram:person-0c5ead9dd1 a vcard:Individual;
+    rdfs:label "Holger  Henzler-Hübner ";
+    vcard:family-name "Henzler-Hübner ";
+    vcard:given-name "Holger ";
+    vcard:hasTelephone _:b1_b24;
+    org:holds organigram:position-7ea44a1b55.
+organigram:person-0febcd1179 a vcard:Individual;
+    rdfs:label "Manuela  Seidel-Nick ";
+    vcard:family-name "Seidel-Nick ";
+    vcard:given-name "Manuela ";
+    vcard:hasTelephone _:b1_b27;
+    org:holds organigram:position-9d7e67e20a.
+organigram:person-130bed15bc a vcard:Individual;
+    rdfs:label "Susanne Gonswa";
+    vcard:given-name "Susanne Gonswa";
+    vcard:hasTelephone _:b1_b12;
+    org:holds organigram:position-90bd657cbc.
+organigram:person-14757726f0 a vcard:Individual;
+    rdfs:label "Ben-Amon  Kosbab ";
+    vcard:family-name " Kosbab ";
+    vcard:given-name "Ben-Amon";
+    vcard:hasTelephone _:b1_b66;
+    org:holds organigram:position-1d7cc104d4.
+organigram:person-16166b3868 a vcard:Individual;
+    rdfs:label "Peter  Klimczak ";
+    vcard:family-name "Klimczak ";
+    vcard:given-name "Peter ";
+    vcard:hasTelephone _:b1_b84;
+    vcard:title "Prof. Dr. Dr. ";
+    org:holds organigram:position-b8d98849e4.
+organigram:person-161e532b21 a vcard:Individual;
+    rdfs:label "Simone  Geisler ";
+    vcard:family-name " Geisler ";
+    vcard:given-name "Simone";
+    vcard:hasTelephone _:b1_b22;
+    org:holds organigram:position-04794639d1.
+organigram:person-1812467791 a vcard:Individual;
+    rdfs:label "Tobias  Titt ";
+    vcard:family-name "Titt ";
+    vcard:given-name "Tobias ";
+    vcard:hasTelephone _:b1_b95;
+    org:holds organigram:position-aac38e8118.
+organigram:person-2225c9acc3 a vcard:Individual;
+    rdfs:label "Martin  Kleßmann";
+    vcard:family-name "Kleßmann";
+    vcard:given-name "Martin ";
+    vcard:hasTelephone _:b1_b11;
+    org:holds organigram:position-0be4cb35ff;
+    schema:gender schema:Male.
+organigram:person-2660ab5898 a vcard:Individual;
+    rdfs:label "Cathrin  Braun ";
+    vcard:family-name "Braun ";
+    vcard:given-name "Cathrin ";
+    vcard:hasTelephone _:b1_b28;
+    org:holds organigram:position-df6d5e147d.
+organigram:person-2981e22a3b a vcard:Individual;
+    rdfs:label "Carsten  Weidner ";
+    vcard:family-name "Weidner ";
+    vcard:given-name "Carsten ";
+    vcard:hasTelephone _:b1_b100;
+    org:holds organigram:position-20c4861eed.
+organigram:person-2d977353e0 a vcard:Individual;
+    rdfs:label "Markus  Harteman ";
+    vcard:family-name "Harteman ";
+    vcard:given-name "Markus ";
+    vcard:hasTelephone _:b1_b13;
+    org:holds organigram:position-b2ae94d985.
+organigram:person-2de13d4877 a vcard:Individual;
+    rdfs:label "Ulrich  Raiser ";
+    vcard:family-name "Raiser ";
+    vcard:given-name "Ulrich ";
+    vcard:hasTelephone _:b1_b42;
+    vcard:title "Dr. ";
+    org:holds organigram:position-38d8cf9006.
+organigram:person-30ae1b9e86 a vcard:Individual;
+    rdfs:label "Henriette  Harms ";
+    vcard:email "Henriette.harms@pfh-berlin.de";
+    vcard:family-name "Harms ";
+    vcard:given-name "Henriette ";
+    vcard:hasTelephone _:b1_b46;
+    vcard:title "Dipl.-Päd.";
+    org:holds organigram:position-d5b4fa6120.
+organigram:person-3209fc0122 a vcard:Individual;
+    rdfs:label " Holger  Schulze";
+    vcard:family-name "Schulze";
+    vcard:given-name " Holger ";
+    vcard:hasTelephone _:b1_b99;
+    org:holds organigram:position-220f21acfe.
+organigram:person-365ac8a7b5 a vcard:Individual;
+    rdfs:label "Anja Tempelhoff";
+    vcard:given-name "Anja Tempelhoff";
+    vcard:hasTelephone _:b1_b83;
+    org:holds organigram:position-458434781c.
+organigram:person-399ca198c5 a vcard:Individual;
+    rdfs:label "Ines  Rackow";
+    vcard:family-name "Rackow";
+    vcard:given-name "Ines ";
+    vcard:hasTelephone _:b1_b34;
+    org:holds organigram:position-9416f2e8be.
+organigram:person-40f2c968b4 a vcard:Individual;
+    rdfs:label "Stefan  Malcherowitz ";
+    vcard:family-name "Malcherowitz ";
+    vcard:given-name "Stefan ";
+    vcard:hasTelephone _:b1_b111;
+    org:holds organigram:position-2b485a646a.
+organigram:person-41348cd8e0 a vcard:Individual;
+    rdfs:label "Marc  Debbert ";
+    vcard:family-name "Debbert ";
+    vcard:given-name "Marc ";
+    vcard:hasTelephone _:b1_b118;
+    org:holds organigram:position-91e1912849.
+organigram:person-4521718e2d a vcard:Individual;
+    rdfs:label "Carmen  Witt ";
+    vcard:family-name "Witt ";
+    vcard:given-name "Carmen ";
+    vcard:hasTelephone _:b1_b45;
+    org:holds organigram:position-115812245b.
+organigram:person-45bec6be90 a vcard:Individual;
+    rdfs:label "Anne Jürgens";
+    vcard:family-name "Jürgens";
+    vcard:given-name "Anne";
+    vcard:hasTelephone _:b1_b5;
+    org:holds organigram:position-db2ea856fd;
+    schema:gender schema:Female.
+organigram:person-474437e607 a vcard:Individual;
+    rdfs:label "Philipp  Lampert ";
+    vcard:family-name "Lampert ";
+    vcard:given-name "Philipp ";
+    vcard:hasTelephone _:b1_b108;
+    org:holds organigram:position-b75e45c917.
+organigram:person-4cc672369c a vcard:Individual;
+    rdfs:label "Volker  Ullsperger ";
+    vcard:family-name "Ullsperger ";
+    vcard:given-name "Volker ";
+    vcard:hasTelephone _:b1_b85;
+    org:holds organigram:position-e7a4cfbf3b.
+organigram:person-4d8dc80a6b a vcard:Individual;
+    rdfs:label "Nils Leonhardt";
+    vcard:family-name "Leonhardt";
+    vcard:given-name "Nils";
+    vcard:hasTelephone _:b1_b86;
+    org:holds organigram:position-d7ea7a5995.
+organigram:person-4fa1fda330 a vcard:Individual;
+    rdfs:label "Sebastian  Westphal ";
+    vcard:family-name "Westphal ";
+    vcard:given-name "Sebastian ";
+    vcard:hasTelephone _:b1_b82;
+    org:holds organigram:position-d72a5d4276.
+organigram:person-50cd43e22e a vcard:Individual;
+    rdfs:label "Tillmann  Albinius";
+    vcard:family-name "Albinius";
+    vcard:given-name "Tillmann ";
+    vcard:hasTelephone _:b1_b6;
+    org:holds organigram:position-e8d27b1192.
+organigram:person-50e479b74c a vcard:Individual;
+    rdfs:label "Andrea  Rost ";
+    vcard:family-name "Rost ";
+    vcard:given-name "Andrea ";
+    vcard:hasTelephone _:b1_b73;
+    org:holds organigram:position-055b9a1922.
+organigram:person-526e71b66a a vcard:Individual;
+    rdfs:label "Torsten  Kühne ";
+    owl:sameAs <http://www.wikidata.org/entity/Q118066336>;
+    vcard:family-name "Kühne ";
+    vcard:given-name "Torsten ";
+    vcard:hasTelephone _:b1_b67;
+    vcard:title "Dr. ";
+    org:holds organigram:position-4d6c61ed13.
+organigram:person-596028318f a vcard:Individual;
+    rdfs:label "Holger  Schmidt ";
+    vcard:family-name "Schmidt ";
+    vcard:given-name "Holger ";
+    vcard:hasTelephone _:b1_b31;
+    org:holds organigram:position-f3fdfd4ddf.
+organigram:person-5c7f1c46e8 a vcard:Individual;
+    rdfs:label "Steffen  Wiegleb ";
+    vcard:family-name "Wiegleb ";
+    vcard:given-name "Steffen ";
+    vcard:hasTelephone _:b1_b21;
+    org:holds organigram:position-6d354f215f.
+organigram:person-5ebfc85aed a vcard:Individual;
+    rdfs:label "Cornelia  Schiller";
+    vcard:family-name "Schiller";
+    vcard:given-name "Cornelia ";
+    vcard:hasTelephone _:b1_b119;
+    org:holds organigram:position-78e29f3dda.
+organigram:person-5fd34d0dfa a vcard:Individual;
+    rdfs:label "Katy  Pîrjol ";
+    vcard:family-name "Pîrjol ";
+    vcard:given-name "Katy ";
+    vcard:hasTelephone _:b1_b62;
+    org:holds organigram:position-75f9fca69e.
+organigram:person-63cfe216af a vcard:Individual;
+    rdfs:label "Isabelle  Haß";
+    vcard:family-name "Haß";
+    vcard:given-name "Isabelle ";
+    vcard:hasTelephone _:b1_b3;
+    org:holds organigram:position-3444bf90b3;
+    schema:gender schema:Female.
+organigram:person-64be43747f a vcard:Individual;
+    rdfs:label "Maja  Arlt ";
+    vcard:family-name "Arlt ";
+    vcard:given-name "Maja ";
+    vcard:hasTelephone _:b1_b102;
+    org:holds organigram:position-0b102dde53.
+organigram:person-6535fbc329 a vcard:Individual;
+    rdfs:label "Dr. Margrit  Witzke";
+    vcard:email "m.witzke@fez-berlin.de";
+    vcard:family-name "Witzke";
+    vcard:given-name "Dr. Margrit ";
+    vcard:hasTelephone _:b1_b96;
+    org:holds organigram:position-02b8d04377.
+organigram:person-67205d8f35 a vcard:Individual;
+    rdfs:label "Tim Florian  Horn ";
+    vcard:email "thorn@planetarium.berlin";
+    vcard:family-name "Horn ";
+    vcard:given-name "Tim Florian ";
+    vcard:hasTelephone _:b1_b55;
+    org:holds organigram:position-7d9ead3881.
+organigram:person-735410d44f a vcard:Individual;
+    rdfs:label "Andreas  Hilke ";
+    vcard:family-name "Hilke ";
+    vcard:given-name "Andreas ";
+    vcard:hasTelephone _:b1_b90;
+    org:holds organigram:position-1b69804493.
+organigram:person-77d7d2fcb7 a vcard:Individual;
+    rdfs:label "Katharina  Günther-Wünsch";
+    vcard:family-name "Günther-Wünsch";
+    vcard:given-name "Katharina ";
+    vcard:hasTelephone _:b1_b0;
+    org:holds organigram:position-c5a13f37c2.
+organigram:person-786a00356e a vcard:Individual;
+    rdfs:label " Anna-Maria  Krebs";
+    vcard:family-name "Krebs";
+    vcard:given-name " Anna-Maria ";
+    vcard:hasTelephone _:b1_b71;
+    org:holds organigram:position-b28f7cf143.
+organigram:person-7881307d4e a vcard:Individual;
+    rdfs:label "Regina  Ultze ";
+    vcard:family-name "Ultze ";
+    vcard:given-name "Regina ";
+    vcard:hasTelephone _:b1_b35;
+    org:holds organigram:position-c5f0571e56.
+organigram:person-7fca7d28b0 a vcard:Individual;
+    rdfs:label "Anette von Nayhauß";
+    vcard:given-name "Anette von Nayhauß";
+    vcard:hasTelephone _:b1_b7;
+    org:holds organigram:position-39efa3abe1.
+organigram:person-8057b7efe9 a vcard:Individual;
+    rdfs:label " Theresa  Hamilton";
+    vcard:email "t.hamilton@grundbildung-berlin.de";
+    vcard:family-name "Hamilton";
+    vcard:given-name " Theresa ";
+    vcard:hasTelephone _:b1_b58;
+    vcard:title "Dr.";
+    org:holds organigram:position-2105f38d48.
+organigram:person-8593274a8d a vcard:Individual;
+    rdfs:label "Heiko  Schultze  90249 5110";
+    vcard:family-name "Schultze  90249 5110";
+    vcard:given-name "Heiko ";
+    vcard:hasTelephone _:b1_b104;
+    org:holds organigram:position-d27bd3b63a.
+organigram:person-863e45116b a vcard:Individual;
+    rdfs:label "Thorsten  Metter ";
+    vcard:family-name "Metter ";
+    vcard:given-name "Thorsten ";
+    vcard:hasTelephone _:b1_b74;
+    vcard:hasUrl "https://www.berlin.de/sen/bjf/";
+    org:holds organigram:position-3cda54063c.
+organigram:person-878a631c97 a vcard:Individual;
+    rdfs:label "Linda  Giesel ";
+    vcard:family-name "Giesel ";
+    vcard:given-name "Linda ";
+    vcard:hasTelephone _:b1_b115;
+    vcard:title "Dr. ";
+    org:holds organigram:position-5a6bac8cd4.
+organigram:person-8a74315059 a vcard:Individual;
+    rdfs:label "Detlev  Thietz";
+    vcard:family-name "Thietz";
+    vcard:given-name "Detlev ";
+    vcard:hasTelephone _:b1_b19;
+    org:holds organigram:position-6e69c4cccf.
+organigram:person-8fb12fe284 a vcard:Individual;
+    rdfs:label "Stefan  Kerk";
+    owl:sameAs <http://www.wikidata.org/entity/Q130273204>;
+    vcard:family-name "Kerk";
+    vcard:given-name "Stefan ";
+    vcard:hasTelephone _:b1_b69;
+    org:holds organigram:position-2f3c53823d.
+organigram:person-8fb4f9884d a vcard:Individual;
+    rdfs:label "Rico  Emmrich ";
+    vcard:email "rico.emmrich@isq.berlin.de";
+    vcard:family-name "Emmrich ";
+    vcard:given-name "Rico ";
+    vcard:hasTelephone _:b1_b61;
+    vcard:title "Dr.";
+    org:holds organigram:position-945b4451df.
+organigram:person-91be076e34 a vcard:Individual;
+    rdfs:label "Christine  Quasdorf";
+    vcard:family-name " Quasdorf";
+    vcard:given-name "Christine";
+    vcard:hasTelephone _:b1_b10;
+    org:holds organigram:position-6005c2ab52;
+    schema:gender schema:Female.
+organigram:person-948ad6edd8 a vcard:Individual;
+    rdfs:label "Thomas  Gill ";
+    vcard:email "thomas.gill@senbjf.berlin.de";
+    vcard:family-name "Gill ";
+    vcard:given-name "Thomas ";
+    vcard:hasTelephone _:b1_b52;
+    org:holds organigram:position-a529788769.
+organigram:person-9804c2ee5f a vcard:Individual;
+    rdfs:label "Felix  Schweikert";
+    vcard:email "+49 30 902275986";
+    vcard:family-name "Schweikert";
+    vcard:given-name "Felix ";
+    org:holds organigram:position-9a623256f9.
+organigram:person-a04f269a22 a vcard:Individual;
+    rdfs:label "Wanjiru  Njehiah ";
+    vcard:family-name "Njehiah ";
+    vcard:given-name "Wanjiru ";
+    vcard:hasTelephone _:b1_b14;
+    org:holds organigram:position-067a9271a8.
+organigram:person-a434e5ec9e a vcard:Individual;
+    rdfs:label "Brita  Tyedmers ";
+    vcard:family-name "Tyedmers ";
+    vcard:given-name "Brita ";
+    vcard:hasTelephone _:b1_b29;
+    org:holds organigram:position-d673fe81f6.
+organigram:person-a66d8f42bc a vcard:Individual;
+    rdfs:label "Markus  Pieper ";
+    vcard:family-name " Pieper ";
+    vcard:given-name "Markus";
+    vcard:hasTelephone _:b1_b26;
+    org:holds organigram:position-aadbeaf565.
+organigram:person-a8e06a4f46 a vcard:Individual;
+    rdfs:label "Thomas  Duveneck ";
+    vcard:family-name "Duveneck ";
+    vcard:given-name "Thomas ";
+    vcard:hasTelephone _:b1_b33;
+    org:holds organigram:position-5965f04845.
+organigram:person-b05a9c79f6 a vcard:Individual;
+    rdfs:label "Esther  Weber";
+    vcard:family-name "Weber";
+    vcard:given-name "Esther ";
+    vcard:hasTelephone _:b1_b20;
+    org:holds organigram:position-c7e4444f07.
+organigram:person-b07c3b3022 a vcard:Individual;
+    rdfs:label "Britta  Schröter ";
+    vcard:family-name "Schröter ";
+    vcard:given-name "Britta ";
+    vcard:hasTelephone _:b1_b103;
+    org:holds organigram:position-832aab5867.
+organigram:person-b335037721 a vcard:Individual;
+    rdfs:label "Martina  Roth";
+    vcard:family-name "Roth";
+    vcard:given-name "Martina ";
+    vcard:hasTelephone _:b1_b18;
+    org:holds organigram:position-a6e7927a6c.
+organigram:person-b3856ef21c a vcard:Individual;
+    rdfs:label "René  Polatzek ";
+    vcard:family-name "Polatzek ";
+    vcard:given-name "René ";
+    vcard:hasTelephone _:b1_b75;
+    org:holds organigram:position-fc79fa6359.
+organigram:person-b648f8aa68 a vcard:Individual;
+    rdfs:label "Kerstin  Stappenbeck";
+    vcard:family-name " Stappenbeck";
+    vcard:given-name "Kerstin";
+    vcard:hasTelephone _:b1_b89;
+    org:holds organigram:position-0fd8c04f68.
+organigram:person-b6aaed1d51 a vcard:Individual;
+    rdfs:label "Gitta  Schleinecke ";
+    vcard:family-name "Schleinecke ";
+    vcard:given-name "Gitta ";
+    org:holds organigram:position-3c58e771c5.
+organigram:person-b7de383e23 a vcard:Individual;
+    rdfs:label "Dr. Eva  Heesen ";
+    vcard:family-name "Heesen ";
+    vcard:given-name "Dr. Eva ";
+    vcard:hasTelephone _:b1_b37;
+    org:holds organigram:position-22b751d5a6.
+organigram:person-b98cdd9df7 a vcard:Individual;
+    rdfs:label "Alexander  Kirk ";
+    vcard:family-name "Kirk ";
+    vcard:given-name "Alexander ";
+    vcard:hasTelephone _:b1_b112;
+    org:holds organigram:position-8cf927d3fc.
+organigram:person-b992ab61a0 a vcard:Individual;
+    rdfs:label "Anja  Herpell ";
+    vcard:family-name "Herpell ";
+    vcard:given-name "Anja ";
+    vcard:hasTelephone _:b1_b38;
+    org:holds organigram:position-dd113be123.
+organigram:person-bbfb19c29c a vcard:Individual;
+    rdfs:label "Ina  Becke";
+    vcard:family-name "Becke";
+    vcard:given-name "Ina ";
+    vcard:hasTelephone _:b1_b9;
+    org:holds organigram:position-849851aff8.
+organigram:person-bdc606e1bc a vcard:Individual;
+    rdfs:label " Regine  Schefels";
+    vcard:family-name "Schefels";
+    vcard:given-name " Regine ";
+    vcard:hasTelephone _:b1_b101;
+    org:holds organigram:position-57b71bb4a2.
+organigram:person-bf72667af4 a vcard:Individual;
+    rdfs:label "Michelle  Lisson ";
+    vcard:family-name "Lisson ";
+    vcard:given-name "Michelle ";
+    vcard:hasTelephone _:b1_b15;
+    org:holds organigram:position-5a97ab7a32.
+organigram:person-c34f595562 a vcard:Individual;
+    rdfs:label "Andrea  Buch ";
+    vcard:family-name "Buch ";
+    vcard:given-name "Andrea ";
+    vcard:hasTelephone _:b1_b94;
+    org:holds organigram:position-c80791ce0e.
+organigram:person-c5254f8301 a vcard:Individual;
+    rdfs:label "Bengt  Markovic ";
+    vcard:family-name "Markovic ";
+    vcard:given-name "Bengt ";
+    vcard:hasTelephone _:b1_b114;
+    org:holds organigram:position-4ffc98aef9.
+organigram:person-ca774d8be2 a vcard:Individual;
+    rdfs:label "Petra  Madyda ";
+    vcard:email "p.madyda@lette-verein.de";
+    vcard:family-name "Madyda ";
+    vcard:given-name "Petra ";
+    vcard:hasTelephone _:b1_b49;
+    org:holds organigram:position-87a554d6aa.
+organigram:person-ccc029fccc a vcard:Individual;
+    rdfs:label "Bernd  Gabbei  ";
+    vcard:family-name " Gabbei  ";
+    vcard:given-name "Bernd";
+    vcard:hasTelephone _:b1_b32;
+    org:holds organigram:position-61449337df.
+organigram:person-ce0b7b796d a vcard:Individual;
+    rdfs:label "Ümit  Teke ";
+    vcard:family-name "Teke ";
+    vcard:given-name "Ümit ";
+    vcard:hasTelephone _:b1_b113;
+    org:holds organigram:position-24f3f919c2.
+organigram:person-ce5bbc6794 a vcard:Individual;
+    rdfs:label "Janika  Jarling ";
+    vcard:family-name "Jarling ";
+    vcard:given-name "Janika ";
+    vcard:hasTelephone _:b1_b23;
+    org:holds organigram:position-4426896a8b.
+organigram:person-ce5f52cfc1 a vcard:Individual;
+    rdfs:label "Norbert Illiges";
+    vcard:family-name "Illiges";
+    vcard:given-name "Norbert";
+    vcard:hasTelephone _:b1_b87;
+    org:holds organigram:position-9361d199f9.
+organigram:person-d68c12d310 a vcard:Individual;
+    rdfs:label "Frank  Seibt ";
+    vcard:family-name "Seibt ";
+    vcard:given-name "Frank ";
+    vcard:hasTelephone _:b1_b93;
+    org:holds organigram:position-4e14d94a2b.
+organigram:person-dd312cea97 a vcard:Individual;
+    rdfs:label "Oliver  Holtfrerich ";
+    vcard:family-name "Holtfrerich ";
+    vcard:given-name "Oliver ";
+    vcard:hasTelephone _:b1_b39;
+    org:holds organigram:position-28dae332fb.
+organigram:person-dd994bea24 a vcard:Individual;
+    rdfs:label " Dirk  Wasmuth ";
+    vcard:family-name "Wasmuth ";
+    vcard:given-name " Dirk ";
+    vcard:hasTelephone _:b1_b30;
+    org:holds organigram:position-fbacbbee78.
+organigram:person-e07071a88a a vcard:Individual;
+    rdfs:label "Felix  Dörstelmann ";
+    vcard:family-name "Dörstelmann ";
+    vcard:given-name "Felix ";
+    vcard:hasTelephone _:b1_b80;
+    org:holds organigram:position-7f3e758432.
+organigram:person-e270ddbb1c a vcard:Individual;
+    rdfs:label "Jana  Pampel ";
+    vcard:family-name "Pampel ";
+    vcard:given-name "Jana ";
+    vcard:hasTelephone _:b1_b107;
+    org:holds organigram:position-d2c6b9e376.
+organigram:person-e390ada8a0 a vcard:Individual;
+    rdfs:label "Christina Henke";
+    owl:sameAs <http://www.wikidata.org/entity/Q118069462>;
+    vcard:given-name "Christina Henke";
+    vcard:hasTelephone _:b1_b16;
+    org:holds organigram:position-a2e9b4d1be.
+organigram:person-e43ca50168 a vcard:Individual;
+    rdfs:label "Leon  Hofmeister";
+    vcard:family-name "Hofmeister";
+    vcard:given-name "Leon ";
+    vcard:hasTelephone _:b1_b65;
+    org:holds organigram:position-b43574fd8e.
+organigram:person-e5c13ac58f a vcard:Individual;
+    rdfs:label "Maresa  Puls";
+    vcard:family-name "Puls";
+    vcard:given-name "Maresa ";
+    vcard:hasTelephone _:b1_b4;
+    org:holds organigram:position-8ad044fe84;
+    schema:gender schema:Female.
+organigram:person-e76d342039 a vcard:Individual;
+    rdfs:label "Detmar  Meinschien ";
+    vcard:family-name "Meinschien ";
+    vcard:given-name "Detmar ";
+    vcard:hasTelephone _:b1_b70;
+    org:holds organigram:position-b4faca26c5.
+organigram:person-e8858f7ce6 a vcard:Individual;
+    rdfs:label "Matthias  Goldbeck-Löwe";
+    vcard:family-name "Goldbeck-Löwe";
+    vcard:given-name "Matthias ";
+    vcard:hasTelephone _:b1_b25;
+    org:holds organigram:position-93c700f883.
+organigram:person-f525c5a462 a vcard:Individual;
+    rdfs:label "Lucas  Velling";
+    vcard:family-name "Velling";
+    vcard:given-name "Lucas ";
+    vcard:hasTelephone _:b1_b8;
+    org:holds organigram:position-4ff2577455.
+organigram:person-fbbed45760 a vcard:Individual;
+    rdfs:label "Ina  Wiersgalla";
+    vcard:family-name "Wiersgalla";
+    vcard:given-name "Ina ";
+    vcard:hasTelephone _:b1_b68;
+    org:holds organigram:position-063d9a9b67.
+organigram:position-02b8d04377 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-04794639d1 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-055b9a1922 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-063d9a9b67 a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-067a9271a8 a org:Post;
+    rdfs:label "Antidiskriminierungsbeauftragte ";
+    org:role organigram:role-002274ddfb.
+organigram:position-0b102dde53 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-0be4cb35ff a org:Post;
+    rdfs:label "Pressesprecher:in für Bildung";
+    org:role organigram:role-00596bfe2e.
+organigram:position-0fd8c04f68 a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-115812245b a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-15c98200da a org:Post;
+    rdfs:label "Personalrat";
+    org:role berorgs:Personalrat.
+organigram:position-1b69804493 a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-1d7cc104d4 a org:Post;
+    rdfs:label "ReferentIn";
+    org:role berorgs:ReferentIn.
+organigram:position-20c4861eed a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-2105f38d48 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-220f21acfe a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-22b751d5a6 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-23535d78c4 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-24f3f919c2 a org:Post;
+    rdfs:label "DatenschutzbeauftragteR";
+    org:role berorgs:DatenschutzbeauftragteR.
+organigram:position-28dae332fb a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-2b485a646a a org:Post;
+    rdfs:label "ReferentIn";
+    org:role berorgs:ReferentIn.
+organigram:position-2f3c53823d a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-3444bf90b3 a org:Post;
+    rdfs:label "LeitungDesLeitungsstabs";
+    org:role berorgs:LeitungDesLeitungsstabs.
+organigram:position-38d8cf9006 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-39efa3abe1 a org:Post.
+organigram:position-3c58e771c5 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-3cda54063c a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-4426896a8b a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-458434781c a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-4d6c61ed13 a org:Post;
+    rdfs:label "StaatssekretaerIn";
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-4e14d94a2b a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-4ff2577455 a org:Post.
+organigram:position-4ffc98aef9 a org:Post;
+    rdfs:label "BehoerdlicheRBeauftragteR";
+    org:role berorgs:BehoerdlicheRBeauftragteR.
+organigram:position-57b71bb4a2 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-5965f04845 a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-5a6bac8cd4 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-5a97ab7a32 a org:Post;
+    rdfs:label "Antimobbingbeauftragte ";
+    org:role organigram:role-003f742086.
+organigram:position-5e78a34d5c a org:Post.
+organigram:position-6005c2ab52 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-61449337df a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-67cc46b7af a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:position-68bb406b2b a org:Post;
+    rdfs:comment "kommissarisch";
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-6d354f215f a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-6e69c4cccf a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-75442acca4 a org:Post.
+organigram:position-75f9fca69e a org:Post;
+    rdfs:label "DirektorIn";
+    org:role berorgs:DirektorIn.
+organigram:position-78e29f3dda a org:Post;
+    rdfs:label "Frauenvertretung";
+    org:role berorgs:Frauenvertretung.
+organigram:position-7d9ead3881 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-7db6cbb648 a org:Post;
+    rdfs:comment "N.N.";
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-7ea44a1b55 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-7f3e758432 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-832aab5867 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-849851aff8 a org:Post;
+    rdfs:label "Verbindungsstelle";
+    org:role organigram:role-00585481da.
+organigram:position-87a554d6aa a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-8ad044fe84 a org:Post;
+    rdfs:label "Persönliche Referentin";
+    org:role organigram:role-00333c6ba5.
+organigram:position-8cf927d3fc a org:Post;
+    rdfs:label "BehoerdlicheRBeauftragteR";
+    org:role berorgs:BehoerdlicheRBeauftragteR.
+organigram:position-90bd657cbc a org:Post;
+    rdfs:label "Pressesprecher:in für Jugend und Familie";
+    org:role organigram:role-00078bf25a.
+organigram:position-91e1912849 a org:Post;
+    rdfs:label "Schwerbehindertenvertretung";
+    org:role berorgs:Schwerbehindertenvertretung.
+organigram:position-9361d199f9 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-93c700f883 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-9416f2e8be a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-945b4451df a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-9a623256f9 a org:Post;
+    rdfs:label "Persönlicher Referent";
+    org:role organigram:role-006f0a4b68.
+organigram:position-9d7e67e20a a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-a2e9b4d1be a org:Post;
+    rdfs:label "StaatssekretaerIn";
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-a529788769 a org:Post.
+organigram:position-a6e7927a6c a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-aac38e8118 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-aadbeaf565 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-b28f7cf143 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-b2ae94d985 a org:Post;
+    rdfs:label "Beschwerdemanangement ";
+    org:role organigram:role-000ed9a00d.
+organigram:position-b43574fd8e a org:Post;
+    rdfs:label "ReferentIn";
+    org:role berorgs:ReferentIn.
+organigram:position-b4faca26c5 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-b75e45c917 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-b8d98849e4 a org:Post;
+    rdfs:comment "kommissarisch";
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-baca3dd5c9 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-c5a13f37c2 a org:Post;
+    rdfs:label "SenatorIn";
+    org:role berorgs:SenatorIn.
+organigram:position-c5f0571e56 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-c7e4444f07 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-c80791ce0e a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-d27bd3b63a a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-d2c6b9e376 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-d5b4fa6120 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-d673fe81f6 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-d72a5d4276 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-d7ea7a5995 a org:Post;
+    rdfs:label "ReferentIn";
+    org:role berorgs:ReferentIn.
+organigram:position-db2ea856fd a org:Post;
+    rdfs:label "Referentin Grundsatz";
+    org:role organigram:role-004079fca4.
+organigram:position-dd113be123 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-df6d5e147d a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-e76a3b87b8 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-e7a4cfbf3b a org:Post;
+    rdfs:comment "kommissarisch";
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-e8d27b1192 a org:Post.
+organigram:position-f079883c29 a org:Post;
+    rdfs:label "StaatssekretaerIn";
+    org:role berorgs:StaatssekretaerIn.
+organigram:position-f3fdfd4ddf a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-fbacbbee78 a org:Post;
+    rdfs:label "Leitung";
+    org:role berorgs:Leitung.
+organigram:position-fc79fa6359 a org:Post;
+    rdfs:label "Referatsleitung";
+    org:role berorgs:Referatsleitung.
+organigram:position-fe1162d839 a org:Post;
+    rdfs:label "Abteilungsleitung";
+    org:role berorgs:Abteilungsleitung.
+organigram:role-00078bf25a a org:Role;
+    skos:prefLabel "Pressesprecher:in für Jugend und Familie"@de.
+organigram:role-000ed9a00d a org:Role;
+    skos:prefLabel "Beschwerdemanangement "@de.
+organigram:role-002274ddfb a org:Role;
+    skos:prefLabel "Antidiskriminierungsbeauftragte "@de.
+organigram:role-00333c6ba5 a org:Role;
+    skos:prefLabel "Persönliche Referentin"@de.
+organigram:role-003f742086 a org:Role;
+    skos:prefLabel "Antimobbingbeauftragte "@de.
+organigram:role-004079fca4 a org:Role;
+    skos:prefLabel "Referentin Grundsatz"@de.
+organigram:role-00585481da a org:Role;
+    skos:prefLabel "Verbindungsstelle"@de.
+organigram:role-00596bfe2e a org:Role;
+    skos:prefLabel "Pressesprecher:in für Bildung"@de.
+organigram:role-006f0a4b68 a org:Role;
+    skos:prefLabel "Persönlicher Referent"@de.
+_:b1_b0 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275849".
+_:b1_b1 a org:Site;
+    org:siteAddress _:b1_b2.
+_:b1_b10 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276059".
+_:b1_b100 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275568".
+_:b1_b101 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275537".
+_:b1_b102 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275561".
+_:b1_b103 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276995".
+_:b1_b104 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495110".
+_:b1_b105 a org:Site;
+    org:siteAddress _:b1_b106.
+_:b1_b106 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "12681 ";
+    vcard:street-address "Rhinstr. 46".
+_:b1_b107 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275880".
+_:b1_b108 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 48481300".
+_:b1_b109 a org:Site;
+    org:siteAddress _:b1_b110.
+_:b1_b11 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275843".
+_:b1_b110 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "14109 ";
+    vcard:street-address "Königstr.  36 B".
+_:b1_b111 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30  902275322".
+_:b1_b112 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30  902275376".
+_:b1_b113 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 Tel. 902275886".
+_:b1_b114 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276139".
+_:b1_b115 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275814".
+_:b1_b116 a org:Site;
+    vcard:email "Personalrat@senbjf.berlin.de";
+    vcard:hasTelephone _:b1_b117.
+_:b1_b117 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275636".
+_:b1_b118 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276275".
+_:b1_b119 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275336".
+_:b1_b12 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275601".
+_:b1_b13 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276030".
+_:b1_b14 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275981".
+_:b1_b15 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275985".
+_:b1_b16 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276053".
+_:b1_b17 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276407".
+_:b1_b18 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275471".
+_:b1_b19 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 90182 6061".
+_:b1_b2 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10178";
+    vcard:street-address "Bernhard-Weiß-Str.  6".
+_:b1_b20 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902983622".
+_:b1_b21 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902491007".
+_:b1_b22 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902925102".
+_:b1_b23 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902792621".
+_:b1_b24 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902995031".
+_:b1_b25 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902776492".
+_:b1_b26 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902391700".
+_:b1_b27 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902492200".
+_:b1_b28 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902491600".
+_:b1_b29 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 92494700".
+_:b1_b3 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276057".
+_:b1_b30 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902491900".
+_:b1_b31 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275616".
+_:b1_b32 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276389".
+_:b1_b33 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275466".
+_:b1_b34 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30  902276670".
+_:b1_b35 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276387".
+_:b1_b36 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275406".
+_:b1_b37 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275863".
+_:b1_b38 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275123".
+_:b1_b39 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902299201".
+_:b1_b4 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275206".
+_:b1_b40 a org:Site;
+    org:siteAddress _:b1_b41.
+_:b1_b41 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10555 ";
+    vcard:street-address "Levetzowstr.    1 -2".
+_:b1_b42 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495208".
+_:b1_b43 a org:Site;
+    org:siteAddress _:b1_b44.
+_:b1_b44 a vcard:Address;
+    vcard:locality "Berlin ";
+    vcard:postal-code "12681 ";
+    vcard:street-address "Rhinstr.  46".
+_:b1_b45 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275150".
+_:b1_b46 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 21730239".
+_:b1_b47 a org:Site;
+    org:siteAddress _:b1_b48.
+_:b1_b48 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10781 ";
+    vcard:street-address "Karl-Schrader-Str.  7-8".
+_:b1_b49 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 21994116".
+_:b1_b5 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275262".
+_:b1_b50 a org:Site;
+    org:siteAddress _:b1_b51.
+_:b1_b51 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10777 ";
+    vcard:street-address "Viktoria-Luise-Platz  6".
+_:b1_b52 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902274966".
+_:b1_b53 a org:Site;
+    org:siteAddress _:b1_b54.
+_:b1_b54 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10623 ";
+    vcard:street-address "Hardenbergstr.  22 - 24".
+_:b1_b55 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 42184525".
+_:b1_b56 a org:Site;
+    org:siteAddress _:b1_b57.
+_:b1_b57 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10405 ";
+    vcard:street-address "Prenzlauer Allee  80".
+_:b1_b58 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 25563311".
+_:b1_b59 a org:Site;
+    org:siteAddress _:b1_b60.
+_:b1_b6 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276166".
+_:b1_b60 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10713 ";
+    vcard:street-address "Paretzer Str.  1".
+_:b1_b61 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 83858310".
+_:b1_b62 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 901939886".
+_:b1_b63 a org:Site;
+    org:siteAddress _:b1_b64.
+_:b1_b64 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "14059";
+    vcard:street-address "Fürstenbrunner Weg 22-30 undefined".
+_:b1_b65 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276051".
+_:b1_b66 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275858".
+_:b1_b67 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275870".
+_:b1_b68 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275783".
+_:b1_b69 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276715".
+_:b1_b7 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275230".
+_:b1_b70 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276027".
+_:b1_b71 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275937".
+_:b1_b72 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276686".
+_:b1_b73 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275989".
+_:b1_b74 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275846".
+_:b1_b75 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902274310".
+_:b1_b76 a org:Site;
+    org:siteAddress _:b1_b77.
+_:b1_b77 a vcard:Address;
+    vcard:locality " Berlin";
+    vcard:postal-code "13407";
+    vcard:street-address "Flottenstr.  28 – 42".
+_:b1_b78 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495227".
+_:b1_b79 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495231".
+_:b1_b8 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276167".
+_:b1_b80 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495260".
+_:b1_b81 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495227".
+_:b1_b82 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902495236".
+_:b1_b83 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276998".
+_:b1_b84 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 90214600".
+_:b1_b85 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 90214616".
+_:b1_b86 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30  902275855".
+_:b1_b87 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276929".
+_:b1_b88 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275502".
+_:b1_b89 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30  902275533".
+_:b1_b9 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276167".
+_:b1_b90 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275512".
+_:b1_b91 a org:Site;
+    org:siteAddress _:b1_b92.
+_:b1_b92 a vcard:Address;
+    vcard:locality "Berlin";
+    vcard:postal-code "10117 ";
+    vcard:street-address "Georgenstr. 35 35".
+_:b1_b93 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275335".
+_:b1_b94 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276877".
+_:b1_b95 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902276248".
+_:b1_b96 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 53071200".
+_:b1_b97 a org:Site;
+    org:siteAddress _:b1_b98.
+_:b1_b98 a vcard:Address;
+    vcard:locality "Berlin ";
+    vcard:postal-code "12459 ";
+    vcard:street-address "Straße zum FEZ undefined".
+_:b1_b99 a vcard:Telephone;
+    vcard:hasValue "tel:+49 30 902275353".

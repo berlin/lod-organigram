@@ -37,6 +37,7 @@ lodorganigram:
     void:vocabulary berorgs: , org: , vcard: , skos: ;
     void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigram/refs/heads/main/data/static/SenFin.ttl> ;
     void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigram/refs/heads/main/data/static/SenWGP.ttl> ;
+    void:dataDump <https://raw.githubusercontent.com/berlin/lod-organigram/refs/heads/main/data/static/SenBJF.ttl> ;
 .
 
 # lodbo:impressum
